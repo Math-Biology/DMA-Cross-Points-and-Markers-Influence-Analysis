@@ -1,0 +1,24 @@
+# ====================================================================
+# AGENTIC DEVELOPMENT WORKFLOW RULES - GITIGNORE TEMPLATE
+# (SOP #L001-U015-P26.0141 - "Track Specifications, Ignore Runtime Noise")
+# ====================================================================
+.env
+.env.*
+.agent/logs/
+.agent/cache/
+.agent/history/
+*.pem
+*.key
+*.id_rsa
+*.sql
+*.sqlite
+
+# Claude Code local state (also ~/.claude/ lives outside the repo)
+.claude/
+
+# ====================================================================
+# PYTHON DEFAULT IGNORE
+# ====================================================================
+__pycache__/
+*.py[cod]
+.venv/

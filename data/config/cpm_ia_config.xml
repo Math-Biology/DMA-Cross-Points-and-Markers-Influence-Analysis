@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CPM-IA Runtime Configuration — REQ-CPM-IA-P26.0001 -->
+<!-- All processing parameters for the Cross Points and Markers Influence Analysis. -->
+<!-- Edit this file to change execution behaviour; never hardcode values in src/. -->
+<cpm_ia_config>
+
+    <!-- I/O -->
+    <input_path>data/input/all_visits_percentage_variation_cleaned.csv</input_path>
+    <output_path>data/output</output_path>
+
+    <!-- Output file label suffixes (used to build output filenames) -->
+    <output_label_detail>cpm_ia_detail</output_label_detail>
+    <output_label_aggregated>cpm_ia_aggregated</output_label_aggregated>
+
+    <!-- Analysis parameters -->
+    <threshold_pct>300.0</threshold_pct>            <!-- default: 300.0 % -->
+    <rise_tolerance_epsilon>5.0</rise_tolerance_epsilon>
+    <n_max>10</n_max>
+
+</cpm_ia_config>

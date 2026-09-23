@@ -1,0 +1,10 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,LF - 3 - c,1.0,Psicophyt Remedy 30 - Biogroup,458.3333333333333,7.0,2,False,,0.0,1.0,0.0,next_positive,5062.830687830685,,
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,LF - 3 - c,2.0,Psicophyt Remedy 6 - Biogroup,358.3333333333334,8.0,2,False,,0.0,1.0,0.0,end,16407.490079365078,,
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,LF - 3 - i,,,,,0,True,,,,,,,,
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,LH - 1 - c,1.0,Psicophyt Remedy 6 - Biogroup,541.1764705882354,8.0,1,False,,0.0,1.0,0.0,end,4033.6134453781506,,
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,LH - 2 - c,1.0,Psicophyt  2 - Biogroup,411.7647058823529,0.0,3,False,-102.35294117647054,305.8823529411764,4.0,101.96078431372547,rise,,17750.86505190311,
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,LH - 2 - c,2.0,Psicophyt Remedy 3 - Biogroup,305.8823529411765,6.0,3,False,,0.0,1.0,0.0,next_positive,20632.064590542097,,
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,LH - 2 - c,3.0,Psicophyt Remedy 30 - Biogroup,623.5294117647059,7.0,3,False,-517.6470588235293,517.6470588235294,2.0,517.6470588235294,end,18678.53023562366,133979.23875432523,7.17290049400141
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,RF - 3 - i,1.0,Psicophyt Remedy 30 - Biogroup,314.2857142857143,7.0,2,False,,0.0,1.0,0.0,next_positive,4232.2643343051495,,
+P408_#2018m01d09-P408_V13509_FreeProtocol,2018-01-09,RF - 3 - i,2.0,Psicophyt Remedy 6 - Biogroup,578.5714285714286,8.0,2,False,,0.0,1.0,0.0,end,5348.943148688045,,

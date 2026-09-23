@@ -1,0 +1,12 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,LF - 1 - e,,,,,0,True,,,,,,,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,LF - 5 - e,,,,,0,True,,,,,,,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 2 - e,,,,,0,True,,,,,,,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 2 - i,,,,,0,True,,,,,,,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 4 - e,1.0,Biotad Plus,465.2173913043479,0.0,7,False,,0.0,1.0,0.0,next_positive,,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 4 - e,2.0,Candida albicans,700.0,1.0,7,False,,0.0,1.0,0.0,next_positive,,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 4 - e,3.0,Meridian Komplex 8,643.4782608695652,2.0,7,False,,0.0,1.0,0.0,next_positive,27561.43667296784,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 4 - e,4.0,Meristemo 21 - PromoPharma,356.5217391304348,3.0,7,False,,0.0,1.0,0.0,next_positive,15015.75299306867,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 4 - e,5.0,Meristemo 8 - PromoPharma,469.5652173913044,4.0,7,False,,0.0,1.0,0.0,next_positive,25185.885318210454,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 4 - e,6.0,Oxistres - Forza Vitale,343.4782608695652,5.0,7,False,,0.0,1.0,0.0,next_positive,19918.71455576559,,
+P302_#2016m09d20-P302_V12644_FreeProtocol,2016-09-20,RF - 4 - e,7.0,Trichophytum rubrum,565.2173913043479,6.0,7,False,-365.21739130434787,365.21739130434787,2.0,365.21739130434787,end,21545.683679899183,66691.87145557658,3.095370397449771

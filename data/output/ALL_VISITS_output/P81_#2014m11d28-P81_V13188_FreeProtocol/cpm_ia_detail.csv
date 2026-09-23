@@ -1,0 +1,12 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,LF - 5 - e,,,,,0,True,,,,,,,,
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,LF - 5 - i,,,,,0,True,,,,,,,,
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,LH - 2 - i,,,,,0,True,,,,,,,,
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,LH - 5 - e,,,,,0,True,,,,,,,,
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,RF - 5 - e,1.0,Staphilococcus aureus,310.0,18.0,1,False,-180.0,180.0,2.0,180.0,rise,3137.5,16200.0,5.163346613545817
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,RF - 5 - i,,,,,0,True,,,,,,,,
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,RH - 2 - i,1.0,Escherichia coli,400.0,9.0,2,False,,0.0,1.0,0.0,next_positive,3055.555555555552,,
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,RH - 2 - i,2.0,Giardia lamblia,550.0,10.0,2,False,-208.33333333333337,416.66666666666674,3.0,208.33333333333337,rise,7172.839506172837,53611.11111111111,7.474182444061965
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,RH - 5 - e,1.0,Echinococcus multilocularis,300.0,8.0,3,False,-100.0,200.0,3.0,100.0,next_positive,3364.285714285714,10533.333333333334,3.130927105449399
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,RH - 5 - e,2.0,Herper zoster,340.0,11.0,3,False,-170.0,340.0,3.0,170.0,rise,6007.272727272728,28933.333333333332,4.816384180790959
+P81_#2014m11d28-P81_V13188_FreeProtocol,2014-11-28,RH - 5 - e,3.0,Proteus mirabilis,459.9999999999999,17.0,3,False,-379.9999999999999,379.9999999999999,2.0,379.9999999999999,rise,8794.117647058822,72199.99999999996,8.21003344481605

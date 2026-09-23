@@ -1,0 +1,470 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[top=3cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[hidelinks,
+            pdftitle={CPM-IA Run Report},
+            pdfauthor={Math Biology S.r.l.},
+            pdfsubject={SR\&TS \#L001-U015-P26.0127}]{hyperref}
+
+%% ─── Colours ────────────────────────────────────────────────────────────────
+\definecolor{dmaaccent}{RGB}{0,74,128}
+\definecolor{dmagray}{RGB}{100,100,100}
+
+%% ─── Page style ─────────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small\textcolor{dmagray}{Math Biology S.r.l.\ --- Confidential}}
+\rhead{\small\textcolor{dmagray}{CPM-IA Automated Run Report}}
+\lfoot{\small\textcolor{dmagray}{SR\&TS \#L001-U015-P26.0127 --- Rev~00.00}}
+\rfoot{\small\textcolor{dmagray}{Page~\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%% ─── Section colour ──────────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{dmaaccent}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{dmaaccent}}{}{0em}{}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+
+%% ── Title page ───────────────────────────────────────────────────────────────
+\begin{titlepage}
+\begin{center}
+  \vspace*{1.8cm}
+  {\color{dmaaccent}\rule{\linewidth}{1.5pt}}\\[0.6cm]
+  {\LARGE\bfseries\color{dmaaccent}
+    Cross Points and Markers\\[0.25cm]
+    Influence Analysis}\\[0.4cm]
+  {\Large Automated Run Report}\\[0.3cm]
+  {\color{dmaaccent}\rule{\linewidth}{1.5pt}}\\[2cm]
+
+  \begin{tabular}{ll}
+    \textbf{Component ID:}   & CPM-IA \\[0.3cm]
+    \textbf{SR\&TS Ref.:}    & \#L001-U015-P26.0127 --- Rev~00.00 \\[0.3cm]
+    \textbf{Run date:}       & 2026-09-23 \\[0.3cm]
+    \textbf{Run time (UTC):} & 13:09:45 \\
+  \end{tabular}
+
+  \vfill
+  {\color{dmagray}\small
+    Math Biology S.r.l.\ --- All rights reserved.\\
+    This document is generated automatically at pipeline completion.\\
+    Do not distribute without authorisation.}
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+%% ── 1. Run Configuration ────────────────────────────────────────────────────
+\section{Run Configuration}
+
+\begin{table}[h!]
+\centering
+\small
+\caption{Runtime parameters loaded from the XML configuration file.}
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Input source                      & \texttt{excel [1 file(s)]} \\
+Output path                       & \texttt{data/output/ALL\_VISITS\_output/P556\_\#2018m12d13-P556\_V1290\_FreeProtocol} \\
+Detail output file                & \texttt{cpm\_ia\_detail.csv} \\
+Aggregated output file            & \texttt{cpm\_ia\_aggregated.csv} \\
+Threshold $\theta$ (\%)           & 300.0 \\
+Rise tolerance $\varepsilon$ (\%) & 1.0 \\
+Max descent window $n_{\max}$     & 1000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ── 2. Dataset Overview ─────────────────────────────────────────────────────
+\section{Dataset Overview}
+
+\begin{table}[h!]
+\centering
+\small
+\caption{Input dataset dimensions after schema validation and ingestion (Module~02).}
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Count} \\
+\midrule
+Total rows ingested                        & 72 \\
+Rows dropped (empty keys)                  & 0 \\
+Invalid points found / rows affected       & 0 / 0 \\
+Total anchors detected                     & 4 \\
+Unique visits                          & 1 \\
+Unique anatomical points               & 3 \\
+Unique markers across all visits       & 24 \\
+(Visit,\,point) series analysed        & 3 \\
+Positive (visit,\,point) series        & 3 (\,100.0\,\%) \\
+Descent windows truncated at $n_{\max}$ & 0 (\,0.0\,\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ── 3. Algorithm Description ─────────────────────────────────────────────────
+\section{Algorithm Description}
+
+The CPM-IA component analyses whether excitation events detected in bioelectrical surface
+current signals systematically influence the signal values recorded at subsequent measurement
+markers. The pipeline processes long-format tabular measurements through eight sequential
+analytical modules (M03--M10), each producing typed, immutable outputs consumed by the next
+stage.
+
+\subsection{Input Data}
+
+The component ingests a single long-format CSV file (UTF-8, comma-separated). Each row
+encodes one (visit, anatomical point, marker) measurement triplet. The required columns are:
+
+\begin{itemize}
+  \item \textbf{Visit identifier} --- unique alphanumeric code for the acquisition session.
+  \item \textbf{Marker identifier} --- unique code identifying the stimulus or measurement
+        marker.
+  \item \textbf{Anatomical point identifier} --- code identifying the electrode or
+        body-surface acquisition site.
+  \item \textbf{Percentage variation} --- raw signal change relative to a reference value,
+        expressed as a floating-point percentage (\%).
+\end{itemize}
+
+Additional visit-level metadata columns (e.g.\ acquisition date) are preserved in the
+detail output without modification.
+
+\subsection{Configuration Parameters}
+
+Three parameters govern the analysis; all are loaded exclusively from the XML configuration
+file at run time and are never hard-coded:
+
+\begin{itemize}
+  \item \textbf{Threshold} $\theta = \mathbf{300.0}\,\%$: a marker is
+        classified as a \emph{positive excitation} when its percentage variation meets or
+        exceeds $\theta$ ($\geq \theta$, inclusive).
+  \item \textbf{Rise tolerance} $\varepsilon = \mathbf{1.0}\,\%$: the maximum
+        increase permitted between two consecutive values inside the descent window; a rise
+        strictly exceeding $\varepsilon$ closes the window.
+  \item \textbf{Maximum window length} $n_{\max} = \mathbf{1000}$: the descent window
+        is forcibly closed after $n_{\max}$ markers even when no rise exceeding $\varepsilon$
+        has occurred (truncated window).
+\end{itemize}
+
+\subsection{Processing Steps}
+
+\paragraph{M03 --- Marker Sequence Reconstruction.}
+For each visit independently, the canonical marker detection order is derived from the
+first-appearance order of marker identifiers in the input file's rows for that visit.
+This per-visit temporal ordering is immutable for the entire run: no sorting, grouping, or
+reordering of markers is performed after this step.
+Each (visit, anatomical~point) pair is represented as an ordered list of percentage
+variation values aligned to its visit's detection order; positions where a marker belongs
+to the visit protocol but was not measured at a specific point receive a NaN sentinel value.
+
+\paragraph{M04 --- All-Positive Trigger Detection.}
+Each (visit, point) sequence is scanned in temporal detection order.
+\emph{All} markers whose percentage variation \emph{meets or exceeds} $\theta$
+($\geq \theta$, inclusive) are designated \emph{excitation anchors}.
+The full list of anchors is recorded as \texttt{positives\_count} per (visit, point) series.
+Series in which no marker meets $\theta$ are flagged as ``no cross-marker effect'' and
+are excluded from all subsequent analytical modules (M06--M09).
+
+\paragraph{M05 --- Positive Census.}
+An anatomical point is classified as \emph{positive} if at least one of its visits produced
+an anchor. The census counts positive and total unique anatomical points across the dataset.
+
+\paragraph{M06 --- Descent Window Determination.}
+For each detected anchor, starting from that anchor (step $i = 0$), the window extends
+to successive markers as long as the signal does not rise by more than $\varepsilon$
+between consecutive steps.
+The window closes when any of three conditions is met: (1) a rise
+$v_i - v_{i-1} > \varepsilon$ is encountered (\texttt{window\_close\_reason = rise});
+(2) the next anchor position is reached (\texttt{window\_close\_reason = next\_positive});
+(3) $n_{\max}$ markers have been collected (\texttt{window\_close\_reason = n\_max}).
+If the sequence is exhausted without any of the above, the reason is \texttt{end}.
+The anchor is always included as the first element of the window.
+The \texttt{window\_close\_reason} field is recorded for each window in the detail output.
+
+\paragraph{M07 --- Descent Slope (OLS Linear Regression).}
+An ordinary least-squares (OLS) linear regression is fitted to the $L$ descent window
+values $y_0, y_1, \ldots, y_{L-1}$ at integer step positions $x_i = i$, where
+$x_0 = 0$ corresponds to the anchor.
+The closed-form slope estimator is:
+\[
+  \hat{\beta}_1 =
+  \frac{L\sum_{i=0}^{L-1} i\,y_i
+        - \sum_{i=0}^{L-1} i \cdot \sum_{i=0}^{L-1} y_i}
+       {L\sum_{i=0}^{L-1} i^2
+        - \Bigl(\sum_{i=0}^{L-1} i\Bigr)^{\!2}}
+\]
+The slope $\hat{\beta}_1$ (in \%\,step$^{-1}$) quantifies the average linear rate of
+change of the signal across the descent window. A window of length $L = 1$ yields an
+undefined slope, reported as missing.
+
+\paragraph{M08 --- Descent Descriptors.}
+Three scalar shape descriptors are computed for each positive (visit, point) series:
+\begin{itemize}
+  \item \textbf{Descent depth} $= v_{\mathrm{anchor}} - \min(v_0, \ldots, v_{L-1})$,
+        in \%: total signal drop from the anchor to the lowest point in the window.
+  \item \textbf{Descent length} $= L$: number of markers in the window, including the
+        anchor.
+  \item \textbf{Mean per-step decrease} $= \mathrm{depth}\,/\,(L - 1)$,
+        in \%\,step$^{-1}$: average drop per marker step, normalising depth by window
+        duration. Undefined for $L = 1$.
+\end{itemize}
+
+\paragraph{M09 --- Variance Indicator.}
+Sample variance (denominator $n - 1$, i.e.\ $\mathtt{ddof} = 1$) is computed separately
+on two signal segments:
+\begin{itemize}
+  \item \textbf{Before-segment}: all sequence values at positions before the anchor index,
+        after removing NaN entries.
+  \item \textbf{After-segment}: the descent window values $v_0, \ldots, v_{L-1}$, after
+        removing NaN entries.
+\end{itemize}
+A segment with fewer than two clean values yields an undefined variance (reported as
+missing). The \textbf{variance ratio}
+$= \sigma^2_{\mathrm{after}} / \sigma^2_{\mathrm{before}}$
+is computed when both variances are defined and $\sigma^2_{\mathrm{before}} > 0$.
+A ratio $> 1$ indicates that signal variability \emph{increases} after the excitation
+onset; a ratio $< 1$ indicates it \emph{decreases}.
+
+\paragraph{M10 --- Output Consolidation.}
+Results from M04--M09 are assembled into two tidy output files:
+\begin{itemize}
+  \item \textbf{Detail file} (\texttt{cpm\_ia\_detail.csv}): one row per
+        (visit, anatomical~point, \emph{anchor}) triplet. Each anchor detected by M04
+        produces a separate row with columns \texttt{anchor\_rank},
+        \texttt{anchor\_marker}, \texttt{anchor\_value}, \texttt{anchor\_index},
+        and \texttt{window\_close\_reason}.
+        (Visit, point) pairs with no cross-marker effect produce a single row with
+        \texttt{anchor\_marker = None}.
+  \item \textbf{Aggregated file} (\texttt{cpm\_ia\_aggregated.csv}): one row per
+        anatomical point, containing visit counts, positive prevalence,
+        \texttt{median\_positives\_count}, and median descent descriptors computed over
+        \emph{all anchors} of that point.
+\end{itemize}
+
+\subsection{Output Artefacts}
+
+The pipeline produces three artefacts in the output directory \texttt{data/output/ALL\_VISITS\_output/P556\_\#2018m12d13-P556\_V1290\_FreeProtocol}:
+\begin{enumerate}
+  \item The per-(visit, point) detail CSV (M10).
+  \item The per-point aggregation CSV (M10).
+  \item This automated PDF run report (M11), generated from a filled \LaTeX{} template
+        and compiled with \texttt{pdflatex} in two passes to resolve table-of-contents
+        page numbers.
+\end{enumerate}
+No output file is ever silently overwritten: the pipeline raises an error if a target
+file already exists (guard~G-10).
+
+%% ── 4. Per-Point Results ────────────────────────────────────────────────────
+\section{Per-Point Results}
+
+\noindent
+Of the \textbf{3} (visit,\,point) series analysed,
+\textbf{3} (\textbf{100.0}\,\%) yielded at least one
+excitation event above the threshold $\theta = 300.0\,\%$.
+\textbf{3} of \textbf{3} unique anatomical points
+have at least one positive visit.
+All tables in this section are sorted alphabetically by point identifier.
+
+\subsection{Visit Counts and Positive Prevalence}
+
+A visit is \emph{positive} for a given anatomical point when at least one marker in that
+(visit, point) series has a percentage variation meeting or exceeding
+$\theta = 300.0\,\%$ ($\geq \theta$) in temporal detection order (Module~M04).
+All other visits are classified as ``no cross-marker effect'' for that point.
+
+The \textbf{positive prevalence} is the proportion of total visits that are positive:
+\[
+  \text{Prevalence (\%)} = \frac{\text{Positive Visits}}{\text{Total Visits}} \times 100
+\]
+
+A high prevalence indicates that the excitation event is consistently reproduced at a given
+point across visits; a low prevalence indicates that the event is rare or confined to
+specific sessions.
+
+\begin{small}
+\begin{longtable}{p{5cm}rrr}
+\toprule
+\textbf{Anatomical Point} &
+\textbf{Total Visits} &
+\textbf{Positive Visits} &
+\textbf{Prevalence (\%)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Anatomical Point} &
+\textbf{Total Visits} &
+\textbf{Positive Visits} &
+\textbf{Prevalence (\%)} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\small\emph{Continued on next page\ldots}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+RF - 1 - i & 1 & 1 & 100.0 \\
+RH - 5 - e & 1 & 1 & 100.0 \\
+RH - 5 - i & 1 & 1 & 100.0 \\
+\end{longtable}
+\end{small}
+
+\subsection{Most Frequent Trigger Markers by Anatomical Point}
+
+For each anatomical point, the table shows which markers most frequently acted as an
+\emph{excitation anchor} --- any marker in temporal detection order (Module~M03)
+whose percentage variation met or exceeded $\theta = 300.0\,\%$
+(Module~M04) --- across positive visits.
+
+\medskip
+Only markers that acted as anchor in at least \textbf{3.5\,\%}
+of the positive visits for that point are listed.
+Markers with a lower share are scattered across sessions with no single dominant trigger
+and are omitted for readability.
+All listed marker values met or exceeded $\theta = 300.0\,\% > 100\,\%$ in the
+visits where they acted as anchor.
+Anatomical points whose most frequent anchor marker appears in fewer than
+3.5\,\% of positive visits do not appear in this table (no single
+marker is dominant at those points).
+
+\medskip
+\noindent\textbf{How to read the columns:}
+\begin{itemize}
+  \item \textbf{Trigger Marker}: identifier of an anchor marker that met or exceeded $\theta$
+        for that point.
+  \item \textbf{$n$}: number of positive visits for that point in which this marker was
+        the anchor.
+  \item \textbf{Share of Pos.\ Visits (\%)}: $n$ expressed as a percentage of the total
+        positive visits for that point.
+        Values near 100\,\% indicate a dominant, reproducible trigger;
+        lower values indicate concurrent triggers across sessions (e.g.\ due to
+        protocol or biological variability).
+\end{itemize}
+
+\medskip
+\noindent Rows are sorted by anatomical point (alphabetical) and, within each point, by
+descending $n$.
+
+\begin{footnotesize}
+\begin{longtable}{p{3.5cm}p{7.5cm}rr}
+\toprule
+\textbf{Anatomical Point} &
+\textbf{Trigger Marker} &
+\textbf{$n$} &
+\textbf{Share (\%)} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Anatomical Point} &
+\textbf{Trigger Marker} &
+\textbf{$n$} &
+\textbf{Share (\%)} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\footnotesize\emph{Continued on next page\ldots}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+RF - 1 - i & Ig-G & 1 & 100.0 \\
+RH - 5 - e & 3-Nitro Tirosina & 1 & 100.0 \\
+RH - 5 - e & H2O2 & 1 & 100.0 \\
+RH - 5 - i & MDA & 1 & 100.0 \\
+\end{longtable}
+\end{footnotesize}
+
+\subsection{Descent Shape Medians (Positive Visits Only)}
+
+All values in this table are medians computed over \emph{all anchors} of positive visits ---
+visits in which at least one excitation anchor was detected for that point. Each anchor
+contributes one row to the detail file and one value to each median. Points with no positive
+visits receive a dash (---) for all descriptor columns.
+Medians are computed on the raw per-anchor values; no smoothing or outlier removal is
+applied.
+
+\medskip
+\noindent\textbf{How to read and interpret the columns:}
+
+\begin{itemize}
+
+  \item \textbf{Med.\ Slope} (\%\,step$^{-1}$): median OLS linear regression slope across
+        the descent window (Module~M07). A negative value indicates a consistent downward
+        trend in the post-excitation signal; a slope near zero indicates a flat or irregular
+        window. The slope is the rate-of-change estimator that minimises the sum of squared
+        vertical residuals between the fitted line and the window values. Undefined for
+        single-marker windows (---).
+
+  \item \textbf{Med.\ Depth} (\%): median total signal drop from the anchor value to the
+        minimum value in the descent window,
+        $v_{\mathrm{anchor}} - \min_{\mathrm{window}}$ (Module~M08). Larger depth indicates
+        a more pronounced excitation response; a depth near zero means the signal barely
+        decreases after the anchor.
+
+  \item \textbf{Med.\ Length} (marker steps): median number of markers in the descent
+        window, including the anchor (Module~M08). A longer window indicates a sustained
+        post-excitation decline before a natural rise exceeding
+        $\varepsilon = 1.0\,\%$ is observed or before the
+        $n_{\max} = 1000$ cap is reached. A length of~1 means the signal rose
+        immediately at the next marker after the anchor.
+
+  \item \textbf{Med.\ Step Decr.} (\%\,step$^{-1}$): median mean per-step decrease,
+        computed as $\mathrm{depth}\,/\,(\mathrm{length} - 1)$ (Module~M08). This metric
+        normalises the total drop by the window duration, providing a rate-of-descent
+        estimate that is comparable across windows of different lengths. Undefined for
+        single-marker windows (---).
+
+\end{itemize}
+
+\medskip
+\noindent\textbf{Interpretation guidance.}
+Anatomical points with high positive prevalence (Section~4.1), large median depth, and a
+well-defined negative slope show a strong and consistent post-excitation descent across
+visits.
+Points with low prevalence but large depth when positive are intermittently reactive.
+A high median length combined with a moderate slope may indicate a gradual, sustained
+descent rather than a sharp drop.
+The variance ratio (available in the detail CSV, column \texttt{variance\_ratio}) complements
+these descriptors by quantifying whether signal dispersion increases or decreases after the
+excitation onset.
+
+\begin{small}
+\begin{longtable}{p{4.5cm}rrrr}
+\toprule
+\textbf{Anatomical Point} &
+\textbf{Med.\ Slope} &
+\textbf{Med.\ Depth} &
+\textbf{Med.\ Length} &
+\textbf{Med.\ Step Decr.} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Anatomical Point} &
+\textbf{Med.\ Slope} &
+\textbf{Med.\ Depth} &
+\textbf{Med.\ Length} &
+\textbf{Med.\ Step Decr.} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\small\emph{Continued on next page\ldots}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+RF - 1 - i & -78.57 & 157.14 & 3.0 & 78.57 \\
+RH - 5 - e & -315.12 & 315.12 & 2.0 & 315.12 \\
+RH - 5 - i & -177.42 & 354.84 & 3.0 & 177.42 \\
+\end{longtable}
+\end{small}
+
+\end{document}

@@ -1,0 +1,29 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,LF - 3 - e,1.0,Calcium Sulfuricum,300.0,2.0,1,False,-80.0,250.0,4.0,83.33333333333333,rise,0.0,12708.333333333334,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,LF - 3 - i,1.0,Natrum Muriaticum,425.0,9.0,1,False,-127.5,425.0,4.0,141.66666666666666,rise,10167.410714285714,31406.25,3.0889132821075744
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,LH - 3 - e,,,,,0,True,,,,,,,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,LH - 3 - i,1.0,m02,550.0,17.0,1,False,-400.0,400.0,2.0,400.0,rise,3968.25396825397,80000.0,20.15999999999999
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,LH - 4 - e,1.0,m02,300.0,17.0,1,False,-83.33333333333333,166.6666666666667,3.0,83.33333333333336,rise,3444.4444444444457,7314.814814814819,2.123655913978495
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RF - 3 - e,1.0,Profito END - OHI,380.0,13.0,2,False,-320.0,320.0,2.0,320.0,rise,7507.692307692308,51200.0,6.8196721311475414
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RF - 3 - e,2.0,m05,300.0,20.0,2,False,,0.0,1.0,0.0,end,10552.94117647059,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RF - 3 - i,1.0,Profito END - OHI,600.0,13.0,1,False,-400.0,400.0,2.0,400.0,end,4290.123456790123,80000.0,18.64748201438849
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 3 - e,1.0,Ferrum Phosphoricum,300.0,4.0,4,False,-100.0,200.0,3.0,100.0,next_positive,555.5555555555555,10370.370370370369,18.666666666666664
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 3 - e,2.0,Kalium sulfuricum,650.0,7.0,4,False,,0.0,1.0,0.0,next_positive,12208.99470899471,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 3 - e,3.0,Magnesium Phosphoricum,450.0,8.0,4,False,-350.0,350.0,2.0,350.0,rise,49598.21428571428,61250.0,1.234923492349235
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 3 - e,4.0,Profito END - OHI,350.0,13.0,4,False,-125.00000000000004,250.0,3.0,125.0,end,38212.250712250716,19537.037037037036,0.5112767940354147
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 3 - i,1.0,m02,300.0,17.0,1,False,-280.0,280.0,2.0,280.0,rise,1544.1176470588234,39200.0,25.386666666666667
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,1.0,Calcium Sulfuricum,350.0,2.0,15,False,-200.0,200.0,2.0,200.0,next_positive,20000.0,20000.0,1.0
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,2.0,Ferrum Phosphoricum,500.0,4.0,15,False,,0.0,1.0,0.0,next_positive,20833.333333333332,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,3.0,Kalium Muriaticum,300.0,5.0,15,False,,0.0,1.0,0.0,next_positive,36750.0,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,4.0,Kalium phosphoricum,1075.0,6.0,15,False,,0.0,1.0,0.0,next_positive,30000.0,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,5.0,Kalium sulfuricum,475.0,7.0,15,False,,0.0,1.0,0.0,next_positive,122232.14285714284,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,6.0,Magnesium Phosphoricum,650.0,8.0,15,False,,0.0,1.0,0.0,next_positive,106205.35714285714,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,7.0,Natrum Muriaticum,400.0,9.0,15,False,,0.0,1.0,0.0,next_positive,100954.86111111111,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,8.0,Natrum Phosphoricum,400.0,10.0,15,False,,0.0,1.0,0.0,next_positive,89750.0,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,9.0,Natrum Sulfuricum,450.0,11.0,15,False,-450.0,450.0,2.0,450.0,next_positive,80784.09090909091,101250.0,1.253340835560557
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,10.0,Profito END - OHI,500.0,13.0,15,False,,0.0,1.0,0.0,next_positive,80536.85897435898,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,11.0,Profito IT - OHI,375.0,14.0,15,False,,0.0,1.0,0.0,next_positive,75357.14285714286,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,12.0,Silica,325.0,15.0,15,False,,0.0,1.0,0.0,next_positive,69988.09523809524,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,13.0,m01,775.0,16.0,15,False,,0.0,1.0,0.0,next_positive,65572.91666666667,,
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,14.0,m02,800.0,17.0,15,False,-600.0,600.0,2.0,600.0,next_positive,70450.36764705883,180000.0,2.554990215264188
+P74_#2014m01d08-P74_V2268_FreeProtocol,2014-01-08,RH - 4 - e,15.0,m04,375.0,19.0,15,False,-175.0,175.0,2.0,175.0,rise,73475.87719298246,15312.5,0.2084017310849127

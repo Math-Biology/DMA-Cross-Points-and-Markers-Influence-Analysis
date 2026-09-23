@@ -4,10 +4,11 @@ output_consolidation.py — Consolidated Tidy Output and Per-Point Aggregation
 for the CPM-IA component.
 
 Assembles outputs from Modules 04–09 into two tidy CSV files:
-  1. Per-(visit, point) detail table    — {output_path}/{output_label_detail}.csv
-  2. Per-point aggregation table        — {output_path}/{output_label_aggregated}.csv
+  1. Per-(visit, point, anchor) detail table  — {output_path}/{output_label_detail}.csv
+  2. Per-point aggregation table              — {output_path}/{output_label_aggregated}.csv
 
 G-09: outputs are in long (tidy) format, uniquely identified by grouping keys.
+      Detail uniqueness key: (visit_id, point, anchor_marker).
 G-10: raises OutputError if an output file already exists (no silent overwrite).
 """
 
@@ -15,7 +16,7 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import Dict, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 
@@ -35,13 +36,17 @@ OUT_COL_POINT = "point"
 
 # Fixed ordering of analytical columns in detail output
 _ANALYTICAL_COLS = [
-    "first_positive_marker",
-    "first_positive_value",
+    "anchor_rank",
+    "anchor_marker",
+    "anchor_value",
+    "anchor_index",
+    "positives_count",
     "no_cross_marker_effect",
     "descent_slope",
     "descent_depth",
     "descent_length",
     "mean_per_step_decrease",
+    "window_close_reason",
     "variance_before",
     "variance_after",
     "variance_ratio",
@@ -53,6 +58,11 @@ _MEDIAN_COLS = [
     "descent_depth",
     "descent_length",
     "mean_per_step_decrease",
+]
+
+# Additional aggregation columns
+_AGG_MEDIAN_EXTRA = [
+    "median_positives_count",
 ]
 
 
@@ -67,45 +77,76 @@ class OutputError(Exception):
 def _build_detail(
     df_raw: pd.DataFrame,
     trigger_results: TriggerResults,
+    descent_windows: DescentWindows,
     slopes: Slopes,
     descriptors: Descriptors,
     variance_indicators: VarianceIndicators,
 ) -> pd.DataFrame:
-    """Assemble the per-(visit, point) detail DataFrame."""
+    """Assemble the per-(visit, point, anchor) detail DataFrame."""
 
-    # --- 1. Build flat rows from all computed module outputs ---
     rows = []
     for (visit, point), result in trigger_results.items():
-        desc = descriptors.get((visit, point))
-        var_ind = variance_indicators.get((visit, point))
+        if result.no_cross_marker_effect:
+            # One row per no-effect (visit, point)
+            rows.append({
+                COL_VISIT: visit,
+                COL_POINT: point,
+                "anchor_rank": None,
+                "anchor_marker": None,
+                "anchor_value": None,
+                "anchor_index": None,
+                "positives_count": 0,
+                "no_cross_marker_effect": True,
+                "descent_slope": None,
+                "descent_depth": None,
+                "descent_length": None,
+                "mean_per_step_decrease": None,
+                "window_close_reason": None,
+                "variance_before": None,
+                "variance_after": None,
+                "variance_ratio": None,
+            })
+        else:
+            anchors = result.anchors
+            slope_list = slopes.get((visit, point), [])
+            desc_list = descriptors.get((visit, point), [])
+            var_list = variance_indicators.get((visit, point), [])
+            win_list = descent_windows.get((visit, point), [])
 
-        rows.append({
-            COL_VISIT: visit,
-            COL_POINT: point,
-            "first_positive_marker": result.first_positive_marker,
-            "first_positive_value": result.first_positive_value,
-            "no_cross_marker_effect": result.no_cross_marker_effect,
-            "descent_slope": slopes.get((visit, point)),
-            "descent_depth": desc.descent_depth if desc is not None else None,
-            "descent_length": desc.descent_length if desc is not None else None,
-            "mean_per_step_decrease": desc.mean_per_step_decrease if desc is not None else None,
-            "variance_before": var_ind.variance_before if var_ind is not None else None,
-            "variance_after": var_ind.variance_after if var_ind is not None else None,
-            "variance_ratio": var_ind.variance_ratio if var_ind is not None else None,
-        })
+            for i, anchor in enumerate(anchors):
+                sl = slope_list[i] if i < len(slope_list) else None
+                desc = desc_list[i] if i < len(desc_list) else None
+                var_ind = var_list[i] if i < len(var_list) else None
+                win = win_list[i] if i < len(win_list) else None
+
+                rows.append({
+                    COL_VISIT: visit,
+                    COL_POINT: point,
+                    "anchor_rank": i + 1,
+                    "anchor_marker": anchor.marker,
+                    "anchor_value": anchor.value,
+                    "anchor_index": anchor.index,
+                    "positives_count": result.positives_count,
+                    "no_cross_marker_effect": False,
+                    "descent_slope": sl,
+                    "descent_depth": desc.descent_depth if desc else None,
+                    "descent_length": desc.descent_length if desc else None,
+                    "mean_per_step_decrease": desc.mean_per_step_decrease if desc else None,
+                    "window_close_reason": win.window_close_reason if win else None,
+                    "variance_before": var_ind.variance_before if var_ind else None,
+                    "variance_after": var_ind.variance_after if var_ind else None,
+                    "variance_ratio": var_ind.variance_ratio if var_ind else None,
+                })
 
     df = pd.DataFrame(rows)
 
-    # --- 2. Derive visit metadata: all df_raw columns except marker-level ones ---
+    # Derive visit metadata: all df_raw columns except marker-level ones
     meta_cols = [c for c in df_raw.columns if c not in (COL_MARKER, COL_RAW_VARIATION)]
     visit_meta = df_raw[meta_cols].drop_duplicates()
 
     df = df.merge(visit_meta, on=[COL_VISIT, COL_POINT], how="left")
 
-    # --- 3. Check for join failures: any (visit, point) in trigger_results absent from df_raw ---
-    # NaN in non-key metadata columns is allowed (source data may have missing visit_date etc.).
-    # A true join failure is detected by checking whether the trigger_results keys are all
-    # represented in visit_meta — an absent key produces all-NaN non-key columns for that row.
+    # Check for join failures: any (visit, point) in trigger_results absent from df_raw
     visit_meta_keys = set(
         zip(visit_meta[COL_VISIT].astype(str), visit_meta[COL_POINT].astype(str))
     )
@@ -120,13 +161,13 @@ def _build_detail(
             f"have no metadata row in df_raw — first missing: {missing_keys[0]}"
         )
 
-    # --- 4. G-09: assert unique (visit, point) identification after join ---
-    if df.duplicated(subset=[COL_VISIT, COL_POINT]).any():
+    # G-09: assert unique (visit_id, point, anchor_marker) identification
+    if df.duplicated(subset=[COL_VISIT, COL_POINT, "anchor_marker"]).any():
         raise OutputError(
-            "Duplicate (visit, point) rows after metadata join — G-09 uniqueness violated"
+            "Duplicate (visit_id, point, anchor_marker) rows — G-09 uniqueness violated"
         )
 
-    # --- 5. Apply canonical output column name; order columns per spec ---
+    # Apply canonical output column name; order columns per spec
     df = df.rename(columns={COL_POINT: OUT_COL_POINT})
     visit_meta_output_cols = [
         c if c != COL_POINT else OUT_COL_POINT
@@ -141,25 +182,42 @@ def _build_detail(
 def _build_aggregation(df_detail: pd.DataFrame) -> pd.DataFrame:
     """Build the per-point aggregation DataFrame from the detail DataFrame."""
 
-    # Total visits per point (all rows)
-    total_counts = df_detail.groupby(OUT_COL_POINT).size().rename("total_visit_count")
-
-    # Positive visits subset
-    df_pos = df_detail[~df_detail["no_cross_marker_effect"]]
-
-    # Positive visit count per point
-    pos_counts = (
-        df_pos.groupby(OUT_COL_POINT).size().rename("positive_visit_count")
+    # total_visit_count: unique visit_id per point (count distinct visits, not rows)
+    total_counts = (
+        df_detail.groupby(OUT_COL_POINT)[COL_VISIT]
+        .nunique()
+        .rename("total_visit_count")
     )
 
-    # Medians over positive visits only (pandas .median() skips NaN by default)
-    pos_medians = df_pos.groupby(OUT_COL_POINT)[_MEDIAN_COLS].median()
+    # Positive visits: rows where no_cross_marker_effect=False
+    df_pos = df_detail[~df_detail["no_cross_marker_effect"]]
+
+    # Positive visit count: unique visits per point in positive rows
+    pos_counts = (
+        df_pos.groupby(OUT_COL_POINT)[COL_VISIT]
+        .nunique()
+        .rename("positive_visit_count")
+    )
+
+    # median_positives_count: median of positives_count per (visit, point) pair (one value per pair)
+    pc_per_pair = (
+        df_pos.groupby([OUT_COL_POINT, COL_VISIT])["positives_count"]
+        .first()
+        .reset_index()
+        .groupby(OUT_COL_POINT)["positives_count"]
+        .median()
+        .rename("median_positives_count")
+    )
+
+    # Medians over ALL anchors of the point (all positive rows in detail)
+    pos_medians = df_pos.groupby(OUT_COL_POINT)[_MEDIAN_COLS].median(numeric_only=True)
     pos_medians.columns = [f"median_{c}" for c in pos_medians.columns]
 
     df_agg = (
         total_counts
         .to_frame()
         .join(pos_counts, how="left")
+        .join(pc_per_pair, how="left")
         .join(pos_medians, how="left")
         .reset_index()
     )
@@ -267,7 +325,7 @@ def consolidate_outputs(
         or if G-09 uniqueness is violated.
     """
     df_detail = _build_detail(
-        df_raw, trigger_results, slopes, descriptors, variance_indicators
+        df_raw, trigger_results, descent_windows, slopes, descriptors, variance_indicators
     )
     df_agg = _build_aggregation(df_detail)
     _cross_check_census(census, df_agg)

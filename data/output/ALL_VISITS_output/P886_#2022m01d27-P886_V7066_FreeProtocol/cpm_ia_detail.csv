@@ -1,0 +1,5 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P886_#2022m01d27-P886_V7066_FreeProtocol,2022-01-27,LF - 3 - c,,,,,0,True,,,,,,,,
+P886_#2022m01d27-P886_V7066_FreeProtocol,2022-01-27,LF - 3 - i,1.0,GABA,307.1428571428572,6.0,1,False,-130.35714285714292,260.7142857142858,3.0,130.3571428571429,rise,340.5612244897951,17886.904761904774,52.521847690387176
+P886_#2022m01d27-P886_V7066_FreeProtocol,2022-01-27,LF - 4 - i,,,,,0,True,,,,,,,,
+P886_#2022m01d27-P886_V7066_FreeProtocol,2022-01-27,LF - 5 - c,,,,,0,True,,,,,,,,

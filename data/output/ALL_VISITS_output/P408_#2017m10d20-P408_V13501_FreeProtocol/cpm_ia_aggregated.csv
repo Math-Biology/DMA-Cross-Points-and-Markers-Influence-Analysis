@@ -1,0 +1,5 @@
+point,total_visit_count,positive_visit_count,median_positives_count,median_descent_slope,median_descent_depth,median_descent_length,median_mean_per_step_decrease,positive_prevalence
+LF - 3 - c,1,1,1.0,-271.42857142857144,271.42857142857144,2.0,271.42857142857144,1.0
+LF - 3 - i,1,1,2.0,-309.09090909090907,154.54545454545456,1.5,154.54545454545456,1.0
+LH - 1 - c,1,0,,,,,,0.0
+LH - 2 - c,1,1,6.0,-101.31578947368425,194.73684210526312,3.0,101.31578947368419,1.0

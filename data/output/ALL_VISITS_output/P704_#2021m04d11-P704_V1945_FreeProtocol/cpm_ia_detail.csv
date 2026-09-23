@@ -1,0 +1,9 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,LF - 2 - e,1.0,Papilloma Virus,328.5714285714286,11.0,1,False,-88.09523809523807,176.1904761904762,3.0,88.0952380952381,end,2743.7641723356014,8185.941043083902,2.9834710743801653
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,LF - 5 - e,1.0,Fibronectina,459.9999999999999,2.0,5,False,,0.0,1.0,0.0,next_positive,800.0,,
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,LF - 5 - e,2.0,Herpes simplex,300.0,3.0,5,False,,0.0,1.0,0.0,next_positive,20681.48148148147,,
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,LF - 5 - e,3.0,IFN-alfa,340.0,4.0,5,False,,0.0,1.0,0.0,next_positive,13792.592592592586,,
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,LF - 5 - e,4.0,IFN-gamma,540.0,5.0,5,False,-373.3333333333333,373.33333333333326,2.0,373.33333333333326,rise,10719.999999999995,69688.88888888886,6.500829187396352
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,LF - 5 - e,5.0,Papilloma Virus,480.0,11.0,5,False,-373.33333333333337,373.3333333333333,2.0,373.3333333333333,rise,19564.44444444444,69688.88888888888,3.5620172648796
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,LH - 2 - i,,,,,0,True,,,,,,,,
+P704_#2021m04d11-P704_V1945_FreeProtocol,2021-04-11,RH - 5 - e,,,,,0,True,,,,,,,,

@@ -1,0 +1,18 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LF - 1 - e,,,,,0,True,,,,,,,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,1.0,Candida albicans,371.4285714285714,0.0,9,False,,0.0,1.0,0.0,next_positive,,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,2.0,IFN-alfa,466.6666666666667,1.0,9,False,,0.0,1.0,0.0,next_positive,,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,3.0,IFN-gamma,704.7619047619047,2.0,9,False,-523.8095238095236,523.8095238095237,2.0,523.8095238095237,next_positive,4535.147392290255,137188.20861677997,30.249999999999947
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,4.0,IL-2,466.6666666666667,4.0,9,False,,0.0,1.0,0.0,next_positive,47430.083144368844,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,5.0,IL-4,309.5238095238095,5.0,9,False,,0.0,1.0,0.0,next_positive,35827.664399092966,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,6.0,PGF-2,909.5238095238095,6.0,9,False,,0.0,1.0,0.0,next_positive,31417.233560090695,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,7.0,Pancreozimina,571.4285714285714,7.0,9,False,,0.0,1.0,0.0,next_positive,60882.19414750026,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,8.0,Saccharomyces spp,580.952380952381,8.0,9,False,,0.0,1.0,0.0,next_positive,53074.18205377389,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,LH - 2 - i,9.0,TNF-alfa,828.5714285714287,9.0,9,False,,0.0,1.0,0.0,end,47211.51423532375,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,RH - 2 - i,1.0,Pancreozimina,817.8571428571429,7.0,3,False,,0.0,1.0,0.0,next_positive,7176.263362487854,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,RH - 2 - i,2.0,Saccharomyces spp,364.2857142857143,8.0,3,False,,0.0,1.0,0.0,next_positive,53006.559766763865,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,RH - 2 - i,3.0,TNF-alfa,364.2857142857143,9.0,3,False,,0.0,1.0,0.0,end,47130.45634920636,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,RH - 5 - e,1.0,Candida albicans,340.0,0.0,2,False,-242.5,242.5,2.0,242.5,rise,,29403.125,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,RH - 5 - e,2.0,PGF-2,305.0,6.0,2,False,-155.0,155.0,2.0,155.0,rise,12871.666666666666,12012.5,0.9332513272044543
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,RH - 5 - i,1.0,PGF-2,360.0,6.0,2,False,,0.0,1.0,0.0,next_positive,6173.605442176873,,
+P1047_#2023m08d27-P1047_V3871_FreeProtocol,2023-08-27,RH - 5 - i,2.0,Pancreozimina,520.0,7.0,2,False,-400.0,400.0,2.0,400.0,rise,12546.161321671527,80000.0,6.376452362509682

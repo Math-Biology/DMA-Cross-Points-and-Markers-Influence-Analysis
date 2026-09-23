@@ -1,0 +1,8 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P704_#2023m01d12-P704_V1952_FreeProtocol,2023-01-12,LH - 3 - c,,,,,0,True,,,,,,,,
+P704_#2023m01d12-P704_V1952_FreeProtocol,2023-01-12,LH - 4 - i,1.0,Aspergillus spp,470.5882352941177,0.0,6,False,-229.41176470588232,229.41176470588238,2.0,229.41176470588238,next_positive,,26314.878892733566,
+P704_#2023m01d12-P704_V1952_FreeProtocol,2023-01-12,LH - 4 - i,2.0,Caseina,458.8235294117647,2.0,6,False,-247.05882352941165,247.05882352941168,2.0,247.05882352941168,rise,26314.878892733566,30519.03114186849,1.1597633136094665
+P704_#2023m01d12-P704_V1952_FreeProtocol,2023-01-12,LH - 4 - i,3.0,Forfore mix,347.0588235294118,6.0,6,False,,0.0,1.0,0.0,next_positive,12839.677047289502,,
+P704_#2023m01d12-P704_V1952_FreeProtocol,2023-01-12,LH - 4 - i,4.0,Glutine,323.5294117647059,7.0,6,False,,0.0,1.0,0.0,next_positive,10792.552315043662,,
+P704_#2023m01d12-P704_V1952_FreeProtocol,2023-01-12,LH - 4 - i,5.0,Graminacee mix,335.2941176470588,8.0,6,False,-101.7647058823529,299.99999999999994,4.0,99.99999999999999,rise,9251.112209589717,17540.369088811993,1.8960281414195386
+P704_#2023m01d12-P704_V1952_FreeProtocol,2023-01-12,LH - 4 - i,6.0,Saccharomyces spp,400.0,16.0,6,False,,0.0,1.0,0.0,end,13313.581314878893,,

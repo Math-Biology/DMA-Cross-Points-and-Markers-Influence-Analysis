@@ -1,0 +1,35 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,LH - 3 - e,,,,,0,True,,,,,,,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,LH - 5 - c,,,,,0,True,,,,,,,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 1 - e,1.0,Rock Rose,409.9999999999999,13.0,1,False,,0.0,1.0,0.0,end,,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,1.0,Aspen,415.0000000000001,1.0,20,False,,0.0,1.0,0.0,next_positive,,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,2.0,Beech,430.0,2.0,20,False,,0.0,1.0,0.0,next_positive,8450.000000000015,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,3.0,Cherry Plum,395.0,3.0,20,False,,0.0,1.0,0.0,next_positive,6358.333333333338,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,4.0,Clematis,305.0,4.0,20,False,,0.0,1.0,0.0,next_positive,4322.916666666669,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,5.0,Crab Apple,660.0,5.0,20,False,,0.0,1.0,0.0,next_positive,4405.000000000003,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,6.0,Elm,300.0,6.0,20,False,,0.0,1.0,0.0,next_positive,17930.0,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,7.0,Gentian,385.0,7.0,20,False,-95.0,95.0,2.0,95.0,next_positive,16830.95238095238,4512.5,0.26810722874522563
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,8.0,Impatiens,440.0000000000001,9.0,20,False,,0.0,1.0,0.0,next_positive,13912.5,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,9.0,Oak,409.9999999999999,10.0,20,False,,0.0,1.0,0.0,next_positive,12669.166666666668,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,10.0,Pine,480.0,11.0,20,False,,0.0,1.0,0.0,next_positive,11436.818181818182,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,11.0,Red Chestnut,360.0,12.0,20,False,,0.0,1.0,0.0,next_positive,11038.44696969697,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,12.0,Rock Rose,455.0,13.0,20,False,,0.0,1.0,0.0,next_positive,10239.102564102566,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,13.0,Schlerantus,430.0,14.0,20,False,,0.0,1.0,0.0,next_positive,9695.604395604398,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,14.0,Star of Bethlehem,555.0,15.0,20,False,,0.0,1.0,0.0,next_positive,9060.238095238095,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,15.0,Vervain,500.0,16.0,20,False,-275.0,275.0,2.0,275.0,next_positive,9906.5625,37812.5,3.8169142929245132
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,16.0,Wild Oat,500.0,18.0,20,False,,0.0,1.0,0.0,next_positive,11223.529411764706,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,17.0,Willow,395.0,19.0,20,False,,0.0,1.0,0.0,next_positive,11058.479532163743,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,18.0,chicory possessivitã_x0083_â,430.0,20.0,20,False,,0.0,1.0,0.0,next_positive,10490.197368421053,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,19.0,gorse qualunque tentativo ã_x0083_â¨ inutile,520.0,21.0,20,False,,0.0,1.0,0.0,next_positive,9983.333333333334,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 2 - c,20.0,rock water rigiditã_x0083_â,400.0,22.0,20,False,,0.0,1.0,0.0,end,10041.396103896104,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,1.0,AGO 2,645.8333333333333,0.0,11,False,,0.0,1.0,0.0,next_positive,,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,2.0,Aspen,370.8333333333334,1.0,11,False,-145.83333333333348,145.83333333333343,2.0,145.83333333333343,next_positive,,10633.68055555557,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,3.0,Cherry Plum,495.8333333333333,3.0,11,False,,0.0,1.0,0.0,next_positive,45665.50925925924,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,4.0,Crab Apple,450.0,5.0,11,False,-266.6666666666667,266.66666666666674,2.0,266.66666666666674,rise,32122.395833333318,35555.55555555557,1.1068774489933801
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,5.0,Oak,412.5,10.0,11,False,-150.0,150.0,2.0,150.0,next_positive,23862.847222222223,11250.0,0.47144416151327756
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,6.0,Red Chestnut,350.0,12.0,11,False,,0.0,1.0,0.0,next_positive,20235.479797979795,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,7.0,Rock Rose,337.5,13.0,11,False,-50.0,50.0,2.0,50.0,next_positive,18396.859217171714,1250.0,0.06794638069705095
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,8.0,Star of Bethlehem,533.3333333333333,15.0,11,False,-304.1666666666666,304.1666666666665,2.0,304.1666666666665,next_positive,15818.547771672771,46258.68055555552,2.9243316910793626
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,9.0,Walnut,375.0,17.0,11,False,,0.0,1.0,0.0,next_positive,16973.379629629624,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,10.0,Wild Oat,591.6666666666667,18.0,11,False,,0.0,1.0,0.0,next_positive,15959.073733660127,,
+P243_#2016m02d05-P243_V3948_FreeProtocol,2016-02-05,RH - 3 - e,11.0,Willow,312.5,19.0,11,False,-79.16666666666669,79.16666666666671,2.0,79.16666666666671,rise,18304.5116194626,3133.6805555555593,0.17119716825570028

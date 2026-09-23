@@ -1,0 +1,13 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,LH - 2 - i - colon,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,LH - 5 - i - Heart,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,RH - 1 - i - lung,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,RH - 5 - e - Small intestine,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,LF - 2 - e - Stomach,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,LF - 3 - e - Spinal cord,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,LF - 4 - e - Gallbladder,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,LF - 5 - i - Kidney,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,RF - 1 - i - Pancreas,1.0,IL-8,314.2105263157895,9.0,1,False,-27.36842105263156,27.36842105263156,2.0,27.36842105263156,end,1101.9467528470298,374.5152354570632,0.3398669078060732
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,RF - 1 - e - Liver,1.0,TNF-alfa,316.0194174757282,10.0,1,False,,0.0,1.0,0.0,end,5106.817063080615,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,RF - 2 - e - Stomach,,,,,0,True,,,,,,,,
+AF_#2026m03d03-AF_FreeProtocol,2026-03-03,RF - 5 - e - Bladder,1.0,IL-8,377.3584905660377,9.0,1,False,-293.39622641509425,293.3962264150943,2.0,293.3962264150943,end,5026.427949843757,43040.67283730863,8.562874722723622

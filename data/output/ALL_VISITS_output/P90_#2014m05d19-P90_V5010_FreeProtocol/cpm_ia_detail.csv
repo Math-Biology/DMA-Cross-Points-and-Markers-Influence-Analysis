@@ -1,0 +1,13 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,LF - 1 - e,,,,,0,True,,,,,,,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,LF - 2 - i,,,,,0,True,,,,,,,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,LH - 2 - i,,,,,0,True,,,,,,,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,LH - 5 - e,1.0,Plasmodium ovale,346.1538461538462,19.0,3,False,,0.0,1.0,0.0,next_positive,3431.5175774451777,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,LH - 5 - e,2.0,Saccharomyces spp,384.6153846153846,20.0,3,False,-138.46153846153845,276.9230769230769,3.0,138.46153846153845,rise,5226.631086359593,21558.18540433925,4.124680898294424
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,LH - 5 - e,3.0,toxoplã_x0083_â sma,346.1538461538462,25.0,3,False,,0.0,1.0,0.0,end,6362.2330846411105,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,RF - 1 - e,,,,,0,True,,,,,,,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,RF - 2 - i,1.0,Aspergillus niger,671.4285714285714,3.0,3,False,-335.7142857142857,671.4285714285714,3.0,335.7142857142857,rise,3673.469387755104,135986.39455782314,37.0185185185185
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,RF - 2 - i,2.0,Plasmodium ovale,357.1428571428572,19.0,3,False,,0.0,1.0,0.0,next_positive,43117.913832199556,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,RF - 2 - i,3.0,Saccharomyces spp,442.8571428571429,20.0,3,False,-300.0,300.0,2.0,300.0,end,42015.87301587302,45000.0,1.0710238005289006
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,RH - 2 - i,,,,,0,True,,,,,,,,
+P90_#2014m05d19-P90_V5010_FreeProtocol,2014-05-19,RH - 5 - e,,,,,0,True,,,,,,,,

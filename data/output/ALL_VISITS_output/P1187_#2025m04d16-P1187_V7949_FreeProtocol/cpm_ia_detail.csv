@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P1187_#2025m04d16-P1187_V7949_FreeProtocol,2025-04-16,LF - 2 - e,,,,,0,True,,,,,,,,
+P1187_#2025m04d16-P1187_V7949_FreeProtocol,2025-04-16,LF - 5 - e,,,,,0,True,,,,,,,,
+P1187_#2025m04d16-P1187_V7949_FreeProtocol,2025-04-16,LH - 5 - c,1.0,n13,300.0,12.0,1,False,-105.0,210.0,3.0,105.0,rise,4593.75,11025.0,2.4
+P1187_#2025m04d16-P1187_V7949_FreeProtocol,2025-04-16,LH - 5 - e,,,,,0,True,,,,,,,,
+P1187_#2025m04d16-P1187_V7949_FreeProtocol,2025-04-16,RF - 1 - i,,,,,0,True,,,,,,,,
+P1187_#2025m04d16-P1187_V7949_FreeProtocol,2025-04-16,RH - 2 - c,,,,,0,True,,,,,,,,

@@ -1,0 +1,16 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,LH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,LH - 5 - e,1.0,Cardepat,409.9999999999999,0.0,4,False,-144.99999999999991,289.9999999999999,3.0,144.99999999999994,rise,,21033.333333333318,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,LH - 5 - e,2.0,Metil Sulfonil Metano,300.0,5.0,4,False,-270.0,270.0,2.0,270.0,rise,18479.99999999999,36450.0,1.9724025974025985
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,LH - 5 - e,3.0,Selenio,400.0,11.0,4,False,,0.0,1.0,0.0,next_positive,13825.45454545454,,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,LH - 5 - e,4.0,Zinco Oligoelemento,470.0,12.0,4,False,,0.0,1.0,0.0,end,17224.24242424242,,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 2 - i,1.0,Cardepat,340.0,0.0,3,False,-78.0,340.0,5.0,85.0,rise,,15700.0,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 2 - i,2.0,Selenio,380.0,11.0,3,False,,0.0,1.0,0.0,next_positive,9829.09090909091,,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 2 - i,3.0,Zinco Oligoelemento,540.0,12.0,3,False,,0.0,1.0,0.0,end,13309.09090909091,,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 5 - e,1.0,Cardepat,472.7272727272727,0.0,7,False,-263.63636363636357,263.6363636363636,2.0,263.6363636363636,next_positive,,34752.066115702466,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 5 - e,2.0,Fitodrena L - Pegaso,418.1818181818182,2.0,7,False,,0.0,1.0,0.0,next_positive,34752.066115702466,,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 5 - e,3.0,Fitodrena R - Pegaso,500.0,3.0,7,False,-436.3636363636364,436.3636363636364,2.0,436.3636363636364,next_positive,19366.391184573,95206.61157024794,4.916073968705549
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 5 - e,4.0,Metil Sulfonil Metano,300.0,5.0,7,False,-150.0,300.0,3.0,150.0,next_positive,35644.628099173555,23333.333333333332,0.6546100935157276
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 5 - e,5.0,Ovaric HP - Just Pharma,372.7272727272727,8.0,7,False,-159.09090909090904,318.18181818181813,3.0,159.09090909090907,next_positive,37684.4746162928,27300.27548209366,0.724443574179231
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 5 - e,6.0,Selenio,345.4545454545454,11.0,7,False,,0.0,1.0,0.0,next_positive,31914.35011269722,,
+P74_#2014m05d21-P74_V2296_FreeProtocol,2014-05-21,RH - 5 - e,7.0,Zinco Oligoelemento,536.3636363636364,12.0,7,False,,0.0,1.0,0.0,end,29727.022289005756,,

@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P447_#2018m02d14-P447_V940_FreeProtocol,2018-02-14,LF - 3 - i,,,,,0,True,,,,,,,,
+P447_#2018m02d14-P447_V940_FreeProtocol,2018-02-14,RH - 3 - i,1.0,Bombesina,310.0,2.0,4,False,-115.0,230.0,3.0,115.0,rise,200.0,13433.333333333334,67.16666666666667
+P447_#2018m02d14-P447_V940_FreeProtocol,2018-02-14,RH - 3 - i,2.0,Istamina,350.0,9.0,4,False,,0.0,1.0,0.0,next_positive,4825.0,,
+P447_#2018m02d14-P447_V940_FreeProtocol,2018-02-14,RH - 3 - i,3.0,NGF,300.0,10.0,4,False,-80.0,80.0,2.0,80.0,rise,7066.666666666667,3200.0,0.45283018867924524
+P447_#2018m02d14-P447_V940_FreeProtocol,2018-02-14,RH - 3 - i,4.0,Serotonina,440.0000000000001,14.0,4,False,-200.0000000000001,200.0000000000001,2.0,200.0000000000001,end,5738.461538461538,20000.000000000022,3.485254691689012
+P447_#2018m02d14-P447_V940_FreeProtocol,2018-02-14,RH - 4 - i,1.0,Glutammato,316.6666666666666,7.0,1,False,-133.33333333333331,133.3333333333333,2.0,133.3333333333333,rise,4970.238095238097,8888.888888888883,1.788423153692613

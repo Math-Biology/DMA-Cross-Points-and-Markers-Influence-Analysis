@@ -1,0 +1,18 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LF - 1 - e,1.0,8-OHdG,442.8571428571429,0.0,4,False,,0.0,1.0,0.0,next_positive,,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LF - 1 - e,2.0,Caspasi-3,1100.0,3.0,4,False,,0.0,1.0,0.0,next_positive,,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LF - 1 - e,3.0,Caspasi-7,400.0,4.0,4,False,,0.0,1.0,0.0,next_positive,215918.36734693876,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LF - 1 - e,4.0,H2O2,414.2857142857143,7.0,4,False,,0.0,1.0,0.0,end,153945.57823129251,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LF - 5 - e,,,,,0,True,,,,,,,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LH - 2 - c,,,,,0,True,,,,,,,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LH - 5 - e,1.0,8-OHdG,388.2352941176471,0.0,5,False,,0.0,1.0,0.0,next_positive,,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LH - 5 - e,2.0,Caspasi-3,464.7058823529412,3.0,5,False,,0.0,1.0,0.0,next_positive,,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LH - 5 - e,3.0,Caspasi-7,370.5882352941177,4.0,5,False,,0.0,1.0,0.0,next_positive,2923.875432525954,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LH - 5 - e,4.0,H2O2,500.0,7.0,5,False,,0.0,1.0,0.0,next_positive,2502.883506343715,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,LH - 5 - e,5.0,PEtn,300.0,10.0,5,False,,0.0,1.0,0.0,end,3791.810841983852,,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,RH - 2 - c,1.0,8-OHdG,320.0,0.0,5,False,-50.0,50.0,2.0,50.0,next_positive,,1250.0,
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,RH - 2 - c,2.0,C-MYC,480.0,2.0,5,False,-140.0,280.0,3.0,140.0,next_positive,1250.0,26133.333333333332,20.906666666666666
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,RH - 2 - c,3.0,Cortisolo,340.0,5.0,5,False,-50.0,100.0,3.0,50.0,next_positive,13380.0,3033.3333333333335,0.22670652715495765
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,RH - 2 - c,4.0,IGF-1,420.0,8.0,5,False,-380.0,380.0,2.0,380.0,next_positive,8592.857142857143,72200.0,8.402327514546966
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,RH - 2 - c,5.0,PEtn,500.0,10.0,5,False,-190.0,380.0,3.0,190.0,rise,15293.333333333334,48133.33333333333,3.147340889276373
+P221_#2015m05d11-P221_V12964_FreeProtocol,2015-05-11,RH - 2 - i,1.0,H2O2,310.0,7.0,1,False,-150.0,150.0,2.0,150.0,end,1433.3333333333333,11250.0,7.848837209302326

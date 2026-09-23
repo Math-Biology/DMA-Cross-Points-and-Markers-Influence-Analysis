@@ -1,0 +1,11 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,LF - 5 - i,,,,,0,True,,,,,,,,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,1.0,FMC Entero - Igeakos,475.8620689655173,0.0,9,False,,0.0,1.0,0.0,next_positive,,,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,2.0,FMC Nefro - Igeakos,351.7241379310345,1.0,9,False,-82.75862068965512,82.75862068965517,2.0,82.75862068965517,rise,,3424.4946492271106,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,3.0,MTS 1 - Alkaest,344.8275862068965,5.0,9,False,,0.0,1.0,0.0,next_positive,10401.902497027357,,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,4.0,MTS 5 - Alkaest,506.8965517241379,6.0,9,False,,0.0,1.0,0.0,next_positive,8435.98890210068,,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,5.0,MTS 7 - Alkaest,513.7931034482759,7.0,9,False,,0.0,1.0,0.0,next_positive,11861.729233905218,,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,6.0,Meristemo 1 1 - PromoPharma,348.2758620689655,8.0,9,False,,0.0,1.0,0.0,next_positive,13551.044674706987,,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,7.0,Meristemo 1 8 - PromoPharma,500.0,9.0,9,False,,0.0,1.0,0.0,next_positive,11908.772625181668,,
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,8.0,Meristemo 22 - PromoPharma,448.2758620689655,10.0,9,False,-175.8620689655172,175.8620689655172,2.0,175.8620689655172,next_positive,12342.977936319201,15463.733650416165,1.2528365302277777
+P236_#2016m11d01-P236_V12786_FreeProtocol,2016-11-01,RH - 5 - e,9.0,Meristemo 30 - PromoPharma,603.448275862069,12.0,9,False,,0.0,1.0,0.0,end,11567.308038770587,,

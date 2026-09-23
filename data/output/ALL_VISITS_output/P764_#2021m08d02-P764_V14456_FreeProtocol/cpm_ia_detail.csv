@@ -1,0 +1,6 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P764_#2021m08d02-P764_V14456_FreeProtocol,2021-08-02,LF - 1 - e,,,,,0,True,,,,,,,,
+P764_#2021m08d02-P764_V14456_FreeProtocol,2021-08-02,LH - 5 - e,1.0,IFN-gamma,339.1304347826087,3.0,2,False,,0.0,1.0,0.0,next_positive,2627.5992438563308,,
+P764_#2021m08d02-P764_V14456_FreeProtocol,2021-08-02,LH - 5 - e,2.0,IL-2,347.8260869565217,4.0,2,False,,0.0,1.0,0.0,end,4705.419029615625,,
+P764_#2021m08d02-P764_V14456_FreeProtocol,2021-08-02,RF - 2 - e,,,,,0,True,,,,,,,,
+P764_#2021m08d02-P764_V14456_FreeProtocol,2021-08-02,RH - 2 - i,1.0,IL-2,304.0,4.0,1,False,,0.0,1.0,0.0,end,2788.0,,

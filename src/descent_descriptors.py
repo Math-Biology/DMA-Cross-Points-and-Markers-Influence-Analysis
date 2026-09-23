@@ -7,7 +7,7 @@ Computes three mandatory shape descriptors for each descent window (REQ-CPM-IA-P
   - descent_length:         number of points in the window
   - mean_per_step_decrease: depth / (length − 1)  [0.0 when length == 1]
 
-Anchor value is sourced from trigger_results (Module 04); window from Module 06.
+Anchor value is sourced from trigger_results anchors (Module 04); window from Module 06.
 """
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ from __future__ import annotations
 import logging
 import math
 from dataclasses import dataclass
-from typing import Dict, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from src.descent_window import DescentWindow, DescentWindows
 from src.trigger_detection import TriggerResults
@@ -29,14 +29,14 @@ class DescriptorError(Exception):
 
 @dataclass(frozen=True)
 class DescentDescriptor:
-    """Immutable shape descriptors for one (visit, point) descent window."""
+    """Immutable shape descriptors for one descent window."""
 
     descent_depth: float           # anchor_value - min(window_values); >= 0
     descent_length: int            # == window.window_length
     mean_per_step_decrease: float  # depth / (length-1), or 0.0 when length == 1
 
 
-Descriptors = Dict[Tuple[str, str], Optional[DescentDescriptor]]
+Descriptors = Dict[Tuple[str, str], List[Optional[DescentDescriptor]]]
 
 
 # ---------------------------------------------------------------------------
@@ -74,42 +74,38 @@ def compute_descriptors(
     trigger_results: TriggerResults,
 ) -> Descriptors:
     """
-    Compute descent shape descriptors for every (visit, point) series.
+    Compute descent shape descriptors for every anchor in every (visit, point) series.
 
     Args:
-        descent_windows: Mapping (visit_id, point_id) -> DescentWindow | None
+        descent_windows: Mapping (visit_id, point_id) -> List[DescentWindow]
                          from determine_descent_windows().
         trigger_results: Mapping (visit_id, point_id) -> TriggerResult
                          from detect_triggers().
 
     Returns:
-        Descriptors: mapping (visit_id, point_id) -> DescentDescriptor or None.
-        None is returned for series with no descent window.
+        Descriptors: mapping (visit_id, point_id) -> List[Optional[DescentDescriptor]].
+        Empty list for series with no anchors.
 
     Raises:
-        DescriptorError: if a non-None window has a missing anchor value, or if
-        a window contains NaN (should not occur with valid upstream data).
+        DescriptorError: if a window contains NaN (should not occur with valid upstream data).
     """
     descriptors: Descriptors = {}
 
-    for key, window in descent_windows.items():
-        if window is None:
-            descriptors[key] = None
+    for key, window_list in descent_windows.items():
+        if not window_list:
+            descriptors[key] = []
             continue
 
-        anchor_value = trigger_results[key].first_positive_value
-        if anchor_value is None:
-            raise DescriptorError(
-                f"Anchor value missing for {key} with a non-None descent window"
-            )
-
-        descriptors[key] = _compute_descriptor(window, anchor_value, key)
+        desc_list: List[Optional[DescentDescriptor]] = []
+        for i, window in enumerate(window_list):
+            anchor_value = trigger_results[key].anchors[i].value
+            desc_list.append(_compute_descriptor(window, anchor_value, key))
+        descriptors[key] = desc_list
 
     logger.debug(
-        "CPM-IA descriptors computed | total=%d | with_descriptor=%d | none=%d",
+        "CPM-IA descriptors computed | total=%d | with_descriptors=%d",
         len(descriptors),
-        sum(1 for d in descriptors.values() if d is not None),
-        sum(1 for d in descriptors.values() if d is None),
+        sum(1 for d in descriptors.values() if d),
     )
 
     return descriptors

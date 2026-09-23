@@ -1,0 +1,13 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,LH - 5 - i,,,,,0,True,,,,,,,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,1.0,Acido lattico,414.2857142857143,0.0,10,False,-299.99999999999994,300.0,2.0,300.0,next_positive,,44999.99999999999,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,2.0,Calcio,500.0,2.0,10,False,,0.0,1.0,0.0,next_positive,44999.99999999999,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,3.0,Ferro,328.5714285714286,3.0,10,False,,0.0,1.0,0.0,next_positive,41020.4081632653,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,4.0,Fosforo,557.1428571428571,4.0,10,False,,0.0,1.0,0.0,next_positive,27397.959183673465,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,5.0,Glutatione-S-Transferasi,328.5714285714286,5.0,10,False,,0.0,1.0,0.0,next_positive,30040.8163265306,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,6.0,Magnesio,350.0,6.0,10,False,,0.0,1.0,0.0,next_positive,24523.80952380952,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,7.0,Omocisteina,471.4285714285714,7.0,10,False,,0.0,1.0,0.0,next_positive,20517.492711370254,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,8.0,Proteina C-Reattiva,542.8571428571429,8.0,10,False,,0.0,1.0,0.0,next_positive,18862.06268221574,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,9.0,Rame Oligoelemento,442.8571428571429,9.0,10,False,,0.0,1.0,0.0,next_positive,19342.40362811791,,
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RF - 5 - e,10.0,S-100,407.1428571428571,10.0,10,False,-214.28571428571422,214.28571428571422,2.0,214.28571428571422,end,17370.181405895688,22959.183673469375,1.3217584282497303
+P447_#2018m02d14-P447_V933_FreeProtocol,2018-02-14,RH - 1 - i,1.0,Calcio,342.3076923076923,2.0,1,False,-165.38461538461547,165.38461538461542,2.0,165.38461538461542,rise,29.585798816567948,13676.035502958584,462.2500000000017

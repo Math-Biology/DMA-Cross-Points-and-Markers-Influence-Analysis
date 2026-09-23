@@ -1,0 +1,5 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P770_#2021m02d21-P770_V3589_FreeProtocol,2021-02-21,LF - 1 - e,,,,,0,True,,,,,,,,
+P770_#2021m02d21-P770_V3589_FreeProtocol,2021-02-21,LF - 2 - e,1.0,Candida albicans,366.6666666666666,0.0,1,False,-311.111111111111,311.11111111111103,2.0,311.11111111111103,rise,,48395.06172839503,
+P770_#2021m02d21-P770_V3589_FreeProtocol,2021-02-21,LH - 5 - e,1.0,Componente grassa del latte,300.0,2.0,1,False,-238.46153846153845,238.46153846153845,2.0,238.46153846153845,rise,1893.4911242603546,28431.95266272189,15.015625000000002
+P770_#2021m02d21-P770_V3589_FreeProtocol,2021-02-21,LH - 5 - i,,,,,0,True,,,,,,,,

@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P758_#2021m01d22-P758_V4925_FreeProtocol,2021-01-22,RF - 3 - e,1,Citomegalovirus,352.7777777777778,1,1,False,-305.5555555555556,305.5555555555556,2,305.5555555555556,rise,,46682.098765432114,
+P758_#2021m01d22-P758_V4925_FreeProtocol,2021-01-22,RH - 1 - e,1,COX-2,328.0,0,4,False,,0.0,1,0.0,next_positive,,,
+P758_#2021m01d22-P758_V4925_FreeProtocol,2021-01-22,RH - 1 - e,2,Citomegalovirus,420.0,1,4,False,-408.0,408.0,2,408.0,rise,,83232.0,
+P758_#2021m01d22-P758_V4925_FreeProtocol,2021-01-22,RH - 1 - e,3,IFN-alfa,352.0,7,4,False,,0.0,1,0.0,next_positive,16916.571428571428,,
+P758_#2021m01d22-P758_V4925_FreeProtocol,2021-01-22,RH - 1 - e,4,IFN-gamma,336.0,8,4,False,-300.0,300.0,2,300.0,rise,16734.85714285714,45000.0,2.6889981561155505
+P758_#2021m01d22-P758_V4925_FreeProtocol,2021-01-22,RH - 5 - c,1,Citomegalovirus,427.2727272727273,1,1,False,-372.7272727272728,372.72727272727275,2,372.72727272727275,rise,,69462.8099173554,

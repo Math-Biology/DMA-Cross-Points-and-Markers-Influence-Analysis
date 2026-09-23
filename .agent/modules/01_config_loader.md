@@ -2,13 +2,13 @@
 **File:** `src/config_loader.py`
 **SR:** REQ-CPM-IA-P26.0001 — External Configuration Loading
 **Linked GR:** REQ-G-P26.0072
-**Status:** Complete — 2026-08-27 | 13/13 tests pass
+**Status:** Complete — 2026-09-23 | 21/21 tests pass
 
 ---
 
 ## Requirement (verbatim)
 
-The component loads all execution parameters at runtime from an external XML configuration file, with no processing parameter hardcoded in the source. The configuration provides, as a minimum: the input and output paths and the output-label suffixes; the positive-detection threshold (default 300 %); the rise tolerance ε used to close a descent window; and the maximum number of descent points N_max. A missing or malformed configuration file results in a controlled failure of the run.
+The component loads all execution parameters at runtime from an external XML configuration file, with no processing parameter hardcoded in the source. The configuration provides, as a minimum: the input source definition and output paths; the positive-detection threshold (required); the rise tolerance ε; the maximum descent window length N_max; and a data-quality policy flag. A missing or malformed configuration file results in a controlled failure of the run.
 
 ---
 
@@ -22,7 +22,7 @@ This module is the **sole** entry point for all runtime parameters. It is called
 
 | Input | Type | Description |
 |-------|------|-------------|
-| `config_path` | `str` / `Path` | Absolute or relative path to the XML configuration file (passed as CLI argument or default location). |
+| `config_path` | `str` / `Path` | Absolute or relative path to the XML configuration file. |
 
 ---
 
@@ -30,29 +30,60 @@ This module is the **sole** entry point for all runtime parameters. It is called
 
 | Output | Type | Description |
 |--------|------|-------------|
-| `CpmIaConfig` | dataclass / named object | Validated configuration object carrying all parameters listed below. |
+| `config` | `CpmIaConfig` | Immutable frozen dataclass containing all runtime parameters. |
 
-### Minimum fields in `CpmIaConfig`
+### CpmIaConfig fields
 
-| Field | XML Element | Type | Default |
-|-------|-------------|------|---------|
-| `input_path` | `<input_path>` | `Path` | — (required) |
-| `output_path` | `<output_path>` | `Path` | — (required) |
-| `output_label_detail` | `<output_label_detail>` | `str` | — (required) |
-| `output_label_aggregated` | `<output_label_aggregated>` | `str` | — (required) |
-| `threshold_pct` | `<threshold_pct>` | `float` | 300.0 |
-| `rise_tolerance_epsilon` | `<rise_tolerance_epsilon>` | `float` | — (required) |
-| `n_max` | `<n_max>` | `int` | — (required) |
+| Field | Type | Description |
+|-------|------|-------------|
+| `input` | `InputConfig` | Input source definition (type + source-specific params). |
+| `output_path` | `Path` | Directory for output files. |
+| `output_label_detail` | `str` | Stem for the detail CSV filename. |
+| `output_label_aggregated` | `str` | Stem for the aggregated CSV filename. |
+| `threshold_pct` | `float` | Positive-detection threshold — **required** (absence → ConfigurationError). |
+| `rise_tolerance_epsilon` | `float` | Rise tolerance for descent window closure. |
+| `n_max` | `int` | Maximum descent window length per anchor. |
+| `data_quality` | `DataQualityConfig` | Data-quality policy (`drop_invalid_points: bool`). |
+
+### InputConfig and sub-dataclasses
+
+```
+InputConfig
+  .type: str                   # 'csv' | 'excel' | 'db'
+  .csv: Optional[CsvInputConfig]
+        .path: Path
+  .excel: Optional[ExcelInputConfig]
+          .files: Tuple[ExcelFileConfig, ...]
+                  .path: Path
+                  .visit_id: str
+                  .visit_date: str
+  .db: Optional[DbInputConfig]
+       .dsn_env: str
+       .query: str
+```
+
+`CpmIaConfig.input_description() -> str` returns a human-readable string for logging/reporting.
 
 ---
 
 ## Behaviour Specification
 
-1. Parse the XML file at `config_path` using the standard library (`xml.etree.ElementTree`).
-2. For each required field: if the element is absent or its text cannot be cast to the declared type, raise a descriptive `ConfigurationError` and abort — do not fall back to silent defaults for required fields.
-3. For `threshold_pct`: if the element is absent, use the default 300.0; if present but malformed, raise `ConfigurationError`.
-4. Return the fully populated `CpmIaConfig` object.
-5. Log the resolved configuration at INFO level (paths, threshold, ε, N_max) before returning.
+1. Parse the XML file at `config_path`. Raise `ConfigurationError` if file is absent or malformed.
+2. Determine input source:
+   - If `<input>` block present → parse `<type>`, populate the corresponding sub-dataclass.
+   - If `<input>` absent but `<input_path>` present → backward-compat: create `InputConfig(type='csv', csv=CsvInputConfig(path=...))`.
+   - If neither → raise `ConfigurationError`.
+3. Parse `threshold_pct` as **required** float. Absent or blank → raise `ConfigurationError` (no silent default).
+4. Parse `rise_tolerance_epsilon` and `n_max` as required.
+5. Parse `<data_quality><drop_invalid_points>` as bool; default `True` if block absent.
+6. Return fully populated `CpmIaConfig`.
+
+---
+
+## Guardrails Enforced
+
+- G-01: All parameters from XML; no processing parameter hard-coded.
+- G-02: Missing or malformed config → controlled failure.
 
 ---
 
@@ -60,32 +91,27 @@ This module is the **sole** entry point for all runtime parameters. It is called
 
 | Condition | Behaviour |
 |-----------|-----------|
-| File not found | Raise `ConfigurationError("Config file not found: <path>")`, abort run. |
-| File not valid XML | Raise `ConfigurationError("Malformed XML in config: <path>")`, abort run. |
-| Required element missing | Raise `ConfigurationError("Missing required config element: <tag>")`, abort run. |
-| Type cast failure | Raise `ConfigurationError("Invalid value for <tag>: expected <type>")`, abort run. |
-
----
-
-## Guardrails Enforced
-
-- G-01: This module is the exclusive location where parameters are read; no other module may read config files.
-- G-02: Any failure in config parsing must propagate as `ConfigurationError` to `main.py` which exits with a non-zero code.
-- G-10: Output path uniqueness enforced by suffix fields; this module exposes the suffix but does not create files.
+| File not found | Raise `ConfigurationError("Config file not found: <path>")`. |
+| Malformed XML | Raise `ConfigurationError("Malformed XML in config: <path>")`. |
+| `threshold_pct` absent | Raise `ConfigurationError("Missing required config element: <threshold_pct>")`. |
+| Invalid numeric value | Raise `ConfigurationError("Invalid value for <tag>: expected <type>")`. |
 
 ---
 
 ## Test File
 
-`tests/test_config_loader.py`
+`tests/test_config_loader.py` — 21 tests
 
 ### Test cases (minimum)
 
 | ID | Scenario | Expected |
 |----|----------|----------|
-| TC-01-001 | Valid XML with all required fields | Returns `CpmIaConfig` with correct values. |
-| TC-01-002 | Valid XML, `threshold_pct` absent | Returns `CpmIaConfig` with `threshold_pct = 300.0`. |
-| TC-01-003 | File not found | Raises `ConfigurationError`. |
-| TC-01-004 | Malformed XML (truncated) | Raises `ConfigurationError`. |
-| TC-01-005 | Required element `n_max` missing | Raises `ConfigurationError`. |
-| TC-01-006 | `n_max` present but non-integer value | Raises `ConfigurationError`. |
+| TC-01-001 | Valid XML with new `<input>` block (type=csv) | Returns correct CpmIaConfig. |
+| TC-01-002 | Valid XML with legacy `<input_path>` | Backward-compat: returns CpmIaConfig with InputConfig(type='csv'). |
+| TC-01-003 | `<threshold_pct>` absent | Raises ConfigurationError. |
+| TC-01-004 | `<threshold_pct>` with non-numeric value | Raises ConfigurationError. |
+| TC-01-005 | File not found | Raises ConfigurationError. |
+| TC-01-006 | Malformed XML | Raises ConfigurationError. |
+| TC-01-007 | Valid XML with type=excel; two `<file>` entries | ExcelInputConfig with 2 ExcelFileConfig entries. |
+| TC-01-008 | `<data_quality>` absent | DataQualityConfig(drop_invalid_points=True). |
+| TC-01-009 | `<data_quality><drop_invalid_points>false` | DataQualityConfig(drop_invalid_points=False). |

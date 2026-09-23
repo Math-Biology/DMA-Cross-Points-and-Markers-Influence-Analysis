@@ -78,7 +78,7 @@
 \toprule
 \textbf{Parameter} & \textbf{Value} \\
 \midrule
-Input path                        & \texttt{__INPUT_PATH__} \\
+Input source                      & \texttt{__INPUT_PATH__} \\
 Output path                       & \texttt{__OUTPUT_PATH__} \\
 Detail output file                & \texttt{__OUTPUT_LABEL_DETAIL__.csv} \\
 Aggregated output file            & \texttt{__OUTPUT_LABEL_AGGREGATED__.csv} \\
@@ -100,6 +100,10 @@ Max descent window $n_{\max}$     & __N_MAX__ \\
 \toprule
 \textbf{Metric} & \textbf{Count} \\
 \midrule
+Total rows ingested                        & __DQ_TOTAL_ROWS__ \\
+Rows dropped (empty keys)                  & __DQ_DROPPED_EMPTY__ \\
+Invalid points found / rows affected       & __DQ_INVALID_POINTS__ / __DQ_INVALID_ROWS__ \\
+Total anchors detected                     & __TOTAL_ANCHORS__ \\
 Unique visits                          & __TOTAL_VISITS__ \\
 Unique anatomical points               & __TOTAL_POINTS__ \\
 Unique markers across all visits       & __TOTAL_MARKERS__ \\
@@ -144,8 +148,8 @@ file at run time and are never hard-coded:
 
 \begin{itemize}
   \item \textbf{Threshold} $\theta = \mathbf{__THRESHOLD_PCT__}\,\%$: a marker is
-        classified as a \emph{positive excitation} when its percentage variation strictly
-        exceeds $\theta$.
+        classified as a \emph{positive excitation} when its percentage variation meets or
+        exceeds $\theta$ ($\geq \theta$, inclusive).
   \item \textbf{Rise tolerance} $\varepsilon = \mathbf{__RISE_EPSILON__}\,\%$: the maximum
         increase permitted between two consecutive values inside the descent window; a rise
         strictly exceeding $\varepsilon$ closes the window.
@@ -165,13 +169,12 @@ Each (visit, anatomical~point) pair is represented as an ordered list of percent
 variation values aligned to its visit's detection order; positions where a marker belongs
 to the visit protocol but was not measured at a specific point receive a NaN sentinel value.
 
-\paragraph{M04 --- First-Positive Trigger Detection.}
+\paragraph{M04 --- All-Positive Trigger Detection.}
 Each (visit, point) sequence is scanned in temporal detection order.
-The first marker whose percentage variation \emph{strictly exceeds} $\theta$ is designated
-the \emph{excitation anchor} --- the onset of the excitation event.
-The anchor is immutable for the run: once assigned, it cannot be reassigned even if a later
-marker has a higher value.
-Series in which no marker exceeds $\theta$ are flagged as ``no cross-marker effect'' and
+\emph{All} markers whose percentage variation \emph{meets or exceeds} $\theta$
+($\geq \theta$, inclusive) are designated \emph{excitation anchors}.
+The full list of anchors is recorded as \texttt{positives\_count} per (visit, point) series.
+Series in which no marker meets $\theta$ are flagged as ``no cross-marker effect'' and
 are excluded from all subsequent analytical modules (M06--M09).
 
 \paragraph{M05 --- Positive Census.}
@@ -179,12 +182,16 @@ An anatomical point is classified as \emph{positive} if at least one of its visi
 an anchor. The census counts positive and total unique anatomical points across the dataset.
 
 \paragraph{M06 --- Descent Window Determination.}
-Starting from the anchor (step $i = 0$), the window extends to successive markers as long
-as the signal does not rise by more than $\varepsilon$ between consecutive steps.
-Formally, the window closes at the first step $i \geq 1$ where
-$v_i - v_{i-1} > \varepsilon$.
-The window is also closed when it reaches $n_{\max}$ markers (truncated window).
+For each detected anchor, starting from that anchor (step $i = 0$), the window extends
+to successive markers as long as the signal does not rise by more than $\varepsilon$
+between consecutive steps.
+The window closes when any of three conditions is met: (1) a rise
+$v_i - v_{i-1} > \varepsilon$ is encountered (\texttt{window\_close\_reason = rise});
+(2) the next anchor position is reached (\texttt{window\_close\_reason = next\_positive});
+(3) $n_{\max}$ markers have been collected (\texttt{window\_close\_reason = n\_max}).
+If the sequence is exhausted without any of the above, the reason is \texttt{end}.
 The anchor is always included as the first element of the window.
+The \texttt{window\_close\_reason} field is recorded for each window in the detail output.
 
 \paragraph{M07 --- Descent Slope (OLS Linear Regression).}
 An ordinary least-squares (OLS) linear regression is fitted to the $L$ descent window
@@ -234,11 +241,16 @@ onset; a ratio $< 1$ indicates it \emph{decreases}.
 Results from M04--M09 are assembled into two tidy output files:
 \begin{itemize}
   \item \textbf{Detail file} (\texttt{__OUTPUT_LABEL_DETAIL__.csv}): one row per
-        (visit, anatomical~point) pair, containing all analytical outputs alongside visit
-        metadata.
+        (visit, anatomical~point, \emph{anchor}) triplet. Each anchor detected by M04
+        produces a separate row with columns \texttt{anchor\_rank},
+        \texttt{anchor\_marker}, \texttt{anchor\_value}, \texttt{anchor\_index},
+        and \texttt{window\_close\_reason}.
+        (Visit, point) pairs with no cross-marker effect produce a single row with
+        \texttt{anchor\_marker = None}.
   \item \textbf{Aggregated file} (\texttt{__OUTPUT_LABEL_AGGREGATED__.csv}): one row per
-        anatomical point, containing visit counts, positive prevalence, and median descent
-        descriptors computed over positive visits only.
+        anatomical point, containing visit counts, positive prevalence,
+        \texttt{median\_positives\_count}, and median descent descriptors computed over
+        \emph{all anchors} of that point.
 \end{itemize}
 
 \subsection{Output Artefacts}
@@ -268,8 +280,8 @@ All tables in this section are sorted alphabetically by point identifier.
 \subsection{Visit Counts and Positive Prevalence}
 
 A visit is \emph{positive} for a given anatomical point when at least one marker in that
-(visit, point) series has a percentage variation strictly exceeding
-$\theta = __THRESHOLD_PCT__\,\%$ in temporal detection order (Module~M04).
+(visit, point) series has a percentage variation meeting or exceeding
+$\theta = __THRESHOLD_PCT__\,\%$ ($\geq \theta$) in temporal detection order (Module~M04).
 All other visits are classified as ``no cross-marker effect'' for that point.
 
 The \textbf{positive prevalence} is the proportion of total visits that are positive:
@@ -308,9 +320,9 @@ __AGG_TABLE_COUNTS__
 
 \subsection{Most Frequent Trigger Markers by Anatomical Point}
 
-For each anatomical point, the table shows which markers most frequently acted as the
-\emph{excitation anchor} --- the first marker in temporal detection order (Module~M03)
-whose percentage variation strictly exceeded $\theta = __THRESHOLD_PCT__\,\%$
+For each anatomical point, the table shows which markers most frequently acted as an
+\emph{excitation anchor} --- any marker in temporal detection order (Module~M03)
+whose percentage variation met or exceeded $\theta = __THRESHOLD_PCT__\,\%$
 (Module~M04) --- across positive visits.
 
 \medskip
@@ -318,7 +330,7 @@ Only markers that acted as anchor in at least \textbf{__ANCHOR_TABLE_THRESHOLD__
 of the positive visits for that point are listed.
 Markers with a lower share are scattered across sessions with no single dominant trigger
 and are omitted for readability.
-All listed marker values exceeded $\theta = __THRESHOLD_PCT__\,\% > 100\,\%$ in the
+All listed marker values met or exceeded $\theta = __THRESHOLD_PCT__\,\% > 100\,\%$ in the
 visits where they acted as anchor.
 Anatomical points whose most frequent anchor marker appears in fewer than
 __ANCHOR_TABLE_THRESHOLD__\,\% of positive visits do not appear in this table (no single
@@ -327,8 +339,8 @@ marker is dominant at those points).
 \medskip
 \noindent\textbf{How to read the columns:}
 \begin{itemize}
-  \item \textbf{Trigger Marker}: identifier of the first marker to exceed $\theta$ for
-        that point; the value that classified the visit as positive.
+  \item \textbf{Trigger Marker}: identifier of an anchor marker that met or exceeded $\theta$
+        for that point.
   \item \textbf{$n$}: number of positive visits for that point in which this marker was
         the anchor.
   \item \textbf{Share of Pos.\ Visits (\%)}: $n$ expressed as a percentage of the total
@@ -369,10 +381,11 @@ __ANCHOR_TABLE_ROWS__
 
 \subsection{Descent Shape Medians (Positive Visits Only)}
 
-All values in this table are medians computed \emph{exclusively over positive visits} ---
-visits in which an excitation anchor was detected for that point. Points with no positive
+All values in this table are medians computed over \emph{all anchors} of positive visits ---
+visits in which at least one excitation anchor was detected for that point. Each anchor
+contributes one row to the detail file and one value to each median. Points with no positive
 visits receive a dash (---) for all descriptor columns.
-Medians are computed on the raw per-visit values; no smoothing or outlier removal is
+Medians are computed on the raw per-anchor values; no smoothing or outlier removal is
 applied.
 
 \medskip

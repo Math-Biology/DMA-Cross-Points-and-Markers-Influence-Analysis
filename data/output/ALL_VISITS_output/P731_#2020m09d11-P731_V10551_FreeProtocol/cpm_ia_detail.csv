@@ -1,0 +1,15 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,LH - 3 - c,,,,,0,True,,,,,,,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,LH - 4 - c,,,,,0,True,,,,,,,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,1.0,AGO 5,564.0,1.0,10,False,,0.0,1.0,0.0,next_positive,,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,2.0,Calcitonina D6,364.0,2.0,10,False,,0.0,1.0,0.0,next_positive,72200.0,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,3.0,FSH,408.0,3.0,10,False,,0.0,1.0,0.0,next_positive,36133.333333333336,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,4.0,GH,444.0000000000001,4.0,10,False,-168.0000000000001,168.0000000000001,2.0,168.0000000000001,next_positive,24437.333333333332,14112.000000000018,0.5774770842426895
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,5.0,IL-2,472.0,6.0,10,False,,0.0,1.0,0.0,next_positive,17591.46666666667,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,6.0,Iodio,451.9999999999999,7.0,10,False,-443.9999999999999,443.9999999999999,2.0,443.9999999999999,next_positive,16050.285714285716,98567.99999999996,6.141199088578749
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,7.0,Melatonina 1mg,372.0,9.0,10,False,,0.0,1.0,0.0,next_positive,29177.777777777777,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,8.0,Paratormone D6 - Guna,432.0,10.0,10,False,,0.0,1.0,0.0,next_positive,25974.044444444444,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,9.0,Selenio,388.0,11.0,10,False,-104.0,104.0,2.0,104.0,next_positive,23924.072727272727,5408.0,0.22604846848818688
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 1 - c,10.0,Zinco Oligoelemento,448.0000000000001,13.0,10,False,-106.00000000000007,212.0000000000001,3.0,106.00000000000006,end,20478.76923076923,12869.333333333348,0.6284231824829224
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 4 - c,,,,,0,True,,,,,,,,
+P731_#2020m09d11-P731_V10551_FreeProtocol,2020-09-11,RH - 5 - c,1.0,Melatonina 1mg,317.3913043478261,9.0,1,False,,0.0,1.0,0.0,end,,,

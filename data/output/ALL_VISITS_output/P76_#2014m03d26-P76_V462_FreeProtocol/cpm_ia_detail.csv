@@ -1,0 +1,11 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,LF - 3 - c,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,LF - 3 - e,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,LH - 1 - c,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,LH - 1 - e,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,LH - 2 - c,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,LH - 2 - e,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,LH - 4 - e,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,RF - 3 - c,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,RH - 4 - e,,,,,0,True,,,,,,,,
+P76_#2014m03d26-P76_V462_FreeProtocol,2014-03-26,RH - 4 - i,,,,,0,True,,,,,,,,

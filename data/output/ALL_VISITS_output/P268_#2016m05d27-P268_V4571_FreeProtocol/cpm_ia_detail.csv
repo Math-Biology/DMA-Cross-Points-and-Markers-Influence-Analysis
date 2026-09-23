@@ -1,0 +1,19 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LF - 2 - e,,,,,0,True,,,,,,,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LF - 4 - c,,,,,0,True,,,,,,,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,1.0,23tã_x0083_â¨nia sã_x0083_â²lium v,322.2222222222222,0.0,15,False,,0.0,1.0,0.0,next_positive,,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,2.0,25toxoplã_x0083_â sma p,355.5555555555555,1.0,15,False,,0.0,1.0,0.0,next_positive,,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,3.0,Ascaris lumbricoides,316.6666666666666,2.0,15,False,-50.0,50.0,2.0,50.0,next_positive,555.5555555555549,1250.0,2.2500000000000027
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,4.0,Aspergillus niger,322.2222222222222,4.0,15,False,-38.8888888888888,38.888888888888744,2.0,38.888888888888744,next_positive,1345.164609053499,756.1728395061672,0.5621414913957888
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,5.0,Candida albicans,311.1111111111111,6.0,15,False,,0.0,1.0,0.0,next_positive,999.9999999999987,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,6.0,Candida parapsilosis,400.0,7.0,15,False,,0.0,1.0,0.0,next_positive,833.3333333333322,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,7.0,Cryptococcus spp,322.2222222222222,8.0,15,False,,0.0,1.0,0.0,next_positive,1701.9400352733687,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,8.0,Echinococcus multilocularis,522.2222222222223,9.0,15,False,,0.0,1.0,0.0,next_positive,1489.1975308641975,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,9.0,Entamoeba histolytica,650.0,10.0,15,False,,0.0,1.0,0.0,next_positive,5323.731138545957,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,10.0,Geotrichum capitatum,344.4444444444445,11.0,15,False,,0.0,1.0,0.0,next_positive,13402.91806958474,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,11.0,Giardia lamblia,344.4444444444445,12.0,15,False,,0.0,1.0,0.0,next_positive,12239.758698092037,,
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,12.0,Mucor mucedo,338.8888888888889,13.0,15,False,-94.44444444444446,94.4444444444444,2.0,94.4444444444444,next_positive,11262.662234884461,4459.876543209873,0.3959877736008146
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,13.0,Oxyurus (Enterobius vermicularis),322.2222222222222,15.0,15,False,-50.0,50.0,2.0,50.0,rise,10660.787771898884,1250.0,0.11725212308371015
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,14.0,Strongyloides stercoralis,494.4444444444445,18.0,15,False,-255.55555555555566,255.5555555555556,2.0,255.5555555555556,next_positive,9418.320826272899,32654.320987654333,3.4671064609057907
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 2 - i,15.0,Trichinella spiralis,366.6666666666666,20.0,15,False,-83.33333333333314,83.33333333333314,2.0,83.33333333333314,end,10186.078622482133,3472.2222222222063,0.34087918922582383
+P268_#2016m05d27-P268_V4571_FreeProtocol,2016-05-27,LH - 5 - e,,,,,0,True,,,,,,,,

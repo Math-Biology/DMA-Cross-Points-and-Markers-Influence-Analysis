@@ -1,0 +1,13 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LF - 3 - c,,,,,0,True,,,,,,,,
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LF - 3 - i,,,,,0,True,,,,,,,,
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LH - 2 - c,,,,,0,True,,,,,,,,
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LH - 5 - c,1.0,Complesso 1-12,325.0,3.0,5,False,-187.5,187.5,2.0,187.5,rise,5052.083333333333,17578.125,3.479381443298969
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LH - 5 - c,2.0,Complesso S,400.0,6.0,5,False,-131.25,262.5,3.0,131.25,rise,8796.875,20156.25,2.291296625222025
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LH - 5 - c,3.0,Profito CR - OHI,437.5,17.0,5,False,-175.0,175.0,2.0,175.0,rise,5978.860294117647,15312.5,2.5611068408916218
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LH - 5 - c,4.0,Profito IT - OHI,362.5,20.0,5,False,-112.5,112.5,2.0,112.5,rise,8452.302631578947,6328.125,0.7486865148861647
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,LH - 5 - c,5.0,Profito VSB - OHI,350.0,26.0,5,False,-175.0,175.0,2.0,175.0,end,7658.653846153846,15312.5,1.999372253609542
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,RF - 3 - c,,,,,0,True,,,,,,,,
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,RF - 3 - i,,,,,0,True,,,,,,,,
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,RH - 2 - c,,,,,0,True,,,,,,,,
+P124_#2015m09d04-P124_V3895_FreeProtocol,2015-09-04,RH - 5 - c,,,,,0,True,,,,,,,,

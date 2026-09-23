@@ -1,0 +1,6 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P164_#2015m04d02-P164_V10441_FreeProtocol,2015-04-02,LF - 1 - e,1.0,3-Nitro Tirosina,396.6666666666667,0.0,1,False,-146.66666666666666,293.33333333333337,3.0,146.66666666666669,rise,,24211.111111111117,
+P164_#2015m04d02-P164_V10441_FreeProtocol,2015-04-02,LF - 2 - e,,,,,0,True,,,,,,,,
+P164_#2015m04d02-P164_V10441_FreeProtocol,2015-04-02,LF - 2 - i,,,,,0,True,,,,,,,,
+P164_#2015m04d02-P164_V10441_FreeProtocol,2015-04-02,LH - 5 - e,,,,,0,True,,,,,,,,
+P164_#2015m04d02-P164_V10441_FreeProtocol,2015-04-02,LH - 5 - i,,,,,0,True,,,,,,,,

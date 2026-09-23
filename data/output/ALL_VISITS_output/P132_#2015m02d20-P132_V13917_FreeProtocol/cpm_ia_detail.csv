@@ -1,0 +1,12 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,LH - 1 - c,,,,,0,True,,,,,,,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,LH - 3 - e,,,,,0,True,,,,,,,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,LH - 4 - i,,,,,0,True,,,,,,,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 2 - c,,,,,0,True,,,,,,,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 4 - e,1.0,Acetilcolina,325.0,0.0,6,False,,0.0,1.0,0.0,next_positive,,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 4 - e,2.0,Adrenalina,350.0,1.0,6,False,,0.0,1.0,0.0,next_positive,,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 4 - e,3.0,CRF,337.5,2.0,6,False,,0.0,1.0,0.0,next_positive,312.5,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 4 - e,4.0,Cortisolo,312.5,3.0,6,False,,0.0,1.0,0.0,next_positive,156.25,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 4 - e,5.0,Dopamina,375.0,4.0,6,False,,0.0,1.0,0.0,next_positive,260.4166666666667,,
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 4 - e,6.0,GABA,312.5,5.0,6,False,-106.25,212.5,3.0,106.25,rise,578.125,12864.583333333332,22.25225225225225
+P132_#2015m02d20-P132_V13917_FreeProtocol,2015-02-20,RH - 5 - c,,,,,0,True,,,,,,,,

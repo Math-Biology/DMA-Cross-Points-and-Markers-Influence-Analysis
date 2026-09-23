@@ -1,0 +1,9 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,LF - 4 - c,,,,,0,True,,,,,,,,
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,LF - 4 - i,,,,,0,True,,,,,,,,
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,LH - 1 - c,,,,,0,True,,,,,,,,
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,LH - 4 - e,,,,,0,True,,,,,,,,
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,RF - 3 - c,,,,,0,True,,,,,,,,
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,RF - 5 - c,1.0,Noradrenalina,300.0,9.0,1,False,-107.14285714285711,107.14285714285711,2.0,107.14285714285711,end,3890.306122448979,5739.795918367344,1.4754098360655732
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,RH - 2 - c,,,,,0,True,,,,,,,,
+P80_#2014m04d08-P80_V4064_FreeProtocol,2014-04-08,RH - 3 - c,,,,,0,True,,,,,,,,

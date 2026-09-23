@@ -1,0 +1,8 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P707_#2021m03d20-P707_V15440_FreeProtocol,2021-03-20,LF - 2 - e,,,,,0,True,,,,,,,,
+P707_#2021m03d20-P707_V15440_FreeProtocol,2021-03-20,LH - 2 - e,1.0,Acetilcolina,370.0,0.0,3,False,-66.0,290.0,5.0,72.5,rise,,11530.0,
+P707_#2021m03d20-P707_V15440_FreeProtocol,2021-03-20,LH - 2 - e,2.0,Noradrenalina,400.0,8.0,3,False,-220.0,220.0,2.0,220.0,rise,7326.785714285715,24200.0,3.3029490616621984
+P707_#2021m03d20-P707_V15440_FreeProtocol,2021-03-20,LH - 2 - e,3.0,Troponin,400.0,14.0,3,False,,0.0,1.0,0.0,end,8934.065934065935,,
+P707_#2021m03d20-P707_V15440_FreeProtocol,2021-03-20,LH - 5 - i,,,,,0,True,,,,,,,,
+P707_#2021m03d20-P707_V15440_FreeProtocol,2021-03-20,RH - 2 - i,,,,,0,True,,,,,,,,
+P707_#2021m03d20-P707_V15440_FreeProtocol,2021-03-20,RH - 3 - e,1.0,Noradrenalina,306.6666666666667,8.0,1,False,-240.00000000000006,240.00000000000003,2.0,240.00000000000003,rise,5681.746031746033,28800.000000000007,5.068864366531639

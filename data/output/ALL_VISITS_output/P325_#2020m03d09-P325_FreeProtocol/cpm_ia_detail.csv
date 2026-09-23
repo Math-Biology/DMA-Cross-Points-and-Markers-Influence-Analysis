@@ -1,0 +1,5 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P325_#2020m03d09-P325_FreeProtocol,2020-03-09,LF - 3 - i,1.0,Fisioreve - Laborest,355.5555555555555,2.0,1,False,-152.7777777777778,305.5555555555555,3.0,152.77777777777774,end,756.1728395061726,23351.33744855966,30.880952380952376
+P325_#2020m03d09-P325_FreeProtocol,2020-03-09,LH - 4 - c,,,,,0,True,,,,,,,,
+P325_#2020m03d09-P325_FreeProtocol,2020-03-09,RF - 3 - i,1.0,Fisioreve - Laborest,325.8064516129032,2.0,1,False,-170.9677419354838,170.9677419354838,2.0,170.9677419354838,rise,4375.650364203955,14614.984391259091,3.3400713436385217
+P325_#2020m03d09-P325_FreeProtocol,2020-03-09,RH - 4 - c,,,,,0,True,,,,,,,,

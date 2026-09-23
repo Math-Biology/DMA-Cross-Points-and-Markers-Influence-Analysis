@@ -1,0 +1,13 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,1,Cadmio,358.3333333333334,0,12,False,,0.0,1,0.0,next_positive,,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,2,Diossina,391.6666666666666,1,12,False,,0.0,1,0.0,next_positive,,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,3,IFN-gamma,487.5,2,12,False,,0.0,1,0.0,next_positive,555.5555555555493,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,4,Idrossicobalamina,512.5,3,12,False,,0.0,1,0.0,next_positive,4496.527777777775,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,5,Manganese,462.5,4,12,False,,0.0,1,0.0,next_positive,5497.6851851851825,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,6,Mercurio (Presenza),491.6666666666667,5,12,False,,0.0,1,0.0,next_positive,4248.263888888887,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,7,Metil Folato,354.1666666666666,6,12,False,,0.0,1,0.0,next_positive,3801.5046296296287,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,8,Piombo,462.5,7,12,False,-241.66666666666669,241.6666666666667,2,241.6666666666667,next_positive,4499.007936507938,29201.3888888889,6.490628445424477
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,9,TNF-alfa,512.5,9,12,False,-325.0,325.0,2,325.0,next_positive,8788.097993827165,52812.5,6.009548372935298
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,10,Zinco Oligoelemento,658.3333333333333,11,12,False,,0.0,1,0.0,next_positive,13018.939393939396,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,11,fT3,391.6666666666666,12,12,False,,0.0,1,0.0,next_positive,17234.848484848484,,
+P704_#2023m01d12-P704_V1954_FreeProtocol,2023-01-12,RH - 1 - c,12,fT4,320.8333333333334,13,12,False,,0.0,1,0.0,end,15884.081196581197,,

@@ -1,0 +1,6 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P666_#2020m01d24-P666_V16090_FreeProtocol,2020-01-24,LF - 2 - e,,,,,0,True,,,,,,,,
+P666_#2020m01d24-P666_V16090_FreeProtocol,2020-01-24,LH - 5 - i,1.0,L-acetilcarnitina 500mg,340.9090909090909,10.0,2,False,-138.63636363636363,277.27272727272725,3.0,138.63636363636363,next_positive,1396.9237832874207,24056.473829201095,17.22103533278552
+P666_#2020m01d24-P666_V16090_FreeProtocol,2020-01-24,LH - 5 - i,2.0,TNF-alfa,427.2727272727273,13.0,2,False,,0.0,1.0,0.0,end,5208.200890019072,,
+P666_#2020m01d24-P666_V16090_FreeProtocol,2020-01-24,RH - 2 - i,,,,,0,True,,,,,,,,
+P666_#2020m01d24-P666_V16090_FreeProtocol,2020-01-24,RH - 5 - e,,,,,0,True,,,,,,,,

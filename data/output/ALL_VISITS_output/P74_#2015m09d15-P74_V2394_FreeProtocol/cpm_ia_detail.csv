@@ -1,0 +1,8 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2015m09d15-P74_V2394_FreeProtocol,2015-09-15,LF - 1 - e,,,,,0,True,,,,,,,,
+P74_#2015m09d15-P74_V2394_FreeProtocol,2015-09-15,LH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2015m09d15-P74_V2394_FreeProtocol,2015-09-15,LH - 5 - e,,,,,0,True,,,,,,,,
+P74_#2015m09d15-P74_V2394_FreeProtocol,2015-09-15,RF - 1 - e,,,,,0,True,,,,,,,,
+P74_#2015m09d15-P74_V2394_FreeProtocol,2015-09-15,RH - 2 - i,1.0,Echinococcus multilocularis,300.0,1.0,1,False,-35.0,150.0,5.0,37.5,rise,,3830.0,
+P74_#2015m09d15-P74_V2394_FreeProtocol,2015-09-15,RH - 5 - e,1.0,IFN-gamma,313.3333333333333,3.0,2,False,-299.99999999999994,300.0,2.0,300.0,rise,14444.444444444447,44999.99999999999,3.1153846153846145
+P74_#2015m09d15-P74_V2394_FreeProtocol,2015-09-15,RH - 5 - e,2.0,Tenia saginata,326.6666666666667,13.0,2,False,,0.0,1.0,0.0,end,10352.136752136752,,

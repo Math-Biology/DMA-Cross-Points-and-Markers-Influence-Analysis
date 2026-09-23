@@ -1,0 +1,9 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,LF - 3 - c,,,,,0,True,,,,,,,,
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,LF - 3 - i,,,,,0,True,,,,,,,,
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,LH - 3 - e,,,,,0,True,,,,,,,,
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,LH - 5 - c,,,,,0,True,,,,,,,,
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,RF - 4 - i,,,,,0,True,,,,,,,,
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,RH - 1 - c,,,,,0,True,,,,,,,,
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,RH - 1 - e,,,,,0,True,,,,,,,,
+P90_#2014m11d10-P90_V5017_FreeProtocol,2014-11-10,RH - 4 - c,,,,,0,True,,,,,,,,

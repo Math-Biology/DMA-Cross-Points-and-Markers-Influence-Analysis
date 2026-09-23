@@ -1,0 +1,11 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LF - 3 - i,,,,,0,True,,,,,,,,
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 3 - c,,,,,0,True,,,,,,,,
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 3 - e,,,,,0,True,,,,,,,,
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 4 - c,1.0,Ammoniaca,587.5,3.0,5,False,-400.0,400.0,2.0,400.0,rise,5625.0,80000.0,14.222222222222221
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 4 - c,2.0,Caspasi-1,325.0,8.0,5,False,-73.75,225.0,4.0,75.0,rise,20979.352678571428,10664.0625,0.5083122755685596
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 4 - c,3.0,Glutammato,300.0,13.0,5,False,-150.0,150.0,2.0,150.0,rise,16316.105769230768,11250.0,0.6895027624309393
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 4 - c,4.0,LH,312.5,16.0,5,False,-118.75,237.5,3.0,118.75,next_positive,13830.729166666666,17031.25,1.231406514780644
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 4 - c,5.0,Serotonina,300.0,19.0,5,False,-62.5,62.5,2.0,62.5,rise,13426.535087719298,1953.125,0.14546753777051857
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,LH - 4 - i,1.0,Ammoniaca,312.5,3.0,1,False,-150.0,150.0,2.0,150.0,rise,3802.083333333333,11250.0,2.9589041095890414
+P181_#2015m11d05-P181_V13685_FreeProtocol,2015-11-05,RH - 1 - c,,,,,0,True,,,,,,,,

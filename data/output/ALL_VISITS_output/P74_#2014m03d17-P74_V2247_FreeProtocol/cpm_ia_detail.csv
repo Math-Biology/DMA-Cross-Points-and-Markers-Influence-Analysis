@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m03d17-P74_V2247_FreeProtocol,2014-03-17,LF - 3 - i,1.0,AGO 2,300.0,0.0,4,False,-125.0,250.0,3.0,125.0,rise,,17500.0,
+P74_#2014m03d17-P74_V2247_FreeProtocol,2014-03-17,LF - 3 - i,2.0,Holly,325.0,9.0,4,False,-125.0,250.0,3.0,125.0,rise,7204.861111111111,18958.333333333332,2.6313253012048192
+P74_#2014m03d17-P74_V2247_FreeProtocol,2014-03-17,LF - 3 - i,3.0,Performance,300.0,15.0,4,False,-200.0,200.0,2.0,200.0,next_positive,8113.095238095238,20000.0,2.4651504035216436
+P74_#2014m03d17-P74_V2247_FreeProtocol,2014-03-17,LF - 3 - i,4.0,Red Chestnut,450.0,17.0,4,False,-450.0,450.0,2.0,450.0,rise,8400.735294117647,101250.0,12.052516411378557
+P74_#2014m03d17-P74_V2247_FreeProtocol,2014-03-17,LH - 3 - e,,,,,0,True,,,,,,,,
+P74_#2014m03d17-P74_V2247_FreeProtocol,2014-03-17,LH - 4 - e,,,,,0,True,,,,,,,,

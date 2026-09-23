@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P458_#2018m06d16-P458_V11592_FreeProtocol,2018-06-16,LH - 2 - c,,,,,0,True,,,,,,,,
+P458_#2018m06d16-P458_V11592_FreeProtocol,2018-06-16,LH - 4 - i,,,,,0,True,,,,,,,,
+P458_#2018m06d16-P458_V11592_FreeProtocol,2018-06-16,RH - 2 - c,,,,,0,True,,,,,,,,
+P458_#2018m06d16-P458_V11592_FreeProtocol,2018-06-16,RH - 3 - c,1.0,Kalium Muriaticum,378.9473684210526,4.0,3,False,-118.42105263157896,236.8421052631579,3.0,118.42105263157895,next_positive,431.6712834718374,17183.748845798706,39.80748663101605
+P458_#2018m06d16-P458_V11592_FreeProtocol,2018-06-16,RH - 3 - c,2.0,Magnesium Phosphoricum,378.9473684210526,7.0,3,False,-113.15789473684215,226.3157894736842,3.0,113.1578947368421,rise,9296.926526843423,16685.133887349948,1.7946935300794549
+P458_#2018m06d16-P458_V11592_FreeProtocol,2018-06-16,RH - 3 - c,3.0,Profito VSB - OHI,415.7894736842105,22.0,3,False,-221.05263157894734,221.0526315789473,2.0,221.0526315789473,end,6920.950702114136,24432.132963988908,3.5301700612497715

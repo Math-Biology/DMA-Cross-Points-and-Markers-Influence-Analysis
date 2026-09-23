@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P494_#2018m06d28-P494_V4208_FreeProtocol,2018-06-28,LF - 1 - e,,,,,0,True,,,,,,,,
+P494_#2018m06d28-P494_V4208_FreeProtocol,2018-06-28,LH - 5 - e,1.0,GLUTATIONE 25O - Natural Point,318.1818181818182,9.0,2,False,-227.2727272727273,227.27272727272728,2.0,227.27272727272728,rise,2871.900826446281,25826.446280991735,8.992805755395683
+P494_#2018m06d28-P494_V4208_FreeProtocol,2018-06-28,LH - 5 - e,2.0,Metil Sulfonil Metano,345.4545454545454,23.0,2,False,-190.90909090909088,190.90909090909088,2.0,190.90909090909088,rise,4653.905203671643,18223.140495867763,3.915666456096019
+P494_#2018m06d28-P494_V4208_FreeProtocol,2018-06-28,RF - 2 - e,,,,,0,True,,,,,,,,
+P494_#2018m06d28-P494_V4208_FreeProtocol,2018-06-28,RF - 4 - i,,,,,0,True,,,,,,,,
+P494_#2018m06d28-P494_V4208_FreeProtocol,2018-06-28,RH - 2 - i,,,,,0,True,,,,,,,,

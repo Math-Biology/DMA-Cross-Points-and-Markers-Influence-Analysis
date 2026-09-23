@@ -1,0 +1,9 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,LF - 5 - i,1.0,Dermatophagoides spp,415.0000000000001,1.0,5,False,,0.0,1.0,0.0,next_positive,,,
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,LF - 5 - i,2.0,Glutine,640.0,2.0,5,False,-350.0,350.0,2.0,350.0,next_positive,20000.000000000022,61250.0,3.0624999999999964
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,LF - 5 - i,3.0,IL-4,345.0,4.0,5,False,,0.0,1.0,0.0,next_positive,34583.333333333336,,
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,LF - 5 - i,4.0,IL-5,335.0,5.0,5,False,-210.0,210.0,2.0,210.0,rise,26342.500000000004,22050.0,0.8370503938502419
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,LF - 5 - i,5.0,Saccharomyces spp,480.0,9.0,5,False,,0.0,1.0,0.0,end,21256.250000000004,,
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,LH - 5 - i,,,,,0,True,,,,,,,,
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,RF - 1 - e,1.0,Glutine,488.2352941176471,2.0,1,False,-300.00000000000006,300.0000000000001,2.0,300.0000000000001,rise,12612.456747404844,45000.00000000002,3.5679012345679033
+P770_#2022m06d10-P770_FreeProtocol,2022-06-10,RF - 2 - e,1.0,Saccharomyces spp,427.2727272727273,9.0,1,False,,0.0,1.0,0.0,end,3051.5381083562897,,

@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P770_#2022m01d29-P770_V3677_FreeProtocol,2022-01-29,LF - 3 - i,,,,,0,True,,,,,,,,
+P770_#2022m01d29-P770_V3677_FreeProtocol,2022-01-29,LH - 4 - c,1.0,Wild Oat,354.5454545454546,5.0,1,False,-322.7272727272728,322.7272727272728,2.0,322.7272727272728,rise,3646.694214876032,52076.44628099176,14.280453257790379
+P770_#2022m01d29-P770_V3677_FreeProtocol,2022-01-29,RH - 4 - c,1.0,Holly,325.0,1.0,4,False,,0.0,1.0,0.0,next_positive,,,
+P770_#2022m01d29-P770_V3677_FreeProtocol,2022-01-29,RH - 4 - c,2.0,Psicophyt Remedy 5 - Biogroup,506.25,2.0,4,False,-184.375,368.75,3.0,184.375,rise,3828.125,34544.270833333336,9.023809523809524
+P770_#2022m01d29-P770_V3677_FreeProtocol,2022-01-29,RH - 4 - c,3.0,m16,375.0,15.0,4,False,,0.0,1.0,0.0,next_positive,8886.532738095237,,
+P770_#2022m01d29-P770_V3677_FreeProtocol,2022-01-29,RH - 4 - c,4.0,m17,368.75,16.0,4,False,-206.25,206.25,2.0,206.25,end,9615.72265625,21269.53125,2.2119534860102577

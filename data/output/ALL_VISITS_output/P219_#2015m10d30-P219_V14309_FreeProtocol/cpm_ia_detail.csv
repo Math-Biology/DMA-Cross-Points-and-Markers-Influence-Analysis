@@ -1,0 +1,15 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - c,1.0,Aspen,320.0,2.0,4,False,-130.0,260.0,3.0,130.0,rise,3200.0,17200.0,5.375
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - c,2.0,Glutammato,360.0,7.0,4,False,-260.0,260.0,2.0,260.0,next_positive,8647.619047619048,33800.0,3.908590308370044
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - c,3.0,Sostanza P,320.0,9.0,4,False,,0.0,1.0,0.0,next_positive,10800.0,,
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - c,4.0,VIP,459.9999999999999,10.0,4,False,,0.0,1.0,0.0,end,10737.777777777777,,
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - e,,,,,0,True,,,,,,,,
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - i,1.0,Acetilcolina,340.0,0.0,6,False,,0.0,1.0,0.0,next_positive,,,
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - i,2.0,Adrenalina,320.0,1.0,6,False,-40.0,40.0,2.0,40.0,next_positive,,800.0,
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - i,3.0,CRF,300.0,3.0,6,False,-220.0,220.0,2.0,220.0,rise,933.3333333333334,24200.0,25.928571428571427
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - i,4.0,Glutammato,560.0,7.0,6,False,-520.0,520.0,2.0,520.0,next_positive,10323.809523809523,135200.0,13.095940959409596
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - i,5.0,Sostanza P,420.0,9.0,6,False,,0.0,1.0,0.0,next_positive,25277.777777777777,,
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,LH - 4 - i,6.0,VIP,420.0,10.0,6,False,,0.0,1.0,0.0,end,25173.333333333332,,
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,RH - 4 - i,1.0,Aspen,312.5,2.0,2,False,-118.75,237.5,3.0,118.75,rise,703.125,14739.583333333334,20.962962962962965
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,RH - 4 - i,2.0,GABA,425.0,6.0,2,False,-168.75,337.5,3.0,168.75,rise,6062.5,28489.583333333332,4.6993127147766325
+P219_#2015m10d30-P219_V14309_FreeProtocol,2015-10-30,RH - 5 - c,1.0,Sostanza P,308.3333333333334,9.0,1,False,-41.666666666666856,41.666666666666856,2.0,41.666666666666856,end,3300.5401234567894,868.0555555555635,0.2630040911747541

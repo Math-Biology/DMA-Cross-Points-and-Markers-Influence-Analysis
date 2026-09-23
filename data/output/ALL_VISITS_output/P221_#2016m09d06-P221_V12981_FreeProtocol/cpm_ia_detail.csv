@@ -1,0 +1,8 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P221_#2016m09d06-P221_V12981_FreeProtocol,2016-09-06,LF - 2 - e,,,,,0,True,,,,,,,,
+P221_#2016m09d06-P221_V12981_FreeProtocol,2016-09-06,LF - 4 - c,,,,,0,True,,,,,,,,
+P221_#2016m09d06-P221_V12981_FreeProtocol,2016-09-06,LF - 4 - e,,,,,0,True,,,,,,,,
+P221_#2016m09d06-P221_V12981_FreeProtocol,2016-09-06,RH - 2 - i,1.0,Oxyurus (Enterobius vermicularis),307.6923076923077,20.0,1,False,,0.0,1.0,0.0,end,4518.685767673623,,
+P221_#2016m09d06-P221_V12981_FreeProtocol,2016-09-06,RH - 5 - e,1.0,Chlamydia psittaci,363.6363636363636,3.0,2,False,-87.72727272727275,272.72727272727275,4.0,90.90909090909092,rise,640.495867768595,15087.80991735537,23.556451612903224
+P221_#2016m09d06-P221_V12981_FreeProtocol,2016-09-06,RH - 5 - e,2.0,FMS Bufo - Igeakos,331.8181818181818,9.0,2,False,-254.54545454545453,254.54545454545456,2.0,254.54545454545456,rise,6802.685950413222,32396.69421487603,4.762338648443433
+P221_#2016m09d06-P221_V12981_FreeProtocol,2016-09-06,RH - 5 - i,,,,,0,True,,,,,,,,

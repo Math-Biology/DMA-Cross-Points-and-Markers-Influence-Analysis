@@ -1,0 +1,19 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,LF - 3 - i,,,,,0,True,,,,,,,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,LH - 3 - e,,,,,0,True,,,,,,,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,LH - 4 - c,1.0,Profito CIRC,335.5555555555555,14.0,1,False,-82.22222222222221,164.4444444444444,3.0,82.2222222222222,rise,4108.777642110975,7960.493827160491,1.9374360261244539
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RF - 3 - i,1.0,Profito CR - OHI,328.5714285714286,16.0,1,False,-204.76190476190482,204.76190476190482,2.0,204.76190476190482,rise,4718.06500377929,20963.71882086169,4.4432874078820905
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,1.0,Kalium phosphoricum,360.0,6.0,13,False,,0.0,1.0,0.0,next_positive,15435.2,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,2.0,Kalium sulfuricum,424.0,7.0,13,False,-82.0,164.0,3.0,82.0,next_positive,18803.2,8752.0,0.4654526889040163
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,3.0,Natrum Phosphoricum,376.0,12.0,13,False,-80.0,80.0,2.0,80.0,next_positive,17540.0,3200.0,0.18244013683010263
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,4.0,Profito CIRC,352.0,14.0,13,False,,0.0,1.0,0.0,next_positive,15988.363636363636,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,5.0,Profito CL - OHI,388.0,15.0,13,False,-92.0,92.0,2.0,92.0,next_positive,15332.242424242424,4232.0,0.2760196377607893
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,6.0,Profito END - OHI,340.0,17.0,13,False,,0.0,1.0,0.0,next_positive,14135.91208791209,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,7.0,Profito FG,332.0,18.0,13,False,,0.0,1.0,0.0,next_positive,13419.12380952381,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,8.0,Profito IT - OHI,328.0,19.0,13,False,,0.0,1.0,0.0,next_positive,12705.866666666667,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,9.0,Profito MP - OHI,348.0,20.0,13,False,,0.0,1.0,0.0,next_positive,12038.941176470587,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,10.0,Profito PL - OHI,340.0,21.0,13,False,,0.0,1.0,0.0,next_positive,11556.653594771242,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,11.0,Profito RN,328.0,22.0,13,False,,0.0,1.0,0.0,next_positive,11058.152046783625,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,12.0,Profito ST,304.0,23.0,13,False,,0.0,1.0,0.0,next_positive,10546.357894736842,,
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 3 - e,13.0,Profito VS - OHI,336.0,24.0,13,False,-44.0,44.0,2.0,44.0,end,10025.447619047618,968.0,0.09655429231517511
+P81_#2014m08d19-P81_V13182_FreeProtocol,2014-08-19,RH - 4 - c,,,,,0,True,,,,,,,,

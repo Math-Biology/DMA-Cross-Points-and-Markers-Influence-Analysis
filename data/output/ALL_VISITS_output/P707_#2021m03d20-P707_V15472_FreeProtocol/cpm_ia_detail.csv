@@ -1,0 +1,8 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P707_#2021m03d20-P707_V15472_FreeProtocol,2021-03-20,LF - 2 - e,,,,,0,True,,,,,,,,
+P707_#2021m03d20-P707_V15472_FreeProtocol,2021-03-20,LH - 2 - e,1.0,Acetilcolina,480.0,0.0,2,False,-190.0,380.0,3.0,190.0,rise,,40900.0,
+P707_#2021m03d20-P707_V15472_FreeProtocol,2021-03-20,LH - 2 - e,2.0,Dopamina,480.0,4.0,2,False,-350.0,350.0,2.0,350.0,rise,30291.666666666668,61250.0,2.0220082530949104
+P707_#2021m03d20-P707_V15472_FreeProtocol,2021-03-20,LH - 5 - i,,,,,0,True,,,,,,,,
+P707_#2021m03d20-P707_V15472_FreeProtocol,2021-03-20,RH - 2 - i,,,,,0,True,,,,,,,,
+P707_#2021m03d20-P707_V15472_FreeProtocol,2021-03-20,RH - 3 - e,1.0,Acetilcolina,540.0,0.0,2,False,-426.66666666666663,426.6666666666667,2.0,426.6666666666667,rise,,91022.22222222222,
+P707_#2021m03d20-P707_V15472_FreeProtocol,2021-03-20,RH - 3 - e,2.0,GABA,333.3333333333334,5.0,2,False,-73.33333333333337,240.0000000000001,4.0,80.00000000000004,end,31586.66666666667,13911.111111111122,0.44041086252990036

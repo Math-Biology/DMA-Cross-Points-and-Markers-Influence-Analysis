@@ -1,0 +1,21 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 1 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,1.0,m01,350.0,0.0,15,False,,0.0,1.0,0.0,next_positive,,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,2.0,m02,300.0,1.0,15,False,,0.0,1.0,0.0,next_positive,,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,3.0,m03,366.6666666666666,2.0,15,False,,0.0,1.0,0.0,next_positive,1250.0,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,4.0,m04,450.0,3.0,15,False,-450.0,450.0,2.0,450.0,next_positive,1203.7037037037012,101250.0,84.11538461538478
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,5.0,m06,500.0,5.0,15,False,,0.0,1.0,0.0,next_positive,29805.55555555555,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,6.0,m07,450.0,6.0,15,False,,0.0,1.0,0.0,next_positive,30962.962962962964,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,7.0,m08,483.3333333333333,7.0,15,False,-433.33333333333326,433.3333333333333,2.0,433.3333333333333,next_positive,27936.507936507936,93888.88888888888,3.360795454545454
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,8.0,m10,450.0,9.0,15,False,,0.0,1.0,0.0,next_positive,33888.88888888889,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,9.0,m11,350.0,10.0,15,False,,0.0,1.0,0.0,next_positive,31617.283950617282,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,10.0,m12,533.3333333333333,11.0,15,False,,0.0,1.0,0.0,next_positive,28464.646464646463,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,11.0,m13,350.0,12.0,15,False,,0.0,1.0,0.0,next_positive,28962.542087542086,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,12.0,m14,433.3333333333333,13.0,15,False,,0.0,1.0,0.0,next_positive,26552.70655270655,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,13.0,m15,416.6666666666667,14.0,15,False,,0.0,1.0,0.0,next_positive,24932.84493284493,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,14.0,m16,766.6666666666667,15.0,15,False,,0.0,1.0,0.0,next_positive,23351.851851851847,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 2 - i,15.0,m17,666.6666666666667,16.0,15,False,,0.0,1.0,0.0,end,31850.694444444445,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,LH - 5 - e,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,RH - 1 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,RH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2264_FreeProtocol,2014-12-06,RH - 5 - e,,,,,0,True,,,,,,,,

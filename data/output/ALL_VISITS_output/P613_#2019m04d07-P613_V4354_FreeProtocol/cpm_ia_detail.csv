@@ -1,0 +1,14 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 1 - e,,,,,0,True,,,,,,,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,1.0,COX-2,352.6315789473684,0.0,10,False,,0.0,1.0,0.0,next_positive,,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,2.0,IFN-alfa,489.4736842105263,1.0,10,False,,0.0,1.0,0.0,next_positive,,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,3.0,IFN-gamma,478.9473684210527,2.0,10,False,,0.0,1.0,0.0,next_positive,9362.880886426596,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,4.0,IL-10,310.5263157894737,3.0,10,False,-73.6842105263158,147.3684210526316,3.0,73.6842105263158,next_positive,5798.707294552176,5761.772853185597,0.993630573248407
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,5.0,IL-5,363.1578947368421,6.0,10,False,,0.0,1.0,0.0,next_positive,18367.497691597422,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,6.0,IL-8,300.0,7.0,10,False,,0.0,1.0,0.0,next_positive,15433.320142461422,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,7.0,PGF-2,378.9473684210526,8.0,10,False,,0.0,1.0,0.0,next_positive,13405.22358527899,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,8.0,TGF-beta1,426.3157894736843,9.0,10,False,,0.0,1.0,0.0,next_positive,11965.220067713146,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,9.0,TNF-alfa,389.4736842105263,10.0,10,False,,0.0,1.0,0.0,next_positive,11415.512465373966,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,LH - 3 - i,10.0,TXA - 2,415.7894736842105,11.0,10,False,,0.0,1.0,0.0,end,10439.184084613451,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,RF - 3 - e,,,,,0,True,,,,,,,,
+P613_#2019m04d07-P613_V4354_FreeProtocol,2019-04-07,RF - 4 - c,,,,,0,True,,,,,,,,

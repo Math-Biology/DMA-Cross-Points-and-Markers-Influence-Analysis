@@ -1,0 +1,11 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,LF - 5 - e,1.0,Herpes simplex,318.1818181818182,4.0,1,False,-63.63636363636363,281.8181818181818,5.0,70.45454545454545,end,3195.592286501377,13206.611570247936,4.132758620689656
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,LF - 5 - i,,,,,0,True,,,,,,,,
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,LH - 3 - i,,,,,0,True,,,,,,,,
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,LH - 4 - e,,,,,0,True,,,,,,,,
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,LH - 5 - e,,,,,0,True,,,,,,,,
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,RF - 5 - e,1.0,FebVin ErbeNobili,309.0909090909091,3.0,1,False,-218.1818181818182,218.18181818181822,2.0,218.18181818181822,rise,82.64462809917347,23801.65289256199,288.00000000000034
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,RH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,RH - 3 - i,,,,,0,True,,,,,,,,
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,RH - 4 - e,,,,,0,True,,,,,,,,
+P74_#2015m01d14-P74_V2316_FreeProtocol,2015-01-14,RH - 5 - e,1.0,Acyclovir,324.1379310344827,0.0,1,False,-84.48275862068961,168.9655172413792,3.0,84.4827586206896,rise,,7257.233452239387,

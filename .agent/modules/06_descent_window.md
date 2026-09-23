@@ -1,20 +1,20 @@
-# Module 06 — Adaptive Descent-Window Determination
+# Module 06 — Adaptive Descent-Window Determination (per anchor)
 **File:** `src/descent_window.py`
 **SR:** REQ-CPM-IA-P26.0006 — Adaptive Descent-Window Determination
 **Linked GR:** REQ-G-P26.0018
-**Status:** Complete — 2026-08-27 | 21/21 tests pass
+**Status:** Complete — 2026-09-23 | 23/23 tests pass
 
 ---
 
 ## Requirement (verbatim)
 
-Starting from the first positive of each (visit, point) series, the component determines the influence (descent) window as the anchor followed by the maximal initial run of non-increasing consecutive marker measurements. The window must be closed at the first significant rise — defined as the first consecutive increase exceeding the configured rise tolerance epsilon — which marks the end of the positive's influence, and shall in any case be truncated to at most N_max points to prevent an excessively long descent. The number of points retained must therefore be adaptive to the actual length of the descent preceding the rise.
+For each anchor detected in a (visit, point) series, the component determines an adaptive influence (descent) window. The window starts at the anchor value and extends over successive markers as long as the signal does not rise significantly. The window closes at the first of: a consecutive increase exceeding the configured rise tolerance epsilon; the position of the next positive anchor in the same series; the n_max cap; or the end of the sequence. The closure reason is recorded.
 
 ---
 
 ## Functional Boundary
 
-This module takes the anchor position from Module 04 and the ordered sequence from Module 03, then slices out the descent window. It returns the window (as a list of values) and its metadata. It does not compute slope or shape descriptors.
+This module takes the anchor list from Module 04 and the ordered sequences from Module 03, then slices out one descent window per anchor. It returns one `List[DescentWindow]` per (visit, point) key. It does not compute slope or shape descriptors.
 
 ---
 
@@ -22,10 +22,10 @@ This module takes the anchor position from Module 04 and the ordered sequence fr
 
 | Input | Type | Description |
 |-------|------|-------------|
-| `sequences` | `dict` | From Module 03. |
-| `trigger_results` | `dict` | From Module 04 (provides anchor index per (visit, point)). |
+| `sequences` | `Sequences` | From Module 03. |
+| `trigger_results` | `TriggerResults` | From Module 04 (provides anchor list per (visit, point)). |
 | `rise_tolerance_epsilon` | `float` | From `CpmIaConfig`. |
-| `n_max` | `int` | From `CpmIaConfig`. Maximum number of descent points. |
+| `n_max` | `int` | From `CpmIaConfig`. Maximum descent window length per anchor. |
 
 ---
 
@@ -33,27 +33,40 @@ This module takes the anchor position from Module 04 and the ordered sequence fr
 
 | Output | Type | Description |
 |--------|------|-------------|
-| `descent_windows` | `dict` | Mapping from (visit, point) to `{'window_values': list[float], 'window_length': int, 'truncated_by_n_max': bool}` or `None` if no anchor. |
+| `descent_windows` | `DescentWindows` | `Dict[Tuple[str,str], List[DescentWindow]]`. Empty list `[]` for series with `no_cross_marker_effect=True`. One `DescentWindow` per anchor. |
+
+### DescentWindow fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `window_values` | `List[float]` | Ordered values starting with the anchor value. |
+| `window_length` | `int` | `== len(window_values)`. |
+| `truncated_by_n_max` | `bool` | `True` when the n_max cap forced early stop. |
+| `window_close_reason` | `str` | `'rise'` / `'next_positive'` / `'n_max'` / `'end'`. |
 
 ---
 
 ## Behaviour Specification
 
-1. For each (visit, point) with `no_cross_marker_effect = True`: store `None` in `descent_windows`.
-2. For each (visit, point) with a valid anchor at index `i`:
-   a. Start with `window = [sequence[i]]` (the anchor value itself).
-   b. Iterate subsequent positions `i+1, i+2, ...` (skipping NaN values).
-   c. Append each value while the consecutive increase does not exceed `epsilon` (i.e., `value[k] - value[k-1] <= epsilon`).
-   d. Stop at the first position where `value[k] - value[k-1] > epsilon` (significant rise).
-   e. Truncate `window` to `n_max` points if `len(window) > n_max`.
-   f. Record `truncated_by_n_max = True` if truncation occurred.
-3. Return `descent_windows`.
+For each (visit, point) series:
+1. If `no_cross_marker_effect = True`: store `[]` in `descent_windows[(visit, point)]`.
+2. For each anchor i in `result.anchors`:
+   a. `next_anchor_index = anchors[i+1].index` if i+1 < len(anchors), else `None`.
+   b. Start: `window = [seq[anchor.index]]`, `prev = anchor.value`, `close_reason = 'end'`.
+   c. Iterate `k = anchor.index + 1, ..., len(seq)-1`:
+      - **NaN bridging:** if `seq[k]` is NaN, skip (`prev` unchanged — NaN does not consume n_max steps).
+      - **Next positive:** if `k == next_anchor_index` → `close_reason = 'next_positive'`; break.
+      - **Rise:** if `seq[k] - prev > epsilon` → `close_reason = 'rise'`; break.
+      - **n_max cap:** if `len(window) >= n_max` → `truncated_by_n_max = True`; `close_reason = 'n_max'`; break.
+      - Otherwise: append `seq[k]` to `window`; `prev = seq[k]`.
+   d. Append `DescentWindow(window, len(window), truncated_by_n_max, close_reason)` to `window_list`.
+3. Store `window_list` in `descent_windows[(visit, point)]`.
 
 ---
 
 ## Guardrails Enforced
 
-- G-07: Descent window must be truncated at `n_max` points regardless of actual descent length.
+- G-07: Hard cap at `n_max` points per anchor window.
 
 ---
 
@@ -63,21 +76,25 @@ This module takes the anchor position from Module 04 and the ordered sequence fr
 |-----------|-----------|
 | `n_max < 1` | Raise `DescentError("n_max must be >= 1")`. |
 | `rise_tolerance_epsilon < 0` | Raise `DescentError("rise_tolerance_epsilon must be >= 0")`. |
-| Anchor index out of bounds | Raise `DescentError("Anchor index out of bounds for (visit, point)")`. |
+| Anchor index out of bounds | Raise `DescentError("Anchor index out of bounds...")`. |
 
 ---
 
 ## Test File
 
-`tests/test_descent_window.py`
+`tests/test_descent_window.py` — 23 tests
 
 ### Test cases (minimum)
 
 | ID | Scenario | Expected |
 |----|----------|----------|
-| TC-06-001 | Anchor=300, then 250, 200, 300 (rise>epsilon); epsilon=5 | Window = [300, 250, 200]. |
-| TC-06-002 | Pure monotone descent; window longer than n_max=3 | Window truncated to 3; `truncated_by_n_max=True`. |
-| TC-06-003 | Anchor is last element | Window = [anchor_value]; length=1. |
-| TC-06-004 | Rise at first step (value[i+1] > anchor + epsilon) | Window = [anchor_value]; length=1. |
-| TC-06-005 | `no_cross_marker_effect=True` | `descent_windows[(v,p)] = None`. |
+| TC-06-001 | Single anchor; descent then rise > ε | `window_close_reason='rise'`; rise value excluded. |
+| TC-06-002 | Single anchor; descent longer than n_max | Window truncated; `truncated_by_n_max=True`; `close_reason='n_max'`. |
+| TC-06-003 | Anchor is last element | `window=[anchor_value]`; `close_reason='end'`. |
+| TC-06-004 | Rise at first step after anchor | `window=[anchor_value]`; `close_reason='rise'`. |
+| TC-06-005 | `no_cross_marker_effect=True` | `descent_windows[(v,p)] == []`. |
 | TC-06-006 | `n_max < 1` | Raises `DescentError`. |
+| TC-06-007 | Two anchors; no rise between them | First window closes at `next_positive`; second closes at `end`. |
+| TC-06-008 | Two adjacent anchors | Two windows of length 1 each; `close_reason='next_positive'` / `'end'`. |
+| TC-06-009 | NaN between anchor and next value | NaN bridged; `prev` retained; window continues. |
+| TC-06-010 | `window_close_reason` correctness across all four cases | Each reason code verified in isolation. |

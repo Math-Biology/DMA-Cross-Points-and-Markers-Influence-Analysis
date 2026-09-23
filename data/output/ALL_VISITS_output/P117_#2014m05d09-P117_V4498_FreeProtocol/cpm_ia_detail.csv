@@ -1,0 +1,12 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,LF - 1 - e,,,,,0,True,,,,,,,,
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,LF - 5 - i,,,,,0,True,,,,,,,,
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,LH - 1 - i,1.0,Borrelia,437.2727272727273,1.0,4,False,-279.6969696969697,279.69696969696975,2.0,279.69696969696975,rise,,39115.197428833795,
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,LH - 1 - i,2.0,Entamoeba histolytica,355.7575757575758,5.0,4,False,-177.8787878787879,355.7575757575758,3.0,177.8787878787879,next_positive,22502.185491276407,32215.365779002157,1.4316549737576083
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,LH - 1 - i,3.0,Mucor racemosus,380.3030303030303,8.0,4,False,-134.09090909090912,268.18181818181824,3.0,134.09090909090912,rise,22225.224649088294,22458.677685950417,1.0105039674760588
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,LH - 1 - i,4.0,toxoplã_x0083_â sma,331.2121212121212,12.0,4,False,-164.54545454545445,164.54545454545448,2.0,164.54545454545448,end,18534.98344324791,13537.603305785111,0.7303811922592631
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,LH - 2 - i,,,,,0,True,,,,,,,,
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,RF - 2 - e,,,,,0,True,,,,,,,,
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,RF - 2 - i,,,,,0,True,,,,,,,,
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,RF - 4 - e,,,,,0,True,,,,,,,,
+P117_#2014m05d09-P117_V4498_FreeProtocol,2014-05-09,RF - 5 - e,,,,,0,True,,,,,,,,

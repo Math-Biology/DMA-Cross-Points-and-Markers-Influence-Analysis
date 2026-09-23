@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P844_#2021m09d10-P844_V10518_FreeProtocol,2021-09-10,RF - 1 - e,,,,,0,True,,,,,,,,
+P844_#2021m09d10-P844_V10518_FreeProtocol,2021-09-10,RF - 5 - e,,,,,0,True,,,,,,,,
+P844_#2021m09d10-P844_V10518_FreeProtocol,2021-09-10,RH - 5 - e,1.0,Insulina,533.3333333333333,9.0,3,False,-376.19047619047615,376.19047619047615,2.0,376.19047619047615,rise,1995.4648526077117,70759.6371882086,35.46022727272723
+P844_#2021m09d10-P844_V10518_FreeProtocol,2021-09-10,RH - 5 - e,2.0,Testosterone,376.1904761904762,17.0,3,False,,0.0,1.0,0.0,next_positive,8358.676804054956,,
+P844_#2021m09d10-P844_V10518_FreeProtocol,2021-09-10,RH - 5 - e,3.0,VIP,409.5238095238095,18.0,3,False,,0.0,1.0,0.0,end,9027.611044417767,,
+P844_#2021m09d10-P844_V10518_FreeProtocol,2021-09-10,RH - 5 - i,,,,,0,True,,,,,,,,

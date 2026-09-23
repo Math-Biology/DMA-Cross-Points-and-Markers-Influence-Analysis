@@ -1,0 +1,10 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,LF - 5 - i,,,,,0,True,,,,,,,,
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,LH - 5 - i,1.0,Angiotensina II,440.0000000000001,0.0,6,False,,0.0,1.0,0.0,next_positive,,,
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,LH - 5 - i,2.0,CPK,340.0,1.0,6,False,,0.0,1.0,0.0,next_positive,,,
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,LH - 5 - i,3.0,Candida albicans,480.0,2.0,6,False,,0.0,1.0,0.0,next_positive,5000.000000000011,,
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,LH - 5 - i,4.0,Emoglobina Glicosilata,735.0,3.0,6,False,,0.0,1.0,0.0,next_positive,5200.000000000002,,
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,LH - 5 - i,5.0,IFN-gamma,560.0,4.0,6,False,-320.0,320.0,2.0,320.0,rise,28272.91666666666,51200.0,1.8109203448529958
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,LH - 5 - i,6.0,Vasopressina,390.0,7.0,6,False,,0.0,1.0,0.0,end,31803.571428571428,,
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,RF - 1 - e,,,,,0,True,,,,,,,,
+P790_#2021m04d28-P790_V10775_FreeProtocol,2021-04-28,RH - 5 - e,,,,,0,True,,,,,,,,

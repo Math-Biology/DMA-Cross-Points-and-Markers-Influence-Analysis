@@ -1,0 +1,25 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 3 - c,1,Agata,366.6666666666666,0,1,False,-149.99999999999991,299.9999999999999,3,149.99999999999994,rise,,25833.333333333314,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 3 - i,1,Rhodiola rosea,317.3913043478261,6,1,False,-226.08695652173915,226.08695652173918,2,226.08695652173918,end,2419.65973534972,25557.655954631387,10.562499999999988
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,1,Agata,487.5,0,10,False,,0.0,1,0.0,next_positive,,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,2,Corallo Kimiya,381.25,1,10,False,,0.0,1,0.0,next_positive,,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,3,Crisobelillo Kimiya,331.25,2,10,False,,0.0,1,0.0,next_positive,5644.53125,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,4,Diamante Kimiya,550.0,3,10,False,,0.0,1,0.0,next_positive,6367.1875,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,5,Fitoginkgo - Solgar,400.0,4,10,False,,0.0,1,0.0,next_positive,9869.791666666666,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,6,Perla Kimiya - Forza Vitale,450.0,5,10,False,-268.75,268.75,2,268.75,next_positive,7683.59375,36113.28125,4.700050838840874
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,7,Rubino Kimiya,606.25,7,10,False,-325.0,325.0,2,325.0,next_positive,14255.952380952382,52812.5,3.704592901878914
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,8,Smeraldo Kimiya - Forza Vitale,406.25,9,10,False,,0.0,1,0.0,next_positive,17712.67361111111,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,9,Topazio Kimiya - Forza Vitale,443.75,10,10,False,,0.0,1,0.0,next_positive,15744.791666666666,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,LF - 4 - c,10,Zaffiro Kimiya,575.0,11,10,False,,0.0,1,0.0,end,14289.772727272726,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,1,Agata,833.3333333333334,0,12,False,,0.0,1,0.0,next_positive,,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,2,Corallo Kimiya,706.6666666666666,1,12,False,,0.0,1,0.0,next_positive,,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,3,Crisobelillo Kimiya,686.6666666666666,2,12,False,,0.0,1,0.0,next_positive,8022.222222222232,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,4,Diamante Kimiya,766.6666666666667,3,12,False,,0.0,1,0.0,next_positive,6325.9259259259325,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,5,Fitoginkgo - Solgar,800.0,4,12,False,,0.0,1,0.0,next_positive,4366.666666666672,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,6,Perla Kimiya - Forza Vitale,773.3333333333334,5,12,False,,0.0,1,0.0,next_positive,3808.888888888893,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,7,Rhodiola rosea,740.0,6,12,False,,0.0,1,0.0,next_positive,3082.9629629629662,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,8,Rubino Kimiya,740.0,7,12,False,,0.0,1,0.0,next_positive,2632.8042328042357,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,9,Silica,526.6666666666666,8,12,False,,0.0,1,0.0,next_positive,2297.61904761905,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,10,Smeraldo Kimiya - Forza Vitale,660.0,9,12,False,,0.0,1,0.0,next_positive,7845.679012345684,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,11,Topazio Kimiya - Forza Vitale,653.3333333333334,10,12,False,,0.0,1,0.0,next_positive,7469.13580246914,,
+P408_#2019m05d02-P408_V13559_FreeProtocol,2019-05-02,RH - 3 - i,12,Zaffiro Kimiya,786.6666666666666,11,12,False,,0.0,1,0.0,end,7167.67676767677,,

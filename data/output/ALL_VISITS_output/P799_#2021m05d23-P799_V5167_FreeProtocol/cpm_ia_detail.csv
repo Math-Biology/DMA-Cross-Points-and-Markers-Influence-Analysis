@@ -1,0 +1,17 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,LF - 1 - e,,,,,0,True,,,,,,,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,LF - 4 - e,,,,,0,True,,,,,,,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RF - 3 - e,,,,,0,True,,,,,,,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,1.0,5-Hydroxy tryptophol,508.0,0.0,11,False,,0.0,1.0,0.0,next_positive,,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,2.0,Ammoniaca,432.0,1.0,11,False,-168.0,168.0,2.0,168.0,next_positive,,14112.0,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,3.0,COX-2,580.0,3.0,11,False,,0.0,1.0,0.0,next_positive,15589.333333333332,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,4.0,Candida albicans,560.0,4.0,11,False,,0.0,1.0,0.0,next_positive,18373.333333333332,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,5.0,Emoglobina Glicosilata,312.0,5.0,11,False,-160.0,160.0,2.0,160.0,next_positive,16379.2,12800.0,0.7814789489108137
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,6.0,Geotrichum capitatum,436.0000000000001,7.0,11,False,,0.0,1.0,0.0,next_positive,26403.809523809523,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,7.0,IFN-alfa,420.0,8.0,11,False,,0.0,1.0,0.0,next_positive,22783.714285714286,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,8.0,IFN-gamma,520.0,9.0,11,False,-268.0,268.0,2.0,268.0,next_positive,19959.111111111113,35912.0,1.7992785249844123
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,9.0,IL-2,364.0,11.0,11,False,-96.0,192.0,3.0,96.0,next_positive,19631.418181818182,10261.333333333334,0.5226995440827072
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,10.0,TGF-beta1,360.0,14.0,11,False,,0.0,1.0,0.0,next_positive,20976.527472527472,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 2 - i,11.0,TNF-alfa,448.0000000000001,15.0,11,False,,0.0,1.0,0.0,end,19485.257142857143,,
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 5 - e,1.0,Candida albicans,330.9523809523809,4.0,2,False,-151.19047619047618,302.38095238095235,3.0,151.19047619047618,rise,7826.908541194255,24087.30158730158,3.0774987928536928
+P799_#2021m05d23-P799_V5167_FreeProtocol,2021-05-23,RH - 5 - e,2.0,TNF-alfa,342.8571428571428,15.0,2,False,,0.0,1.0,0.0,end,6669.258179462259,,

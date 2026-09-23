@@ -1,0 +1,14 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LF - 3 - c,1.0,VIP,344.4444444444445,12.0,1,False,,0.0,1.0,0.0,end,6584.362139917693,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LF - 3 - i,,,,,0,True,,,,,,,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LF - 4 - c,,,,,0,True,,,,,,,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 1 - e,,,,,0,True,,,,,,,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - c,1.0,GABA,370.0,6.0,6,False,-230.0,230.0,2.0,230.0,next_positive,7746.666666666667,26450.0,3.4143717728055076
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - c,2.0,Pregnenolone,530.0,8.0,6,False,,0.0,1.0,0.0,next_positive,11826.785714285714,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - c,3.0,Prolattina,360.0,9.0,6,False,,0.0,1.0,0.0,next_positive,24449.999999999996,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - c,4.0,Serotonina,300.0,10.0,6,False,,0.0,1.0,0.0,next_positive,23884.444444444445,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - c,5.0,Sostanza P,570.0,11.0,6,False,,0.0,1.0,0.0,next_positive,21967.272727272728,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - c,6.0,VIP,560.0,12.0,6,False,,0.0,1.0,0.0,end,29347.727272727272,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - e,1.0,Sostanza P,371.4285714285714,11.0,2,False,,0.0,1.0,0.0,next_positive,9992.578849721707,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,LH - 3 - e,2.0,VIP,371.4285714285714,12.0,2,False,,0.0,1.0,0.0,end,13612.786023500308,,
+P124_#2014m09d25-P124_V3879_FreeProtocol,2014-09-25,RH - 1 - c,,,,,0,True,,,,,,,,

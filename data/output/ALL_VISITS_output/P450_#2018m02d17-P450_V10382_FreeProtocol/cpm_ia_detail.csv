@@ -1,0 +1,53 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,1,AGO 2,400.0,0,26,False,-110.0,110.0,2,110.0,next_positive,,6050.0,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,2,Calcium Phosphoricum,480.0,2,26,False,,0.0,1,0.0,next_positive,6050.0,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,3,Calcium Sulfuricum,380.0,3,26,False,,0.0,1,0.0,next_positive,9100.0,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,4,Chestnut Bud,810.0,4,26,False,,0.0,1,0.0,next_positive,6091.666666666667,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,5,Elm,600.0,5,26,False,-380.0,380.0,2,380.0,next_positive,40270.0,72200.0,1.7928979389123416
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,6,Gentian,360.0,7,26,False,,0.0,1,0.0,next_positive,39795.2380952381,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,7,Kalium Muriaticum,530.0,8,26,False,,0.0,1,0.0,next_positive,35221.42857142857,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,8,Kalium phosphoricum,360.0,9,26,False,,0.0,1,0.0,next_positive,31669.44444444444,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,9,Kalium sulfuricum,360.0,10,26,False,,0.0,1,0.0,next_positive,29001.11111111111,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,10,Magnesium Phosphoricum,480.0,11,26,False,,0.0,1,0.0,next_positive,26727.272727272728,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,11,Natrum Muriaticum,430.0,12,26,False,,0.0,1,0.0,next_positive,24462.878787878788,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,12,Natrum Phosphoricum,500.0,13,26,False,,0.0,1,0.0,next_positive,22430.76923076923,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,13,Natrum Sulfuricum,409.9999999999999,14,26,False,,0.0,1,0.0,next_positive,20975.824175824175,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,14,Oak,520.0,15,26,False,,0.0,1,0.0,next_positive,19549.52380952381,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,15,Pine,500.0,16,26,False,-270.0,270.0,2,270.0,next_positive,18639.583333333332,36450.0,1.955515815357103
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,16,Profito CL - OHI,430.0,18,26,False,,0.0,1,0.0,next_positive,19270.58823529412,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,17,Profito CR - OHI,360.0,19,26,False,,0.0,1,0.0,next_positive,18202.33918128655,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,18,Profito END - OHI,630.0,20,26,False,-105.0,490.0,5,122.5,next_positive,17535.526315789473,37870.0,2.159615817513319
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,19,Profito RN,320.0,25,26,False,,0.0,1,0.0,next_positive,23484.0,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,20,Profito ST,360.0,26,26,False,,0.0,1,0.0,next_positive,22818.615384615383,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,21,Profito VS - OHI,310.0,27,26,False,,0.0,1,0.0,next_positive,22003.703703703704,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,22,Profito VSB - OHI,490.0000000000001,28,26,False,,0.0,1,0.0,next_positive,21475.661375661377,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,23,Silica,360.0,29,26,False,-120.0,120.0,2,120.0,next_positive,21010.591133004928,7200.0,0.3426843135645874
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,24,Sweet Chestnut,520.0,31,26,False,,0.0,1,0.0,next_positive,20469.247311827956,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,25,White Chestnut,1010.0,32,26,False,,0.0,1,0.0,next_positive,20311.189516129034,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LF - 4 - i,26,Wild Oat,310.0,33,26,False,-100.0,100.0,2,100.0,rise,31056.439393939396,5000.0,0.1609972069423947
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - e,1,Profito IT - OHI,360.0,22,2,False,,0.0,1,0.0,next_positive,3533.3333333333335,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - e,2,Profito PL - OHI,370.0,24,2,False,-270.0,270.0,2,270.0,end,9130.0,36450.0,3.9923329682365827
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,1,AGO 2,370.0,0,20,False,-260.0,260.0,2,260.0,next_positive,,33800.0,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,2,Chestnut Bud,480.0,4,20,False,,0.0,1,0.0,next_positive,33800.0,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,3,Elm,360.0,5,20,False,,0.0,1,0.0,next_positive,36100.0,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,4,Gentian,310.0,7,20,False,-130.0,130.0,2,130.0,next_positive,24466.666666666668,8450.0,0.3453678474114441
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,5,Oak,490.0000000000001,15,20,False,,0.0,1,0.0,next_positive,18296.666666666668,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,6,Pine,470.0,16,20,False,-210.0,210.0,2,210.0,next_positive,20314.28571428572,22050.0,1.0854430379746831
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,7,Profito CL - OHI,350.0,18,20,False,,0.0,1,0.0,next_positive,18250.000000000004,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,8,Profito CR - OHI,550.0,19,20,False,,0.0,1,0.0,next_positive,16240.000000000004,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,9,Profito END - OHI,520.0,20,20,False,-134.0,400.0,4,133.33333333333334,next_positive,18701.818181818184,35566.666666666664,1.9017758765960202
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,10,Profito PL - OHI,310.0,24,20,False,-110.0,110.0,2,110.0,next_positive,23171.428571428572,6050.0,0.26109741060419234
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,11,Profito ST,360.0,26,20,False,,0.0,1,0.0,next_positive,21273.529411764706,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,12,Profito VS - OHI,310.0,27,20,False,,0.0,1,0.0,next_positive,20105.88235294118,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,13,Profito VSB - OHI,310.0,28,20,False,,0.0,1,0.0,next_positive,18998.24561403509,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,14,Silica,480.0,29,20,False,,0.0,1,0.0,next_positive,18006.315789473687,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,15,Star of Bethlehem,550.0,30,20,False,,0.0,1,0.0,next_positive,18294.76190476191,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,16,Sweet Chestnut,470.0,31,20,False,,0.0,1,0.0,next_positive,19633.116883116883,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,17,White Chestnut,570.0,32,20,False,,0.0,1,0.0,next_positive,19480.632411067196,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,18,Wild Oat,470.0,33,20,False,,0.0,1,0.0,next_positive,20738.94927536232,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,19,Willow,500.0,34,20,False,,0.0,1,0.0,next_positive,20407.666666666668,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,LH - 3 - i,20,gorse qualunque tentativo ã_x0083_â¨ inutile,409.9999999999999,35,20,False,,0.0,1,0.0,end,20353.846153846156,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,RF - 3 - i,1,Calcium Sulfuricum,350.0,3,4,False,,0.0,1,0.0,next_positive,,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,RF - 3 - i,2,Ferrum Phosphoricum,409.9999999999999,6,4,False,,0.0,1,0.0,next_positive,8450.0,,
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,RF - 3 - i,3,Kalium phosphoricum,459.9999999999999,9,4,False,-149.99999999999991,299.9999999999999,3,149.99999999999994,rise,9433.333333333325,23033.333333333314,2.441696113074205
+P450_#2018m02d17-P450_V10382_FreeProtocol,2018-02-17,RF - 3 - i,4,Profito PL - OHI,360.0,24,4,False,-130.0,130.0,2,130.0,rise,10825.454545454539,8450.0,0.7805676855895202

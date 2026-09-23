@@ -1,0 +1,14 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,LF - 2 - e,,,,,0,True,,,,,,,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,LF - 2 - i,,,,,0,True,,,,,,,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,LH - 2 - i,1.0,PEtn,416.6666666666667,9.0,2,False,,0.0,1.0,0.0,next_positive,8665.123456790121,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,LH - 2 - i,2.0,TGF-beta1,300.0,10.0,2,False,,0.0,1.0,0.0,end,15521.604938271605,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,LH - 5 - e,,,,,0,True,,,,,,,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RF - 2 - i,,,,,0,True,,,,,,,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RF - 5 - i,,,,,0,True,,,,,,,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RH - 2 - i,1.0,TGF-beta1,383.3333333333334,10.0,1,False,,0.0,1.0,0.0,end,2435.185185185185,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RH - 5 - e,1.0,C-MYC,400.0,0.0,5,False,,0.0,1.0,0.0,next_positive,,,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RH - 5 - e,2.0,C-RAS,300.0,1.0,5,False,-300.0,300.0,2.0,300.0,rise,,45000.0,
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RH - 5 - e,3.0,IL-1beta,325.0,4.0,5,False,-75.0,150.0,3.0,75.0,next_positive,30625.0,5625.0,0.1836734693877551
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RH - 5 - e,4.0,IL-5,325.0,7.0,5,False,-175.0,175.0,2.0,175.0,rise,17589.285714285714,15312.5,0.8705583756345178
+P41_#2013m09d25-P41_V9856_FreeProtocol,2013-09-25,RH - 5 - e,5.0,TGF-beta1,550.0,10.0,5,False,,0.0,1.0,0.0,end,13534.722222222223,,

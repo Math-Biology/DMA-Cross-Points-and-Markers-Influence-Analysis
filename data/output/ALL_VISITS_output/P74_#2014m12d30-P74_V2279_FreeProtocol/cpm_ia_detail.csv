@@ -1,0 +1,10 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,LF - 3 - c,1.0,Olive,327.2727272727273,30.0,2,False,-131.81818181818184,263.6363636363637,3.0,131.81818181818184,next_positive,5941.293815901967,19366.391184573007,3.2596252238424155
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,LF - 3 - c,2.0,Red Chestnut,445.4545454545454,44.0,2,False,-195.4545454545454,390.9090909090908,3.0,195.4545454545454,rise,6652.579514149763,40688.70523415976,6.116229824478844
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,LF - 3 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,LH - 3 - e,,,,,0,True,,,,,,,,
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,LH - 4 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,RF - 3 - c,,,,,0,True,,,,,,,,
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,RF - 3 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,RH - 3 - e,,,,,0,True,,,,,,,,
+P74_#2014m12d30-P74_V2279_FreeProtocol,2014-12-30,RH - 4 - i,,,,,0,True,,,,,,,,

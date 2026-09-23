@@ -1,0 +1,13 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,LH - 2 - i,1,Angiostatina,319.0476190476191,0,6,False,,0.0,1,0.0,next_positive,,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,LH - 2 - i,2,C-MYC,395.2380952380952,1,6,False,,0.0,1,0.0,next_positive,,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,LH - 2 - i,3,C-RAS,471.4285714285714,2,6,False,,0.0,1,0.0,next_positive,2902.494331065752,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,LH - 2 - i,4,PChoCl,300.0,3,6,False,,0.0,1,0.0,next_positive,5804.988662131513,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,LH - 2 - i,5,PDGF,300.0,4,6,False,,0.0,1,0.0,next_positive,6137.566137566132,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,LH - 2 - i,6,PEtn,623.8095238095239,5,6,False,,0.0,1,0.0,end,5623.582766439905,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,RH - 2 - i,1,Angiostatina,475.0,0,6,False,,0.0,1,0.0,next_positive,,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,RH - 2 - i,2,C-MYC,500.0,1,6,False,,0.0,1,0.0,next_positive,,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,RH - 2 - i,3,C-RAS,675.0,2,6,False,,0.0,1,0.0,next_positive,312.5,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,RH - 2 - i,4,PChoCl,300.0,3,6,False,,0.0,1,0.0,next_positive,11875.0,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,RH - 2 - i,5,PDGF,525.0,4,6,False,,0.0,1,0.0,next_positive,23541.666666666668,,
+P755_#2021m03d21-P755_V16077_FreeProtocol,2021-03-21,RH - 2 - i,6,PEtn,600.0,5,6,False,,0.0,1,0.0,end,17937.5,,

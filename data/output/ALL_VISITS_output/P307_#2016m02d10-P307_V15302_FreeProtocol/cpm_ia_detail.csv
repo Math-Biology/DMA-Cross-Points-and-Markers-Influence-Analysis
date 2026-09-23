@@ -1,0 +1,6 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P307_#2016m02d10-P307_V15302_FreeProtocol,2016-02-10,LF - 5 - c,1.0,Cortisolo,357.1428571428572,7.0,1,False,-72.85714285714289,228.5714285714286,4.0,76.1904761904762,rise,7363.945578231292,10102.040816326535,1.3718244803695157
+P307_#2016m02d10-P307_V15302_FreeProtocol,2016-02-10,LH - 2 - c,,,,,0,True,,,,,,,,
+P307_#2016m02d10-P307_V15302_FreeProtocol,2016-02-10,LH - 2 - e,1.0,LH,300.0,13.0,1,False,-250.0,250.0,2.0,250.0,rise,945.8705357142857,31250.0,33.038348082595874
+P307_#2016m02d10-P307_V15302_FreeProtocol,2016-02-10,LH - 3 - e,,,,,0,True,,,,,,,,
+P307_#2016m02d10-P307_V15302_FreeProtocol,2016-02-10,LH - 4 - i,1.0,Prolattina,306.6666666666667,20.0,1,False,-220.00000000000003,220.0,2.0,220.0,end,3568.2539682539687,24200.000000000004,6.78202846975089

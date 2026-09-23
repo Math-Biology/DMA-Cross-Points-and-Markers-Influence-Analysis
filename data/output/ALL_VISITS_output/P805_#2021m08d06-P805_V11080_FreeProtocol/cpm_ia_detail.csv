@@ -1,0 +1,12 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,LH - 5 - i,1.0,Angiotensina II,317.6470588235294,0.0,5,False,,0.0,1.0,0.0,next_positive,,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,LH - 5 - i,2.0,Candida albicans,711.7647058823529,1.0,5,False,,0.0,1.0,0.0,next_positive,,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,LH - 5 - i,3.0,Glutine,658.8235294117646,2.0,5,False,,0.0,1.0,0.0,next_positive,77664.3598615917,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,LH - 5 - i,4.0,L-acetilcarnitina 500mg,341.1764705882353,3.0,5,False,,0.0,1.0,0.0,next_positive,45755.47866205305,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,LH - 5 - i,5.0,Lattosio D8,417.6470588235294,4.0,5,False,-217.6470588235294,217.6470588235294,2.0,217.6470588235294,rise,42776.81660899653,23685.12110726643,0.553690596562184
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,RF - 1 - e,,,,,0,True,,,,,,,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,RH - 2 - i,1.0,Candida albicans,476.6666666666667,1.0,4,False,,0.0,1.0,0.0,next_positive,,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,RH - 2 - i,2.0,Glutine,493.3333333333334,2.0,4,False,,0.0,1.0,0.0,next_positive,,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,RH - 2 - i,3.0,L-acetilcarnitina 500mg,770.0,3.0,4,False,,0.0,1.0,0.0,next_positive,138.88888888889016,,
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,RH - 2 - i,4.0,Lattosio D8,486.6666666666666,4.0,4,False,-220.0,220.0,2.0,220.0,end,27144.444444444434,24200.0,0.8915268112975853
+P805_#2021m08d06-P805_V11080_FreeProtocol,2021-08-06,RH - 5 - e,,,,,0,True,,,,,,,,

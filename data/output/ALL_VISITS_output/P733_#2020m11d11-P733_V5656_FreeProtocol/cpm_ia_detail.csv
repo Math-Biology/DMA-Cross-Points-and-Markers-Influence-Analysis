@@ -1,0 +1,6 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P733_#2020m11d11-P733_V5656_FreeProtocol,2020-11-11,RF - 1 - e,1.0,TGF-beta1,335.7142857142857,10.0,1,False,-67.85714285714289,67.85714285714295,2.0,67.85714285714295,end,8573.696145124715,2302.295918367353,0.26853015075376957
+P733_#2020m11d11-P733_V5656_FreeProtocol,2020-11-11,RF - 4 - e,,,,,0,True,,,,,,,,
+P733_#2020m11d11-P733_V5656_FreeProtocol,2020-11-11,RH - 2 - i,1.0,Candida albicans,354.5454545454546,1.0,2,False,-236.3636363636364,236.36363636363643,2.0,236.36363636363643,rise,,27933.88429752067,
+P733_#2020m11d11-P733_V5656_FreeProtocol,2020-11-11,RH - 2 - i,2.0,TNF-alfa,306.0606060606061,11.0,2,False,,0.0,1.0,0.0,end,9032.139577594127,,
+P733_#2020m11d11-P733_V5656_FreeProtocol,2020-11-11,RH - 5 - i,,,,,0,True,,,,,,,,

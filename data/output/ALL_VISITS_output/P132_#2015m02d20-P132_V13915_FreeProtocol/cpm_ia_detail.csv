@@ -1,0 +1,16 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,LH - 2 - i,,,,,0,True,,,,,,,,
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,LH - 5 - e,1.0,Tenia saginata,300.0,25.0,1,False,-115.0,230.0,3.0,115.0,rise,5547.333333333333,15100.0,2.722028602331451
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 2 - i,1.0,25toxoplã_x0083_â sma p,327.2727272727273,0.0,2,False,-163.63636363636365,327.2727272727273,3.0,163.63636363636365,rise,,27768.595041322318,
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 2 - i,2.0,Entamoeba histolytica,300.0,9.0,2,False,-145.4545454545455,145.4545454545455,2.0,145.4545454545455,rise,10498.16345270891,10578.512396694221,1.0076536190684455
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,1.0,25toxoplã_x0083_â sma p,425.0,0.0,11,False,,0.0,1.0,0.0,next_positive,,,
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,2.0,Ascaris lumbricoides,387.5,1.0,11,False,-325.0,325.0,2.0,325.0,rise,,52812.5,
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,3.0,Candida albicans,512.5,5.0,11,False,-312.5,312.5,2.0,312.5,next_positive,30671.875,48828.125,1.5919510952623535
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,4.0,Cryptococcus spp,400.0,7.0,11,False,,0.0,1.0,0.0,next_positive,33169.642857142855,,
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,5.0,Echinococcus multilocularis,437.5,8.0,11,False,,0.0,1.0,0.0,next_positive,30982.14285714286,,
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,6.0,Entamoeba histolytica,475.0,9.0,11,False,-168.75,337.5,3.0,168.75,rise,30043.402777777777,37968.75,1.263796590580757
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,7.0,Mucor mucedo,412.5,21.0,11,False,-237.5,237.5,2.0,237.5,next_positive,25045.386904761905,28203.125,1.12608062743234
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,8.0,Oxyurus (Enterobius vermicularis),525.0,23.0,11,False,-400.0,400.0,2.0,400.0,next_positive,24614.624505928852,80000.0,3.2501003613006825
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,9.0,Tenia saginata,387.5,25.0,11,False,,0.0,1.0,0.0,next_positive,26766.666666666668,,
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,10.0,Trichinella spiralis,500.0,26.0,11,False,-437.5,437.5,2.0,437.5,next_positive,26686.778846153848,95703.125,3.586162479620238
+P132_#2015m02d20-P132_V13915_FreeProtocol,2015-02-20,RH - 5 - e,11.0,Trichophytum rubrum,325.0,28.0,11,False,,0.0,1.0,0.0,end,28413.52513227513,,

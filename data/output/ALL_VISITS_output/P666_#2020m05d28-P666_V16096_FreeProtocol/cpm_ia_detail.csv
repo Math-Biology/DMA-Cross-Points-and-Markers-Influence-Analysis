@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P666_#2020m05d28-P666_V16096_FreeProtocol,2020-05-28,LH - 5 - i,1.0,Glutatione ridotto 250mg - Solgar,420.0,9.0,2,False,-100.00000000000004,313.3333333333333,4.0,104.44444444444444,rise,2453.0864197530855,18444.44444444444,7.518872672370409
+P666_#2020m05d28-P666_V16096_FreeProtocol,2020-05-28,LH - 5 - i,2.0,TNF-alfa,380.0,15.0,2,False,,0.0,1.0,0.0,end,8443.597883597886,,
+P666_#2020m05d28-P666_V16096_FreeProtocol,2020-05-28,RH - 1 - c,,,,,0,True,,,,,,,,
+P666_#2020m05d28-P666_V16096_FreeProtocol,2020-05-28,RH - 2 - c,1.0,Adrenalina,329.6296296296296,0.0,3,False,-229.62962962962962,229.62962962962962,2.0,229.62962962962962,rise,,26364.883401920437,
+P666_#2020m05d28-P666_V16096_FreeProtocol,2020-05-28,RH - 2 - c,2.0,Emoglobina Glicosilata,325.9259259259259,8.0,3,False,,0.0,1.0,0.0,next_positive,9026.063100137175,,
+P666_#2020m05d28-P666_V16096_FreeProtocol,2020-05-28,RH - 2 - c,3.0,Glutatione ridotto 250mg - Solgar,322.2222222222222,9.0,3,False,-151.8518518518518,151.85185185185176,2.0,151.85185185185176,rise,10216.04938271605,11529.492455418367,1.1285666330983537

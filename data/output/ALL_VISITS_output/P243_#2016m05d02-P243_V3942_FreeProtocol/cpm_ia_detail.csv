@@ -1,0 +1,19 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,LH - 3 - e,1.0,Caspasi-3,305.5555555555555,2.0,5,False,-149.9999999999999,149.9999999999999,2.0,149.9999999999999,next_positive,555.555555555554,11249.999999999984,20.25000000000003
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,LH - 3 - e,2.0,Mio-Inositolo,355.5555555555555,4.0,5,False,,0.0,1.0,0.0,next_positive,4369.855967078183,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,LH - 3 - e,3.0,Omocisteina,533.3333333333333,5.0,5,False,-355.5555555555555,355.55555555555543,2.0,355.55555555555543,rise,7370.370370370362,63209.87654320984,8.576214405360139
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,LH - 3 - e,4.0,Tau Protein,388.8888888888889,8.0,5,False,,0.0,1.0,0.0,next_positive,15916.55643738976,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,LH - 3 - e,5.0,alfa Synuclein,388.8888888888889,9.0,5,False,,0.0,1.0,0.0,end,15385.802469135795,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,LH - 5 - c,,,,,0,True,,,,,,,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 1 - e,,,,,0,True,,,,,,,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 2 - c,1.0,Acetylcholinesterase,340.0,0.0,6,False,-145.0,290.0,3.0,145.0,next_positive,,21558.333333333336,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 2 - c,2.0,L-Glutamin-sintetasi,325.0,3.0,6,False,,0.0,1.0,0.0,next_positive,21558.333333333336,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 2 - c,3.0,Mio-Inositolo,445.0,4.0,6,False,,0.0,1.0,0.0,next_positive,17775.0,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 2 - c,4.0,Omocisteina,509.9999999999999,5.0,6,False,,0.0,1.0,0.0,next_positive,21942.5,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 2 - c,5.0,S-100,360.0,6.0,6,False,-120.0,120.0,2.0,120.0,rise,26447.499999999993,7200.0,0.2722374515549675
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 2 - c,6.0,alfa Synuclein,395.0,9.0,6,False,,0.0,1.0,0.0,end,17523.611111111106,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 3 - e,1.0,L-Glutamin-sintetasi,362.5,3.0,5,False,,0.0,1.0,0.0,next_positive,9033.564814814808,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 3 - e,2.0,Mio-Inositolo,345.8333333333334,4.0,5,False,,0.0,1.0,0.0,next_positive,13083.04398148148,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 3 - e,3.0,Omocisteina,370.8333333333334,5.0,5,False,-122.9166666666667,245.83333333333343,3.0,122.91666666666671,next_positive,12204.861111111115,15109.953703703715,1.2380275011853965
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 3 - e,4.0,Tau Protein,416.6666666666667,8.0,5,False,,0.0,1.0,0.0,next_positive,11324.404761904767,,
+P243_#2016m05d02-P243_V3942_FreeProtocol,2016-05-02,RH - 3 - e,5.0,alfa Synuclein,475.0,9.0,5,False,,0.0,1.0,0.0,end,12842.881944444449,,

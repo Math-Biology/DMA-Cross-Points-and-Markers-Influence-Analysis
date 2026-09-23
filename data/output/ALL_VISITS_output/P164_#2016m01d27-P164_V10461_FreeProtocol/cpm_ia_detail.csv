@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P164_#2016m01d27-P164_V10461_FreeProtocol,2016-01-27,LH - 4 - e,,,,,0,True,,,,,,,,
+P164_#2016m01d27-P164_V10461_FreeProtocol,2016-01-27,RH - 1 - c,,,,,0,True,,,,,,,,
+P164_#2016m01d27-P164_V10461_FreeProtocol,2016-01-27,RH - 2 - e,1.0,Crisoberillo Kimiya,337.5,2.0,4,False,-125.0,125.0,2.0,125.0,next_positive,1250.0,7812.5,6.25
+P164_#2016m01d27-P164_V10461_FreeProtocol,2016-01-27,RH - 2 - e,2.0,FMC PNEI - Igeakos,475.0,4.0,4,False,-175.0,350.0,3.0,175.0,next_positive,3854.1666666666665,30833.333333333332,8.0
+P164_#2016m01d27-P164_V10461_FreeProtocol,2016-01-27,RH - 2 - e,3.0,Rubino Kimiya,375.0,7.0,4,False,-125.0,250.0,3.0,125.0,rise,12700.892857142857,15677.083333333332,1.2343292325717632
+P164_#2016m01d27-P164_V10461_FreeProtocol,2016-01-27,RH - 2 - e,4.0,Zaffiro Kimiya,300.0,11.0,4,False,,0.0,1.0,0.0,end,11511.363636363636,,

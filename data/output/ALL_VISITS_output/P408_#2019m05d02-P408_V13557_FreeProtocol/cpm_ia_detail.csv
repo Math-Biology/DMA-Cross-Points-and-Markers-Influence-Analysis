@@ -1,0 +1,12 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,1.0,Fagus Composto Forza Vitale,340.0,1.0,8,False,,0.0,1.0,0.0,next_positive,,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,2.0,Magnesio,480.0,2.0,8,False,,0.0,1.0,0.0,next_positive,11250.0,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,3.0,Niacina 100mg - Natural Point,440.0000000000001,3.0,8,False,,0.0,1.0,0.0,next_positive,21033.333333333332,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,4.0,Omega 3 - 2 grammi,340.0,4.0,8,False,,0.0,1.0,0.0,next_positive,16691.66666666667,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,5.0,Vitamina B1,570.0,5.0,8,False,,0.0,1.0,0.0,next_positive,12620.000000000005,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,6.0,Vitamina B2,509.9999999999999,6.0,8,False,-229.9999999999999,229.9999999999999,2.0,229.9999999999999,next_positive,17586.666666666668,26449.999999999975,1.5039802880970417
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,7.0,Vitamina B6,300.0,8.0,8,False,,0.0,1.0,0.0,next_positive,16341.071428571426,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 1 - e,8.0,Vitamina C 3g,580.0,9.0,8,False,,0.0,1.0,0.0,end,15274.999999999998,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LF - 5 - i,,,,,0,True,,,,,,,,
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LH - 5 - e,1.0,Vitamina B2,382.7586206896552,6.0,1,False,-79.3103448275862,158.62068965517247,3.0,79.31034482758623,rise,2890.606420927466,6389.219183511696,2.2103386809269185
+P408_#2019m05d02-P408_V13557_FreeProtocol,2019-05-02,LH - 5 - i,,,,,0,True,,,,,,,,

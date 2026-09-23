@@ -1,0 +1,12 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,LF - 1 - e,1.0,m07,335.2941176470588,6.0,1,False,,0.0,1.0,0.0,end,2856.978085351789,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,LF - 1 - i,,,,,0,True,,,,,,,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,LH - 5 - c,,,,,0,True,,,,,,,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RF - 4 - e,1.0,m03,370.5882352941177,2.0,2,False,-135.29411764705884,135.29411764705887,2.0,135.29411764705887,rise,19999.99999999999,9152.249134948102,0.45761245674740536
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RF - 4 - e,2.0,m07,352.9411764705882,6.0,2,False,,0.0,1.0,0.0,end,10334.486735870818,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RF - 5 - e,,,,,0,True,,,,,,,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RF - 5 - i,1.0,m03,320.0,2.0,4,False,-120.0,120.0,2.0,120.0,next_positive,18688.888888888887,7200.0,0.38525564803804996
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RF - 5 - i,2.0,m05,406.6666666666666,4.0,4,False,,0.0,1.0,0.0,next_positive,9966.666666666666,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RF - 5 - i,3.0,m06,480.0,5.0,4,False,,0.0,1.0,0.0,next_positive,13835.55555555555,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RF - 5 - i,4.0,m07,320.0,6.0,4,False,,0.0,1.0,0.0,end,18844.44444444444,,
+P1116_#2024m05d24-P1116_V11054_FreeProtocol,2024-05-24,RH - 5 - e,,,,,0,True,,,,,,,,

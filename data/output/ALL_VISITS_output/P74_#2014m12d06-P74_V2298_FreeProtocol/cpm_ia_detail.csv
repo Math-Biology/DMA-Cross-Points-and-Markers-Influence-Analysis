@@ -1,0 +1,22 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 1 - i,1.0,FM Crataegus + FMS Elaps - Igeakos,312.5,7.0,2,False,-112.5,225.0,3.0,112.5,next_positive,7485.119047619048,12864.583333333334,1.7186878727634196
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 1 - i,2.0,Manganese oligoelemento,375.0,10.0,2,False,-108.75,312.5,4.0,104.16666666666667,rise,8777.777777777777,22226.5625,2.5321400316455698
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,1.0,Cimicifuga Homaccord,450.0,0.0,15,False,,0.0,1.0,0.0,next_positive,,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,2.0,Colchicum,433.3333333333333,1.0,15,False,-433.3333333333333,433.3333333333333,2.0,433.3333333333333,next_positive,,93888.88888888888,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,3.0,DMG,350.0,3.0,15,False,,0.0,1.0,0.0,next_positive,65092.59259259259,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,4.0,Ekinflu,450.0,4.0,15,False,-400.0,400.0,2.0,400.0,next_positive,44166.666666666664,80000.0,1.8113207547169812
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,5.0,FM Colchicum+FMS magnesium - Igeakos,416.6666666666667,6.0,15,False,,0.0,1.0,0.0,next_positive,43407.40740740741,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,6.0,FM Crataegus + FMS Elaps - Igeakos,1233.333333333333,7.0,15,False,,0.0,1.0,0.0,next_positive,38505.291005291,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,7.0,Gelsemium - Guna,483.3333333333333,8.0,15,False,,0.0,1.0,0.0,next_positive,140233.13492063485,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,8.0,IFN-beta,666.6666666666667,9.0,15,False,,0.0,1.0,0.0,next_positive,123109.56790123452,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,9.0,Manganese oligoelemento,300.0,10.0,15,False,,0.0,1.0,0.0,next_positive,115049.38271604934,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,10.0,Metil Sulfonil Metano,350.0,11.0,15,False,,0.0,1.0,0.0,next_positive,105681.81818181813,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,11.0,Oxistres - Forza Vitale,533.3333333333333,12.0,15,False,,0.0,1.0,0.0,next_positive,96740.31986531983,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,12.0,R33 Reckeweg,366.6666666666666,13.0,15,False,,0.0,1.0,0.0,next_positive,89469.37321937317,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,13.0,R71 Reckeweg,350.0,14.0,15,False,,0.0,1.0,0.0,next_positive,82968.55921855918,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,14.0,Rheuma Heel - Guna,500.0,15.0,15,False,,0.0,1.0,0.0,next_positive,77518.51851851848,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 2 - i,15.0,Vc 15 Forte Reckeweg,450.0,16.0,15,False,,0.0,1.0,0.0,end,72666.66666666664,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,LH - 5 - e,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,RH - 1 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,RH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2298_FreeProtocol,2014-12-06,RH - 5 - e,,,,,0,True,,,,,,,,

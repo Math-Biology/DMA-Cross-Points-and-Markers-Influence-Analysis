@@ -1,0 +1,4 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P755_#2021m01d13-P755_V16071_FreeProtocol,2021-01-13,RH - 1 - c,,,,,0,True,,,,,,,,
+P755_#2021m01d13-P755_V16071_FreeProtocol,2021-01-13,RH - 2 - c,1.0,IL-4,317.6470588235294,3.0,2,False,-64.70588235294116,64.70588235294119,2.0,64.70588235294119,next_positive,2802.768166089962,2093.425605536333,0.7469135802469148
+P755_#2021m01d13-P755_V16071_FreeProtocol,2021-01-13,RH - 2 - c,2.0,Selenio,358.8235294117647,5.0,2,False,-96.76470588235297,270.5882352941176,4.0,90.19607843137254,rise,8674.740484429065,16374.71164936563,1.8876312990293849

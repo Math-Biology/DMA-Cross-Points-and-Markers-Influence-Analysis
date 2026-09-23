@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CPM-IA Runtime Configuration — REQ-CPM-IA-P26.0001 -->
+<cpm_ia_config>
+
+  <input>
+    <type>excel</type>
+    <csv><path></path></csv>
+    <excel>
+      <file>
+        <path>data/input/AF_#2026m03d03-AF_FreeProtocol/#2026m03d03-AF_FreeProtocol_percentage_variation.xlsx</path>
+        <visit_id>AF_#2026m03d03-AF_FreeProtocol</visit_id>
+        <visit_date>2026-03-03</visit_date>
+      </file>
+    </excel>
+    <db><dsn_env>CPM_IA_PG_DSN</dsn_env><query></query></db>
+  </input>
+
+  <output_path>data/output/AF_#2026m03d03-AF_FreeProtocol</output_path>
+  <output_label_detail>cpm_ia_detail</output_label_detail>
+  <output_label_aggregated>cpm_ia_aggregated</output_label_aggregated>
+
+  <threshold_pct>300.0</threshold_pct>
+  <rise_tolerance_epsilon>1.0</rise_tolerance_epsilon>
+  <n_max>1000</n_max>
+
+  <data_quality>
+    <drop_invalid_points>true</drop_invalid_points>
+  </data_quality>
+
+</cpm_ia_config>

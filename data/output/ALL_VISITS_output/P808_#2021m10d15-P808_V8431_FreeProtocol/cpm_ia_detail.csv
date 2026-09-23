@@ -1,0 +1,3 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P808_#2021m10d15-P808_V8431_FreeProtocol,2021-10-15,LF - 5 - e,,,,,0,True,,,,,,,,
+P808_#2021m10d15-P808_V8431_FreeProtocol,2021-10-15,LH - 4 - c,,,,,0,True,,,,,,,,

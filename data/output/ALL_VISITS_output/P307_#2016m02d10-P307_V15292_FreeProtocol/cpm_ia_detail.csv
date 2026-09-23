@@ -1,0 +1,6 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P307_#2016m02d10-P307_V15292_FreeProtocol,2016-02-10,LH - 2 - i,,,,,0,True,,,,,,,,
+P307_#2016m02d10-P307_V15292_FreeProtocol,2016-02-10,LH - 5 - e,1.0,Cryptococcus spp,308.3333333333334,7.0,2,False,-50.0,50.0,2.0,50.0,rise,8812.003968253975,1250.0,0.14185195609344203
+P307_#2016m02d10-P307_V15292_FreeProtocol,2016-02-10,LH - 5 - e,2.0,toxoplã_x0083_â sma gondii,358.3333333333334,26.0,2,False,-104.16666666666669,104.16666666666671,2.0,104.16666666666671,end,8899.065170940174,5425.347222222227,0.6096536117005475
+P307_#2016m02d10-P307_V15292_FreeProtocol,2016-02-10,RH - 5 - i,1.0,Ascaris spp,879.3103448275862,0.0,2,False,-844.8275862068965,844.8275862068965,2.0,844.8275862068965,rise,,356866.8252080856,
+P307_#2016m02d10-P307_V15292_FreeProtocol,2016-02-10,RH - 5 - i,2.0,Oxyurus (Enterobius vermicularis),420.6896551724138,16.0,2,False,-296.55172413793105,296.551724137931,2.0,296.551724137931,rise,40962.14823622671,43971.46254458976,1.073465734536394

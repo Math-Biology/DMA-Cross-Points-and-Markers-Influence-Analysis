@@ -1,0 +1,9 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,LF - 4 - c,,,,,0,True,,,,,,,,
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,LF - 5 - i,,,,,0,True,,,,,,,,
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,RH - 1 - e,1.0,Clematis,447.0588235294118,0.0,4,False,-338.2352941176472,338.23529411764713,2.0,338.23529411764713,next_positive,,57201.557093425625,
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,RH - 1 - e,2.0,Gentian,314.7058823529412,2.0,4,False,,0.0,1.0,0.0,next_positive,57201.557093425625,,
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,RH - 1 - e,3.0,Gorse qualunque tentativo Ã¨ inutile,764.7058823529412,3.0,4,False,-322.0588235294118,644.1176470588236,3.0,322.0588235294118,next_positive,29051.32641291812,132269.3194925029,4.552952853598014
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,RH - 1 - e,4.0,Hornbeam,588.2352941176471,6.0,4,False,-223.52941176470594,447.05882352941177,3.0,223.52941176470588,rise,65432.52595155711,64094.57900807382,0.979552265115459
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,RH - 4 - i,1.0,Gentian,342.8571428571428,2.0,1,False,-95.7142857142857,276.19047619047615,4.0,92.06349206349205,rise,181.4058956916111,15621.693121693117,86.11458333333277
+P305_#2019m03d05-P305_V231_FreeProtocol,2019-03-05,RH - 5 - i,,,,,0,True,,,,,,,,

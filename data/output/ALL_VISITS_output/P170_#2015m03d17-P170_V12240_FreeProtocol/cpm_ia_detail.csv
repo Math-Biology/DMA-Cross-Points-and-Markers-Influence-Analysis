@@ -1,0 +1,13 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LF - 4 - c,1.0,Bombesina,412.5,3.0,1,False,-325.0,325.0,2.0,325.0,rise,2500.0,52812.5,21.125
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LF - 5 - c,,,,,0,True,,,,,,,,
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LH - 4 - c,1.0,Aspen,1650.0,2.0,6,False,-1650.0,1650.0,2.0,1650.0,rise,9800.0,1361250.0,138.9030612244898
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LH - 4 - c,2.0,Cortisolo,400.0,5.0,6,False,,0.0,1.0,0.0,next_positive,471230.0,,
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LH - 4 - c,3.0,Dopamina,860.0,6.0,6,False,,0.0,1.0,0.0,next_positive,377176.66666666674,,
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LH - 4 - c,4.0,GABA,430.0,7.0,6,False,,0.0,1.0,0.0,next_positive,340933.3333333333,,
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LH - 4 - c,5.0,Glutammato,400.0,8.0,6,False,,0.0,1.0,0.0,next_positive,292678.5714285714,,
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LH - 4 - c,6.0,Noradrenalina,420.0,9.0,6,False,,0.0,1.0,0.0,end,256850.00000000003,,
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,LH - 5 - c,,,,,0,True,,,,,,,,
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,RF - 4 - c,1.0,Glutammato,411.1111111111111,8.0,1,False,-300.0,300.0,2.0,300.0,end,5537.918871252205,45000.0,8.125796178343949
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,RF - 4 - i,1.0,Bombesina,306.6666666666667,3.0,1,False,-116.66666666666669,233.33333333333337,3.0,116.66666666666669,rise,2799.9999999999973,15244.444444444447,5.444444444444451
+P170_#2015m03d17-P170_V12240_FreeProtocol,2015-03-17,RH - 2 - e,,,,,0,True,,,,,,,,

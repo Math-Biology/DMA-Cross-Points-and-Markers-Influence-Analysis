@@ -1,0 +1,6 @@
+point,total_visit_count,positive_visit_count,median_positives_count,median_descent_slope,median_descent_depth,median_descent_length,median_mean_per_step_decrease,positive_prevalence
+LH - 1 - i,1,1,6.0,-258.33333333333326,491.6666666666667,2.0,229.16666666666666,1.0
+LH - 5 - e,1,1,1.0,-150.00000000000003,300.00000000000006,3.0,150.00000000000003,1.0
+LH - 5 - i,1,1,4.0,-200.0,216.66666666666669,2.0,200.0,1.0
+RF - 2 - e,1,1,5.0,-275.0,275.0,2.0,275.0,1.0
+RH - 5 - e,1,1,5.0,-123.33333333333334,283.3333333333333,3.0,111.11111111111114,1.0

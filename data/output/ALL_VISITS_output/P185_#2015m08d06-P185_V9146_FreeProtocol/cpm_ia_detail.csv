@@ -1,0 +1,27 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,1.0,Beech,350.0,2.0,20,False,-175.0,175.0,2.0,175.0,rise,312.5,15312.5,49.0
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,2.0,Chestnut Bud,400.0,9.0,20,False,,0.0,1.0,0.0,next_positive,2857.1428571428573,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,3.0,Clematis,300.0,10.0,20,False,,0.0,1.0,0.0,next_positive,5000.0,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,4.0,Crab Apple,350.0,11.0,20,False,-125.0,250.0,3.0,125.0,next_positive,4444.444444444444,16458.333333333332,3.703125
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,5.0,Holly,300.0,15.0,20,False,-300.0,300.0,2.0,300.0,rise,7211.174242424242,45000.0,6.240315167432699
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,6.0,Impatiens,350.0,18.0,20,False,,0.0,1.0,0.0,next_positive,10696.42857142857,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,7.0,Larch,300.0,22.0,20,False,-25.0,25.0,2.0,25.0,next_positive,10739.583333333334,312.5,0.029097963142580018
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,8.0,Mustard,300.0,25.0,20,False,,0.0,1.0,0.0,next_positive,9667.075163398693,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,9.0,Oak,300.0,29.0,20,False,-50.0,100.0,3.0,50.0,next_positive,9254.38596491228,2708.3333333333335,0.29265402843601895
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,10.0,Profito CL - OHI,425.0,33.0,20,False,-325.0,325.0,2.0,325.0,next_positive,8192.640692640693,52812.5,6.446334214002642
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,11.0,Profito END - OHI,375.0,35.0,20,False,,0.0,1.0,0.0,next_positive,9781.476449275362,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,12.0,Profito FG,400.0,36.0,20,False,-250.0,250.0,2.0,250.0,rise,9947.916666666666,31250.0,3.141361256544503
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,13.0,Profito ST,350.0,41.0,20,False,-175.0,175.0,2.0,175.0,next_positive,9339.798850574713,15312.5,1.6394892700561496
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,14.0,Profito VSB - OHI,300.0,43.0,20,False,-47.5,150.0,4.0,50.0,rise,9231.350806451614,3906.25,0.4231504231504231
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,15.0,Vine,300.0,51.0,20,False,-25.0,75.0,4.0,25.0,next_positive,8032.219973009447,1041.6666666666667,0.1296860233119815
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,16.0,Wild Yam - 300  - Natural Point,300.0,55.0,20,False,,0.0,1.0,0.0,next_positive,7346.345514950166,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,17.0,Willow,425.0,56.0,20,False,-137.5,275.0,3.0,137.5,next_positive,7219.873150105708,18958.333333333332,2.625854075158614
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,18.0,"heather eccessiva loquacitã_x0083_â , paura della solitudine",300.0,59.0,20,False,,0.0,1.0,0.0,next_positive,7616.211840888066,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,19.0,rock water rigiditã_x0083_â,300.0,60.0,20,False,,0.0,1.0,0.0,next_positive,7490.026595744681,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 3 - c,20.0,water violet distacco per superioritã_x0083_â,400.0,61.0,20,False,,0.0,1.0,0.0,end,7367.66581632653,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LF - 4 - i,,,,,0,True,,,,,,,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,LH - 1 - c,,,,,0,True,,,,,,,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,RF - 3 - c,,,,,0,True,,,,,,,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,RF - 3 - i,,,,,0,True,,,,,,,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,RF - 4 - i,,,,,0,True,,,,,,,,
+P185_#2015m08d06-P185_V9146_FreeProtocol,2015-08-06,RH - 5 - c,,,,,0,True,,,,,,,,

@@ -1,0 +1,9 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 2 - i,1.0,Aspergillus niger,391.6666666666666,1.0,7,False,,0.0,1.0,0.0,next_positive,,,
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 2 - i,2.0,Candida albicans,833.3333333333334,2.0,7,False,,0.0,1.0,0.0,next_positive,50138.88888888886,,
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 2 - i,3.0,Candida parapsilosis,616.6666666666667,3.0,7,False,-616.6666666666667,616.6666666666667,2.0,616.6666666666667,rise,145069.44444444447,190138.88888888893,1.3106749640976545
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 2 - i,4.0,Mucor mucedo,333.3333333333334,6.0,7,False,,0.0,1.0,0.0,next_positive,107629.62962962964,,
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 2 - i,5.0,Mucor racemosus,608.3333333333333,7.0,7,False,-424.99999999999994,425.0,2.0,425.0,next_positive,89718.91534391535,90312.49999999999,1.006616048063101
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 2 - i,6.0,Saccharomyces spp,425.0,9.0,7,False,,0.0,1.0,0.0,next_positive,79076.00308641976,,
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 2 - i,7.0,Tenia saginata,775.0,10.0,7,False,,0.0,1.0,0.0,end,70759.25925925926,,
+P408_#2018m02d18-P408_V13515_FreeProtocol,2018-02-18,LH - 5 - e,,,,,0,True,,,,,,,,

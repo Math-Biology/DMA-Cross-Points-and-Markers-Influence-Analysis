@@ -16,13 +16,13 @@ from __future__ import annotations
 
 import logging
 import math
-from typing import Dict, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from src.descent_window import DescentWindows
 
 logger = logging.getLogger(__name__)
 
-Slopes = Dict[Tuple[str, str], Optional[float]]
+Slopes = Dict[Tuple[str, str], List[Optional[float]]]
 
 
 class SlopeError(Exception):
@@ -70,16 +70,16 @@ def _ols_slope(values: list[float]) -> Optional[float]:
 
 def compute_slopes(descent_windows: DescentWindows) -> Slopes:
     """
-    Compute the OLS descent slope for every (visit, point) series.
+    Compute the OLS descent slope for every anchor in every (visit, point) series.
 
     Args:
-        descent_windows: Mapping (visit_id, point_id) -> DescentWindow | None
+        descent_windows: Mapping (visit_id, point_id) -> List[DescentWindow]
                          from determine_descent_windows().
 
     Returns:
-        Slopes: mapping (visit_id, point_id) -> float slope or None.
-        None is returned for series with no descent window and for
-        single-point windows (slope undefined).
+        Slopes: mapping (visit_id, point_id) -> List[Optional[float]].
+        Empty list for series with no anchors.
+        None entries within the list for single-point windows (slope undefined).
 
     Raises:
         SlopeError: if a window contains NaN values (should not occur with
@@ -87,18 +87,13 @@ def compute_slopes(descent_windows: DescentWindows) -> Slopes:
     """
     slopes: Slopes = {}
 
-    for (visit, point), window in descent_windows.items():
-        if window is None:
-            slopes[(visit, point)] = None
-            continue
-
-        slopes[(visit, point)] = _ols_slope(window.window_values)
+    for (visit, point), window_list in descent_windows.items():
+        slopes[(visit, point)] = [_ols_slope(w.window_values) for w in window_list]
 
     logger.debug(
-        "CPM-IA slopes computed | total=%d | with_slope=%d | none=%d",
+        "CPM-IA slopes computed | total=%d | with_slopes=%d",
         len(slopes),
-        sum(1 for s in slopes.values() if s is not None),
-        sum(1 for s in slopes.values() if s is None),
+        sum(1 for sl in slopes.values() if sl),
     )
 
     return slopes

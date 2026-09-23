@@ -1,0 +1,5 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m12d06-P74_V2266_FreeProtocol,2014-12-06,LH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2266_FreeProtocol,2014-12-06,LH - 5 - e,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2266_FreeProtocol,2014-12-06,RH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2014m12d06-P74_V2266_FreeProtocol,2014-12-06,RH - 5 - e,,,,,0,True,,,,,,,,

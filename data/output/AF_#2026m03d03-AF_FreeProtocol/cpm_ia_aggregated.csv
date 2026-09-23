@@ -1,0 +1,13 @@
+point,total_visit_count,positive_visit_count,median_positives_count,median_descent_slope,median_descent_depth,median_descent_length,median_mean_per_step_decrease,positive_prevalence
+LF - 2 - e - Stomach,1,0,,,,,,0.0
+LF - 3 - e - Spinal cord,1,0,,,,,,0.0
+LF - 4 - e - Gallbladder,1,0,,,,,,0.0
+LF - 5 - i - Kidney,1,0,,,,,,0.0
+LH - 2 - i - colon,1,0,,,,,,0.0
+LH - 5 - i - Heart,1,0,,,,,,0.0
+RF - 1 - e - Liver,1,1,1.0,,0.0,1.0,0.0,1.0
+RF - 1 - i - Pancreas,1,1,1.0,-27.36842105263156,27.36842105263156,2.0,27.36842105263156,1.0
+RF - 2 - e - Stomach,1,0,,,,,,0.0
+RF - 5 - e - Bladder,1,1,1.0,-293.39622641509425,293.3962264150943,2.0,293.3962264150943,1.0
+RH - 1 - i - lung,1,0,,,,,,0.0
+RH - 5 - e - Small intestine,1,0,,,,,,0.0

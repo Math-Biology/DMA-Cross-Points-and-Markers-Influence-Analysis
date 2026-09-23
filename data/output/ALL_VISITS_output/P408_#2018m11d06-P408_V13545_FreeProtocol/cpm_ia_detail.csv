@@ -1,0 +1,7 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P408_#2018m11d06-P408_V13545_FreeProtocol,2018-11-06,LF - 3 - i,1,Crisobelillo Kimiya,426.0869565217392,2,4,False,,0.0,1,0.0,next_positive,28591.68241965971,,
+P408_#2018m11d06-P408_V13545_FreeProtocol,2018-11-06,LF - 3 - i,2,Diamante Kimiya,447.8260869565217,3,4,False,-334.782608695652,334.7826086956521,2,334.7826086956521,next_positive,35129.17454316321,56039.697542533046,1.5952466367712992
+P408_#2018m11d06-P408_V13545_FreeProtocol,2018-11-06,LF - 3 - i,3,Rubino Kimiya,508.6956521739131,5,4,False,-273.9130434782609,273.91304347826093,2,273.91304347826093,next_positive,31706.99432892249,37514.177693761834,1.1831514934716516
+P408_#2018m11d06-P408_V13545_FreeProtocol,2018-11-06,LF - 3 - i,4,Topazio Kimiya - Forza Vitale,639.1304347826087,7,4,False,-500.0000000000001,500.00000000000006,2,500.00000000000006,end,29961.292645602665,125000.00000000003,4.172049633457518
+P408_#2018m11d06-P408_V13545_FreeProtocol,2018-11-06,RF - 3 - c,1,Topazio Kimiya - Forza Vitale,325.0,7,2,False,,0.0,1,0.0,next_positive,10611.030126336247,,
+P408_#2018m11d06-P408_V13545_FreeProtocol,2018-11-06,RF - 3 - c,2,Zaffiro Kimiya,303.5714285714286,8,2,False,,0.0,1,0.0,end,13453.899416909619,,

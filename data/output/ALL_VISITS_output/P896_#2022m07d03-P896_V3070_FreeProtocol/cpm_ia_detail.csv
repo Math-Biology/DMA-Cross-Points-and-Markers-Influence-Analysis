@@ -1,0 +1,8 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P896_#2022m07d03-P896_V3070_FreeProtocol,2022-07-03,LF - 1 - i,,,,,0,True,,,,,,,,
+P896_#2022m07d03-P896_V3070_FreeProtocol,2022-07-03,RH - 1 - c,,,,,0,True,,,,,,,,
+P896_#2022m07d03-P896_V3070_FreeProtocol,2022-07-03,RH - 5 - c,1.0,Iodio,480.9523809523809,2.0,5,False,-142.8571428571428,285.71428571428567,3.0,142.85714285714283,next_positive,1371.8820861678032,21889.644746787602,15.955922865013742
+P896_#2022m07d03-P896_V3070_FreeProtocol,2022-07-03,RH - 5 - c,2.0,Progesterone,571.4285714285714,5.0,5,False,,0.0,1.0,0.0,next_positive,13451.247165532875,,
+P896_#2022m07d03-P896_V3070_FreeProtocol,2022-07-03,RH - 5 - c,3.0,Selenio,404.7619047619048,6.0,5,False,-204.76190476190482,204.76190476190482,2.0,204.76190476190482,next_positive,24731.67044595616,20963.71882086169,0.8476466992665042
+P896_#2022m07d03-P896_V3070_FreeProtocol,2022-07-03,RH - 5 - c,4.0,Zinco Oligoelemento,428.5714285714286,8.0,5,False,,0.0,1.0,0.0,next_positive,20825.639779721412,,
+P896_#2022m07d03-P896_V3070_FreeProtocol,2022-07-03,RH - 5 - c,5.0,fT3,366.6666666666666,9.0,5,False,-85.71428571428567,85.71428571428567,2.0,85.71428571428567,end,19455.78231292517,3673.469387755098,0.1888111888111886

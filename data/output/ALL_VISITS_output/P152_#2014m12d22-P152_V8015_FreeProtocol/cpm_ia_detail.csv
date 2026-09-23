@@ -1,0 +1,20 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 1 - i,1.0,Mucor racemosus,300.0,17.0,1,False,-271.42857142857144,271.42857142857144,2.0,271.42857142857144,rise,3603.8961038961033,36836.73469387756,10.221364221364226
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 2 - i,,,,,0,True,,,,,,,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,1.0,Aspergillus fumigatus,375.0,1.0,12,False,,0.0,1.0,0.0,next_positive,,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,2.0,Aspergillus niger,375.0,2.0,12,False,,0.0,1.0,0.0,next_positive,5000.0,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,3.0,Borrelia,300.0,3.0,12,False,-225.0,225.0,2.0,225.0,rise,3333.3333333333335,25312.5,7.59375
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,4.0,Candida albicans,350.0,6.0,12,False,,0.0,1.0,0.0,next_positive,14916.666666666666,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,5.0,Candida parapsilosis,375.0,7.0,12,False,-112.5,225.0,3.0,112.5,next_positive,13630.952380952382,13958.333333333334,1.0240174672489082
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,6.0,Cryptococcus spp,375.0,10.0,12,False,-75.0,150.0,3.0,75.0,next_positive,12395.833333333334,5833.333333333334,0.4705882352941177
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,7.0,Melatonina 1mg,450.0,14.0,12,False,-175.0,350.0,3.0,175.0,rise,10432.692307692307,30625.0,2.935483870967742
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,8.0,PEtn,350.0,20.0,12,False,,0.0,1.0,0.0,next_positive,14228.801169590643,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,9.0,Penicillum notatum,375.0,21.0,12,False,,0.0,1.0,0.0,next_positive,13953.947368421053,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,10.0,TXA - 2,425.0,22.0,12,False,,0.0,1.0,0.0,next_positive,13913.690476190475,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,11.0,Tenia saginata,300.0,23.0,12,False,,0.0,1.0,0.0,next_positive,14442.640692640693,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - e,12.0,Trichinella spiralis/Anisakis spp,325.0,24.0,12,False,-75.0,75.0,2.0,75.0,end,13824.110671936758,2812.5,0.20344889206576128
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,LH - 5 - i,1.0,Mucor racemosus,380.0,17.0,1,False,-380.0,380.0,2.0,380.0,rise,4109.090909090909,72200.0,17.570796460176993
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,RH - 1 - i,,,,,0,True,,,,,,,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,RH - 2 - i,,,,,0,True,,,,,,,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,RH - 5 - e,,,,,0,True,,,,,,,,
+P152_#2014m12d22-P152_V8015_FreeProtocol,2014-12-22,RH - 5 - i,,,,,0,True,,,,,,,,

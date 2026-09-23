@@ -1,0 +1,8 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P508_#2018m01d11-P508_V9771_FreeProtocol,2018-01-11,LF - 1 - e,1.0,Cryptococcus spp,408.8888888888889,2.0,3,False,,0.0,1.0,0.0,next_positive,2372.839506172841,,
+P508_#2018m01d11-P508_V9771_FreeProtocol,2018-01-11,LF - 1 - e,2.0,Entamoeba histolytica,486.6666666666666,3.0,3,False,-155.55555555555551,311.1111111111111,3.0,155.55555555555554,rise,19507.818930041154,26451.028806584352,1.3559193317019655
+P508_#2018m01d11-P508_V9771_FreeProtocol,2018-01-11,LF - 1 - e,3.0,Strongyloides stercoralis,300.0,7.0,3,False,-68.88888888888891,68.88888888888891,2.0,68.88888888888891,end,17000.352733686064,2372.839506172841,0.13957589841480633
+P508_#2018m01d11-P508_V9771_FreeProtocol,2018-01-11,LH - 5 - e,,,,,0,True,,,,,,,,
+P508_#2018m01d11-P508_V9771_FreeProtocol,2018-01-11,RF - 4 - e,,,,,0,True,,,,,,,,
+P508_#2018m01d11-P508_V9771_FreeProtocol,2018-01-11,RH - 2 - i,,,,,0,True,,,,,,,,
+P508_#2018m01d11-P508_V9771_FreeProtocol,2018-01-11,RH - 3 - e,,,,,0,True,,,,,,,,

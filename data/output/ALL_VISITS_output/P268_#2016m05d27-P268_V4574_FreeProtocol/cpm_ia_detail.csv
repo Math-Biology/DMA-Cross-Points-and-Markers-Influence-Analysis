@@ -1,0 +1,5 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P268_#2016m05d27-P268_V4574_FreeProtocol,2016-05-27,LH - 1 - c,1.0,Cortisolo,300.0,4.0,2,False,-70.0,140.0,3.0,70.0,rise,1958.3333333333333,6533.333333333333,3.3361702127659574
+P268_#2016m05d27-P268_V4574_FreeProtocol,2016-05-27,LH - 1 - c,2.0,Progesterone,320.0,12.0,2,False,-80.0,80.0,2.0,80.0,end,3824.2424242424245,3200.0,0.8367670364500792
+P268_#2016m05d27-P268_V4574_FreeProtocol,2016-05-27,LH - 2 - e,,,,,0,True,,,,,,,,
+P268_#2016m05d27-P268_V4574_FreeProtocol,2016-05-27,LH - 4 - i,1.0,Progesterone,300.0,12.0,1,False,-154.5454545454545,154.5454545454545,2.0,154.5454545454545,end,8391.560230403205,11942.148760330572,1.4231142281578744

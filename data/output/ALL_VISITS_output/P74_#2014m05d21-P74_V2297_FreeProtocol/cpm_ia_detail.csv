@@ -1,0 +1,5 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P74_#2014m05d21-P74_V2297_FreeProtocol,2014-05-21,LH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2014m05d21-P74_V2297_FreeProtocol,2014-05-21,LH - 5 - e,1.0,Tenia saginata,311.1111111111111,19.0,1,False,-149.99999999999997,300.0,3.0,150.0,rise,4126.777849974731,29999.999999999996,7.26959412176347
+P74_#2014m05d21-P74_V2297_FreeProtocol,2014-05-21,RH - 2 - i,,,,,0,True,,,,,,,,
+P74_#2014m05d21-P74_V2297_FreeProtocol,2014-05-21,RH - 5 - e,1.0,Oxyurus (Enterobius vermicularis),346.1538461538462,15.0,1,False,-111.53846153846158,346.1538461538462,4.0,115.3846153846154,rise,4470.555085939701,24038.461538461546,5.3770641623597655

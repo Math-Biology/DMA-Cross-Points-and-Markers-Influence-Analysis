@@ -1,0 +1,5 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P236_#2016m01d11-P236_V12789_FreeProtocol,2016-01-11,LF - 3 - i,,,,,0,True,,,,,,,,
+P236_#2016m01d11-P236_V12789_FreeProtocol,2016-01-11,RF - 4 - c,,,,,0,True,,,,,,,,
+P236_#2016m01d11-P236_V12789_FreeProtocol,2016-01-11,RF - 4 - i,,,,,0,True,,,,,,,,
+P236_#2016m01d11-P236_V12789_FreeProtocol,2016-01-11,RF - 5 - c,,,,,0,True,,,,,,,,

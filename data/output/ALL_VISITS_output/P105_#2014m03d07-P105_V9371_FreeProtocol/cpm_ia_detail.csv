@@ -1,0 +1,16 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,LF - 3 - i,,,,,0,True,,,,,,,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,LH - 3 - i,,,,,0,True,,,,,,,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,LH - 4 - c,,,,,0,True,,,,,,,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,LH - 4 - e,,,,,0,True,,,,,,,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,LH - 4 - i,,,,,0,True,,,,,,,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RF - 3 - i,,,,,0,True,,,,,,,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 2 - c,,,,,0,True,,,,,,,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,1.0,Profito CIRC,509.9999999999999,11.0,8,False,-239.9999999999999,239.9999999999999,2.0,239.9999999999999,next_positive,7976.363636363637,28799.99999999997,3.6106678823797544
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,2.0,Profito CR - OHI,730.0,13.0,8,False,-550.0,550.0,2.0,550.0,next_positive,17293.58974358974,151250.0,8.746015271702872
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,3.0,Profito FG,400.0,15.0,8,False,,0.0,1.0,0.0,next_positive,34626.666666666664,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,4.0,Profito IT - OHI,440.0000000000001,16.0,8,False,-140.00000000000009,280.0000000000001,3.0,140.00000000000006,next_positive,34313.33333333333,19633.33333333335,0.5721779677482034
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,5.0,Profito RN,930.0000000000001,19.0,8,False,,0.0,1.0,0.0,next_positive,31353.80116959064,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,6.0,Profito ST,330.0,20.0,8,False,,0.0,1.0,0.0,next_positive,53327.36842105264,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,7.0,Profito VS - OHI,620.0,21.0,8,False,,0.0,1.0,0.0,next_positive,50794.76190476191,,
+P105_#2014m03d07-P105_V9371_FreeProtocol,2014-03-07,RH - 3 - c,8.0,Profito VSB - OHI,340.0,22.0,8,False,-280.0,280.0,2.0,280.0,end,53645.2380952381,39200.0,0.7307265545248768

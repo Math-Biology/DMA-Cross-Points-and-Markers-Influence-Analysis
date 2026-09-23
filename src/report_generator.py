@@ -28,6 +28,7 @@ from typing import Dict, Optional
 import pandas as pd
 
 from src.config_loader import CpmIaConfig
+from src.data_ingestion import DataQualityReport
 from src.descent_window import DescentWindows
 from src.marker_sequence import PerVisitMarkerOrders
 from src.positive_census import PointCensus
@@ -99,6 +100,7 @@ def _build_values(
     marker_orders: PerVisitMarkerOrders,
     config: CpmIaConfig,
     run_dt: datetime,
+    dq_report: Optional[DataQualityReport] = None,
 ) -> Dict[str, str]:
     """Compute all template placeholder values from pipeline outputs."""
     total_series = len(trigger_results)
@@ -118,14 +120,26 @@ def _build_values(
     no_effect_points_rate = 100.0 - positive_points_rate
 
     truncated = sum(
-        1 for w in descent_windows.values()
-        if w is not None and w.truncated_by_n_max
+        1 for wl in descent_windows.values()
+        for w in wl if w.truncated_by_n_max
     )
     truncated_rate = truncated / positive_series * 100 if positive_series else 0.0
 
     total_markers = len(
         {m for markers in marker_orders.values() for m in markers}
     )
+
+    # Data quality values
+    if dq_report is not None:
+        dq_total_rows = str(dq_report.total_rows)
+        dq_dropped_empty = str(dq_report.rows_dropped_empty_keys)
+        dq_invalid_points = str(len(dq_report.invalid_point_names))
+        dq_invalid_rows = str(dq_report.rows_affected_invalid_points)
+    else:
+        dq_total_rows = "---"
+        dq_dropped_empty = "---"
+        dq_invalid_points = "---"
+        dq_invalid_rows = "---"
 
     # Per-point counts table rows (sorted by point name)
     counts_rows = []
@@ -148,12 +162,12 @@ def _build_values(
             f"{_fmt(row.get('median_mean_per_step_decrease'))} \\\\"
         )
 
-    # Anchor marker summary: per (point, anchor_marker) visit count
+    # Anchor marker summary: per (point, anchor_marker) count
     df_pos_detail = df_detail[~df_detail["no_cross_marker_effect"]]
-    if not df_pos_detail.empty:
+    if not df_pos_detail.empty and "anchor_marker" in df_pos_detail.columns:
         anchor_summary = (
             df_pos_detail
-            .groupby(["point", "first_positive_marker"])
+            .groupby(["point", "anchor_marker"])
             .size()
             .reset_index(name="anchor_count")
         )
@@ -169,7 +183,7 @@ def _build_values(
         )
         anchor_rows = [
             f"{_escape(row['point'])} & "
-            f"{_escape(str(row['first_positive_marker']))} & "
+            f"{_escape(str(row['anchor_marker']))} & "
             f"{int(row['anchor_count'])} & "
             f"{row['anchor_pct']:.1f} \\\\"
             for _, row in anchor_summary.iterrows()
@@ -180,7 +194,7 @@ def _build_values(
     return {
         "RUN_DATE":                   run_dt.strftime("%Y-%m-%d"),
         "RUN_TIME":                   run_dt.strftime("%H:%M:%S"),
-        "INPUT_PATH":                 _escape(str(config.input_path)),
+        "INPUT_PATH":                 _escape(config.input_description()),
         "OUTPUT_PATH":                _escape(str(config.output_path)),
         "OUTPUT_LABEL_DETAIL":        _escape(config.output_label_detail),
         "OUTPUT_LABEL_AGGREGATED":    _escape(config.output_label_aggregated),
@@ -202,6 +216,11 @@ def _build_values(
         "NO_EFFECT_POINTS_RATE":      f"{no_effect_points_rate:.1f}",
         "TRUNCATED_COUNT":            str(truncated),
         "TRUNCATED_RATE":             f"{truncated_rate:.1f}",
+        "TOTAL_ANCHORS":              str(census.total_positives_count),
+        "DQ_TOTAL_ROWS":              dq_total_rows,
+        "DQ_DROPPED_EMPTY":           dq_dropped_empty,
+        "DQ_INVALID_POINTS":          dq_invalid_points,
+        "DQ_INVALID_ROWS":            dq_invalid_rows,
         "AGG_TABLE_COUNTS":           "\n".join(counts_rows),
         "AGG_TABLE_MEDIANS":          "\n".join(median_rows),
         "ANCHOR_TABLE_ROWS":          "\n".join(anchor_rows),
@@ -242,12 +261,13 @@ def generate_report(
     marker_orders: PerVisitMarkerOrders,
     config: CpmIaConfig,
     run_dt: datetime,
+    dq_report: Optional[DataQualityReport] = None,
 ) -> Path:
     """
     Generate the automated PDF run report for the CPM-IA component (M11).
 
     Args:
-        df_detail:        Per-(visit, point) detail DataFrame from Module 10.
+        df_detail:        Per-(visit, point, anchor) detail DataFrame from Module 10.
         df_agg:           Per-point aggregation DataFrame from Module 10.
         trigger_results:  Anchor detection results from Module 04.
         census:           Positive-point census from Module 05.
@@ -255,6 +275,7 @@ def generate_report(
         marker_orders:    Per-visit marker detection orders from Module 03.
         config:           CpmIaConfig with output paths and label suffixes.
         run_dt:           Pipeline start datetime (UTC) for the report header.
+        dq_report:        DataQualityReport from Module 02 (optional for backward compat).
 
     Returns:
         Path of the compiled PDF report.
@@ -285,7 +306,7 @@ def generate_report(
     template = _TEMPLATE_PATH.read_text(encoding="utf-8")
     values = _build_values(
         df_detail, df_agg, trigger_results, census,
-        descent_windows, marker_orders, config, run_dt,
+        descent_windows, marker_orders, config, run_dt, dq_report,
     )
     filled = _fill_template(template, values)
     tex_path.write_text(filled, encoding="utf-8")

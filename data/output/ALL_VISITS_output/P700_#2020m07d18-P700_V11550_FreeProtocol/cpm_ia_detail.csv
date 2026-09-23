@@ -1,0 +1,29 @@
+visit_id,visit_date,point,anchor_rank,anchor_marker,anchor_value,anchor_index,positives_count,no_cross_marker_effect,descent_slope,descent_depth,descent_length,mean_per_step_decrease,window_close_reason,variance_before,variance_after,variance_ratio
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,1,AGO 5,400.0,0,8,False,-162.5,162.5,2,162.5,next_positive,,13203.125,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,2,CPK,553.125,2,8,False,,0.0,1,0.0,next_positive,13203.125,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,3,Candida albicans,834.375,3,8,False,,0.0,1,0.0,next_positive,24912.109375,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,4,Carbonili di Proteine,368.75,4,8,False,,0.0,1,0.0,next_positive,64459.635416666664,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,5,Carbonili di Zuccheri,462.5,5,8,False,,0.0,1,0.0,next_positive,52125.9765625,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,6,PCR,462.5,6,8,False,-210.9375,421.875,3,210.9375,next_positive,41744.791666666664,48147.78645833333,1.1533842794759825
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,7,TNF-alfa,487.5,9,8,False,-443.75,443.75,2,443.75,rise,54946.2890625,98457.03125,1.7918777214964898
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 2 - e,8,Vasopressina,331.25,12,8,False,,0.0,1,0.0,end,57421.579071969696,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,1,Angiotensina II,535.7142857142857,1,12,False,,0.0,1,0.0,next_positive,,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,2,CPK,796.4285714285714,2,12,False,,0.0,1,0.0,next_positive,37812.499999999985,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,3,Candida albicans,632.1428571428571,3,12,False,,0.0,1,0.0,next_positive,71764.45578231293,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,4,Carbonili di Proteine,571.4285714285714,4,12,False,,0.0,1,0.0,next_positive,50402.84863945578,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,5,Carbonili di Zuccheri,732.1428571428571,5,12,False,,0.0,1,0.0,next_positive,37848.21428571428,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,6,PCR,664.2857142857143,6,12,False,,0.0,1,0.0,next_positive,35258.50340136054,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,7,Pancreozimina,846.4285714285713,7,12,False,,0.0,1,0.0,next_positive,30211.37026239067,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,8,Renina,764.2857142857143,8,12,False,,0.0,1,0.0,next_positive,33549.33491253644,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,9,TNF-alfa,503.5714285714286,9,12,False,,0.0,1,0.0,next_positive,31361.961451247163,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,10,TXA - 2,328.5714285714286,10,12,False,,0.0,1,0.0,next_positive,29873.01587301587,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,11,Troponin,385.7142857142857,11,12,False,,0.0,1,0.0,next_positive,35184.833024118736,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LF - 5 - i,12,Vasopressina,417.8571428571429,12,12,False,,0.0,1,0.0,end,35929.576376004945,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LH - 2 - i,1,Angiotensina II,415.625,1,6,False,,0.0,1,0.0,next_positive,,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LH - 2 - i,2,CPK,625.0,2,6,False,-425.0,425.0,2,425.0,rise,40434.5703125,90312.5,2.2335466731071127
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LH - 2 - i,3,Carbonili di Zuccheri,493.75,5,6,False,,0.0,1,0.0,next_positive,41432.6171875,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LH - 2 - i,4,PCR,521.875,6,6,False,,0.0,1,0.0,next_positive,38471.354166666664,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LH - 2 - i,5,Pancreozimina,418.75,7,6,False,-293.75,293.75,2,293.75,rise,36539.24851190476,43144.53125,1.1807722656349429
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,LH - 2 - i,6,Troponin,356.25,11,6,False,-300.0,300.0,2,300.0,end,29512.428977272728,45000.0,1.5247813060271698
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,RH - 5 - i,1,Angiotensina II,356.25,1,2,False,,0.0,1,0.0,next_positive,,,
+P700_#2020m07d18-P700_V11550_FreeProtocol,2020-07-18,RH - 5 - i,2,CPK,334.375,2,2,False,-284.375,284.375,2,284.375,rise,51801.7578125,40434.5703125,0.780563672353662

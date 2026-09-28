@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import math
 import logging
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
 
 from src.marker_sequence import PerVisitMarkerOrders, Sequences
@@ -31,6 +31,28 @@ class Anchor:
     value: float
 
 
+def _compute_consecutive_runs(anchors: List[Anchor]) -> Tuple[List[int], int]:
+    """Map each anchor to the length of its maximal consecutive run.
+
+    Two anchors are consecutive when anchors[i+1].index == anchors[i].index + 1.
+    Returns (per_anchor_run_lengths, consecutive_peaks).
+    consecutive_peaks = number of anchors belonging to a run of length >= 2.
+    """
+    if not anchors:
+        return [], 0
+    run_lengths: List[int] = []
+    i = 0
+    while i < len(anchors):
+        j = i
+        while j + 1 < len(anchors) and anchors[j + 1].index == anchors[j].index + 1:
+            j += 1
+        run_len = j - i + 1
+        run_lengths.extend([run_len] * run_len)
+        i = j + 1
+    consecutive_peaks = sum(1 for rl in run_lengths if rl >= 2)
+    return run_lengths, consecutive_peaks
+
+
 @dataclass(frozen=True)
 class TriggerResult:
     """Immutable result record for one (visit, point) series."""
@@ -38,6 +60,13 @@ class TriggerResult:
     anchors: List[Anchor]         # ordered list of all anchors (empty when no_cross_marker_effect)
     positives_count: int          # == len(anchors)
     no_cross_marker_effect: bool  # True when anchors is empty
+    anchor_run_lengths: List[int] = field(default_factory=list)  # auto-computed
+    consecutive_peaks: int = 0                                   # auto-computed
+
+    def __post_init__(self) -> None:
+        rl, cp = _compute_consecutive_runs(self.anchors)
+        object.__setattr__(self, "anchor_run_lengths", rl)
+        object.__setattr__(self, "consecutive_peaks", cp)
 
 
 TriggerResults = Dict[Tuple[str, str], TriggerResult]

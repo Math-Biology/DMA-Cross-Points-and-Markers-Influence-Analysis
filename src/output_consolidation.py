@@ -41,6 +41,8 @@ _ANALYTICAL_COLS = [
     "anchor_value",
     "anchor_index",
     "positives_count",
+    "consecutive_run_length",
+    "consecutive_peaks",
     "no_cross_marker_effect",
     "descent_slope",
     "descent_depth",
@@ -96,6 +98,8 @@ def _build_detail(
                 "anchor_value": None,
                 "anchor_index": None,
                 "positives_count": 0,
+                "consecutive_run_length": None,
+                "consecutive_peaks": 0,
                 "no_cross_marker_effect": True,
                 "descent_slope": None,
                 "descent_depth": None,
@@ -127,6 +131,8 @@ def _build_detail(
                     "anchor_value": anchor.value,
                     "anchor_index": anchor.index,
                     "positives_count": result.positives_count,
+                    "consecutive_run_length": result.anchor_run_lengths[i],
+                    "consecutive_peaks": result.consecutive_peaks,
                     "no_cross_marker_effect": False,
                     "descent_slope": sl,
                     "descent_depth": desc.descent_depth if desc else None,
@@ -209,6 +215,16 @@ def _build_aggregation(df_detail: pd.DataFrame) -> pd.DataFrame:
         .rename("median_positives_count")
     )
 
+    # median_max_consecutive_peaks: per point, median of max(consecutive_run_length) per (visit, point)
+    median_consec_peaks = (
+        df_pos.groupby([OUT_COL_POINT, COL_VISIT])["consecutive_peaks"]
+        .first()
+        .reset_index()
+        .groupby(OUT_COL_POINT)["consecutive_peaks"]
+        .median()
+        .rename("median_consecutive_peaks")
+    )
+
     # Medians over ALL anchors of the point (all positive rows in detail)
     pos_medians = df_pos.groupby(OUT_COL_POINT)[_MEDIAN_COLS].median(numeric_only=True)
     pos_medians.columns = [f"median_{c}" for c in pos_medians.columns]
@@ -218,6 +234,7 @@ def _build_aggregation(df_detail: pd.DataFrame) -> pd.DataFrame:
         .to_frame()
         .join(pos_counts, how="left")
         .join(pc_per_pair, how="left")
+        .join(median_consec_peaks, how="left")
         .join(pos_medians, how="left")
         .reset_index()
     )

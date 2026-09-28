@@ -77,11 +77,11 @@ def _write_temp_config(tmp_path: Path) -> Path:
 
 
 # ---------------------------------------------------------------------------
-# TC-11-001 — Full end-to-end pipeline on mock data
+# TC-12-001 — Full end-to-end pipeline on mock data
 # ---------------------------------------------------------------------------
 
-class TestTC11001:
-    """TC-11-001: Full pipeline on mock data; validate detail and agg row counts."""
+class TestTC12001:
+    """TC-12-001: Full pipeline on mock data; validate detail and agg row counts."""
 
     def test_detail_row_count(self, tmp_path):
         # 5 anchor rows: P01 has 1+1=2 visits with 1 anchor each;
@@ -130,11 +130,11 @@ class TestTC11001:
 
 
 # ---------------------------------------------------------------------------
-# TC-11-002 — Non-existent config path
+# TC-12-002 — Non-existent config path
 # ---------------------------------------------------------------------------
 
-class TestTC11002:
-    """TC-11-002: Non-existent config path -> ConfigurationError raised."""
+class TestTC12002:
+    """TC-12-002: Non-existent config path -> ConfigurationError raised."""
 
     def test_missing_config_raises(self, tmp_path):
         with pytest.raises(ConfigurationError):
@@ -142,11 +142,11 @@ class TestTC11002:
 
 
 # ---------------------------------------------------------------------------
-# TC-11-003 — Output CSV files written to configured path
+# TC-12-003 — Output CSV files written to configured path
 # ---------------------------------------------------------------------------
 
-class TestTC11003:
-    """TC-11-003: After successful run, both CSV files exist at configured path."""
+class TestTC12003:
+    """TC-12-003: After successful run, both CSV files exist at configured path."""
 
     def test_detail_csv_exists(self, tmp_path):
         config_path = _write_temp_config(tmp_path)
@@ -182,11 +182,11 @@ class TestTC11003:
 
 
 # ---------------------------------------------------------------------------
-# TC-11-004 — main() exits 0 on success
+# TC-12-004 — main() exits 0 on success
 # ---------------------------------------------------------------------------
 
-class TestTC11004:
-    """TC-11-004: main() with valid config -> SystemExit(0)."""
+class TestTC12004:
+    """TC-12-004: main() with valid config -> SystemExit(0)."""
 
     def test_main_exits_zero(self, tmp_path, monkeypatch):
         config_path = _write_temp_config(tmp_path)
@@ -197,11 +197,11 @@ class TestTC11004:
 
 
 # ---------------------------------------------------------------------------
-# TC-11-005 — main() exits 1 on missing argument
+# TC-12-005 — main() exits 1 on missing argument
 # ---------------------------------------------------------------------------
 
-class TestTC11005:
-    """TC-11-005: main() with no config argument -> SystemExit(1)."""
+class TestTC12005:
+    """TC-12-005: main() with no config argument -> SystemExit(1)."""
 
     def test_main_exits_one_no_arg(self, monkeypatch):
         monkeypatch.setattr(sys, "argv", ["main.py"])
@@ -262,11 +262,11 @@ def _excel_xml(output_dir, files_data, threshold=300.0):
 
 
 # ---------------------------------------------------------------------------
-# TC-11-006 — Per-file Excel output: one subfolder per visit
+# TC-12-006 — Per-file Excel output: one subfolder per visit
 # ---------------------------------------------------------------------------
 
-class TestTC11006:
-    """TC-11-006: Multi-file Excel input produces one output subfolder per visit."""
+class TestTC12006:
+    """TC-12-006: Multi-file Excel input produces one output subfolder per visit."""
 
     def test_per_visit_subfolders_created(self, tmp_path):
         """Each visit gets its own <output_path>/<visit_id>/ subfolder."""
@@ -305,11 +305,11 @@ class TestTC11006:
 
 
 # ---------------------------------------------------------------------------
-# TC-11-007 — Batch resilience: empty visit skipped, valid visit processed
+# TC-12-007 — Batch resilience: empty visit skipped, valid visit processed
 # ---------------------------------------------------------------------------
 
-class TestTC11007:
-    """TC-11-007: In multi-file mode, empty xlsx is skipped; valid visit succeeds."""
+class TestTC12007:
+    """TC-12-007: In multi-file mode, empty xlsx is skipped; valid visit succeeds."""
 
     def test_empty_visit_skipped_valid_processed(self, tmp_path):
         """Empty xlsx (headers only) causes skip; the other visit is still processed."""

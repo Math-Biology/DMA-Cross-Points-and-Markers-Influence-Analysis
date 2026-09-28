@@ -173,7 +173,8 @@ class TestTC10002:
         args = _base_inputs(tmp_path)
         df_detail, _ = consolidate_outputs(*args)
         row = df_detail[(df_detail["visit_id"] == "V002") & (df_detail["point"] == "P02")]
-        for col in ("descent_slope", "descent_depth", "descent_length", "mean_per_step_decrease", "variance_ratio"):
+        for col in ("descent_slope", "descent_depth", "descent_length", "mean_per_step_decrease",
+                    "variance_ratio", "consecutive_run_length"):
             assert pd.isna(row[col].iloc[0]), f"{col} should be NaN for no-effect row"
 
 
@@ -331,14 +332,14 @@ class TestTC10008:
     EXPECTED_DETAIL_COLS = {
         "visit_id", "visit_date", "point",
         "anchor_rank", "anchor_marker", "anchor_value", "anchor_index",
-        "positives_count", "no_cross_marker_effect",
+        "positives_count", "consecutive_run_length", "consecutive_peaks", "no_cross_marker_effect",
         "descent_slope", "descent_depth", "descent_length", "mean_per_step_decrease",
         "window_close_reason",
         "variance_before", "variance_after", "variance_ratio",
     }
     EXPECTED_AGG_COLS = {
         "point", "total_visit_count", "positive_visit_count", "positive_prevalence",
-        "median_positives_count",
+        "median_positives_count", "median_consecutive_peaks",
         "median_descent_slope", "median_descent_depth", "median_descent_length",
         "median_mean_per_step_decrease",
     }
@@ -407,3 +408,84 @@ class TestTC10010:
         # no_effect rows have anchor_marker=None; should be unique per (visit, point)
         no_eff = df_detail[df_detail["no_cross_marker_effect"]]
         assert len(no_eff) == no_eff[["visit_id", "point"]].drop_duplicates().shape[0]
+
+
+class TestTC10011:
+    """TC-10-011: consecutive_run_length and median_max_consecutive_peaks values."""
+
+    def test_isolated_anchors_run_length_one(self, tmp_path):
+        """_base_inputs has single-anchor series; all positive rows -> consecutive_run_length=1, max=1."""
+        args = _base_inputs(tmp_path)
+        df_detail, _ = consolidate_outputs(*args)
+        pos_rows = df_detail[~df_detail["no_cross_marker_effect"]]
+        assert (pos_rows["consecutive_run_length"] == 1).all()
+        assert (pos_rows["consecutive_peaks"] == 0).all()
+
+    def test_no_effect_run_length_nan(self, tmp_path):
+        args = _base_inputs(tmp_path)
+        df_detail, _ = consolidate_outputs(*args)
+        no_eff = df_detail[df_detail["no_cross_marker_effect"]]
+        assert pd.isna(no_eff["consecutive_run_length"]).all()
+
+    def test_consecutive_anchors_run_length_two(self, tmp_path):
+        """Two consecutive anchors (indices 0,1) -> both rows get consecutive_run_length=2."""
+        from src.trigger_detection import Anchor, TriggerResult
+        df_raw = pd.DataFrame([
+            {"visit_id": "V001", "marker": "M1", "point": "P01", "percentage_variation": 400.0, "visit_date": "2026-01-01"},
+            {"visit_id": "V001", "marker": "M2", "point": "P01", "percentage_variation": 350.0, "visit_date": "2026-01-01"},
+            {"visit_id": "V001", "marker": "M3", "point": "P01", "percentage_variation": 100.0, "visit_date": "2026-01-01"},
+        ])
+        a0 = Anchor(marker="M1", index=0, value=400.0)
+        a1 = Anchor(marker="M2", index=1, value=350.0)
+        trigger = TriggerResult(anchors=[a0, a1], positives_count=2, no_cross_marker_effect=False)
+        trigger_results = {("V001", "P01"): trigger}
+        descent_windows = {("V001", "P01"): [_make_window([400.0]), _make_window([350.0, 100.0])]}
+        slopes = {("V001", "P01"): [None, -250.0]}
+        descriptors = {("V001", "P01"): [_make_descriptor(0.0, 1, 0.0), _make_descriptor(250.0, 2, 250.0)]}
+        variance_indicators = {("V001", "P01"): [None, None]}
+        census = PointCensus(
+            positive_point_count=1, positive_points=["P01"],
+            total_point_count=1, total_positives_count=2,
+        )
+        config = _make_config(tmp_path)
+        df_detail, df_agg = consolidate_outputs(
+            df_raw, trigger_results, census, descent_windows,
+            slopes, descriptors, variance_indicators, config
+        )
+        assert (df_detail["consecutive_run_length"] == 2).all()
+        assert (df_detail["consecutive_peaks"] == 2).all()
+
+    def test_median_max_consecutive_peaks_isolated(self, tmp_path):
+        """_base_inputs: all anchors isolated -> median_max_consecutive_peaks=1.0 for P01."""
+        args = _base_inputs(tmp_path)
+        _, df_agg = consolidate_outputs(*args)
+        row = df_agg[df_agg["point"] == "P01"]
+        assert row["median_consecutive_peaks"].iloc[0] == pytest.approx(0.0)
+
+    def test_median_max_consecutive_peaks_consecutive(self, tmp_path):
+        """Consecutive anchors (indices 0,1) -> median_max_consecutive_peaks=2.0."""
+        from src.trigger_detection import Anchor, TriggerResult
+        df_raw = pd.DataFrame([
+            {"visit_id": "V001", "marker": "M1", "point": "P01", "percentage_variation": 400.0, "visit_date": "2026-01-01"},
+            {"visit_id": "V001", "marker": "M2", "point": "P01", "percentage_variation": 350.0, "visit_date": "2026-01-01"},
+            {"visit_id": "V001", "marker": "M3", "point": "P01", "percentage_variation": 100.0, "visit_date": "2026-01-01"},
+        ])
+        a0 = Anchor(marker="M1", index=0, value=400.0)
+        a1 = Anchor(marker="M2", index=1, value=350.0)
+        trigger = TriggerResult(anchors=[a0, a1], positives_count=2, no_cross_marker_effect=False)
+        trigger_results = {("V001", "P01"): trigger}
+        descent_windows = {("V001", "P01"): [_make_window([400.0]), _make_window([350.0, 100.0])]}
+        slopes = {("V001", "P01"): [None, -250.0]}
+        descriptors = {("V001", "P01"): [_make_descriptor(0.0, 1, 0.0), _make_descriptor(250.0, 2, 250.0)]}
+        variance_indicators = {("V001", "P01"): [None, None]}
+        census = PointCensus(
+            positive_point_count=1, positive_points=["P01"],
+            total_point_count=1, total_positives_count=2,
+        )
+        config = _make_config(tmp_path)
+        _, df_agg = consolidate_outputs(
+            df_raw, trigger_results, census, descent_windows,
+            slopes, descriptors, variance_indicators, config
+        )
+        row = df_agg[df_agg["point"] == "P01"]
+        assert row["median_consecutive_peaks"].iloc[0] == pytest.approx(2.0)

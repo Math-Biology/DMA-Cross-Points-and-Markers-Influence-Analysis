@@ -66,9 +66,7 @@ apt-get install texlive-latex-extra
 │   ├── input/                          # Input data — one subdirectory per visit (Excel) or single CSV
 │   │   ├── AF_#2026m03d03-AF_FreeProtocol/
 │   │   └── TP0010_player0010-test_Tennis/
-│   ├── output/                         # Pipeline writes CSV and PDF outputs here
-│   └── templates/
-│       └── cpm_ia_report.tex.template # LaTeX report template
+│   └── output/                         # Pipeline writes CSV outputs here
 ├── src/
 │   ├── config_loader.py               # M01 — XML config loading and validation
 │   ├── data_ingestion.py              # M02 — Flexible ingestion (CSV/Excel/DB stub) + data quality
@@ -80,11 +78,10 @@ apt-get install texlive-latex-extra
 │   ├── descent_descriptors.py         # M08 — Descent depth, length, mean per-step decrease per anchor
 │   ├── variance_indicator.py          # M09 — Pre/post variance per anchor
 │   ├── output_consolidation.py        # M10 — Tidy CSV output (per anchor granularity)
-│   ├── report_generator.py            # M11 — Automated PDF report compilation
 │   └── main.py                        # Pipeline orchestrator (CLI entry point)
 ├── tests/
 │   ├── test_config_loader.py          # 21 tests
-│   ├── test_data_ingestion.py         # 17 tests
+│   ├── test_data_ingestion.py         # 20 tests
 │   ├── test_marker_sequence.py        # 17 tests
 │   ├── test_trigger_detection.py      # 19 tests
 │   ├── test_positive_census.py        # 13 tests
@@ -93,8 +90,7 @@ apt-get install texlive-latex-extra
 │   ├── test_descent_descriptors.py    # 15 tests
 │   ├── test_variance_indicator.py     # 22 tests
 │   ├── test_output_consolidation.py   # 25 tests
-│   ├── test_main.py                   # 15 tests
-│   └── test_report_generator.py       # 33 tests  (238 total)
+│   └── test_main.py                   # 18 tests  (211 total)
 └── TechDoc/                            # SR&TS and GR documents
 ```
 
@@ -218,10 +214,8 @@ All outputs are written to the directory specified in `<output_path>`.
 
 | File | Description |
 |------|-------------|
-| `cpm_ia_detail.csv` | One row per (visit, anatomical point, anchor). Series with no positives have one row with `no_cross_marker_effect=True` and anchor fields set to None. Columns include: `anchor_rank`, `anchor_marker`, `anchor_value`, `anchor_index`, `positives_count`, `window_close_reason`, descent metrics, and variance indicators. |
-| `cpm_ia_aggregated.csv` | One row per anatomical point. Columns: `total_visit_count`, `positive_visit_count`, `positive_prevalence`, `median_positives_count`, and median descent metrics across all anchors of that point. |
-| `cpm_ia_report.pdf` | Automated PDF run report. Contains run metadata, data quality summary, dataset overview, algorithm description, and per-point results tables. |
-| `cpm_ia_report.tex` | Filled LaTeX source for the PDF (preserved on compilation failure). |
+| `cpm_ia_detail.csv` | One row per (visit, anatomical point, anchor). Series with no positives have one row with `no_cross_marker_effect=True` and anchor fields set to None. Columns include: `anchor_rank`, `anchor_marker`, `anchor_value`, `anchor_index`, `positives_count`, `consecutive_run_length`, `consecutive_peaks`, `window_close_reason`, descent metrics, and variance indicators. |
+| `cpm_ia_aggregated.csv` | One row per anatomical point. Columns: `total_visit_count`, `positive_visit_count`, `positive_prevalence`, `median_positives_count`, `median_consecutive_peaks`, and median descent metrics across all anchors of that point. |
 
 ---
 
@@ -233,7 +227,7 @@ The pipeline executes eleven modules in strict sequential order:
 M01 config_loader  →  M02 data_ingestion  →  M03 marker_sequence
 →  M04 trigger_detection  →  M05 positive_census  →  M06 descent_window
 →  M07 descent_slope  →  M08 descent_descriptors  →  M09 variance_indicator
-→  M10 output_consolidation  →  M11 report_generator
+→  M10 output_consolidation
 ```
 
 **Key design invariants:**

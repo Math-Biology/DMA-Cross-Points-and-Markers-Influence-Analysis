@@ -2,7 +2,11 @@
 **File:** `src/report_generator.py`
 **SR:** REQ-CPM-IA-P26.0011 — Automated PDF Run Report
 **Template:** `data/templates/cpm_ia_report.tex.template`
-**Status:** Complete — 2026-09-23 | 33/33 tests pass
+**Status:** REMOVED — 2026-09-24
+
+> **Module 11 has been removed from the pipeline.** The source file `src/report_generator.py`, the LaTeX template `data/templates/cpm_ia_report.tex.template`, and the test file `tests/test_report_generator.py` were deleted on 2026-09-24. PDF report generation is no longer part of the CPM-IA component. All previously generated PDF and TEX files were also removed from the output directories.
+>
+> This spec is retained for audit-trail purposes only.
 
 ---
 

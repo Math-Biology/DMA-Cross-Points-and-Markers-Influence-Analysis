@@ -36,7 +36,7 @@
 
 # 
 
-1. # **Document Information**
+1. # **Document Information** {#document-information}
 
 | Doc. Title. | DMA \- Cross Points and Markers Influence Analysis Specific Requirements & Technical Specifications |
 | :---- | :---- |
@@ -49,7 +49,7 @@
 
 # 
 
-2. # **Definitions & Acronyms** 
+2. # **Definitions & Acronyms**  {#definitions-&-acronyms}
 
 | Def. / Acron. | Description |
 | :---- | :---- |
@@ -59,7 +59,7 @@
 |  |  |
 |  |  |
 
-3. # **Referencies**
+3. # **Referencies** {#referencies}
 
 Unless otherwise specified, definitions and acronyms are defined in DOC-QMS-001 – Definitions, Acronyms & Ontology.
 
@@ -72,7 +72,7 @@ Unless otherwise specified, definitions and acronyms are defined in DOC-QMS-001 
 | ref.5 | \#L001-U015-P26.0035 | Math B \- DMA Screening \- General Hardware & Software Requirements |
 | ref.6 | \#L001-U015-P26.0033 | Math B \- DMA Screening \- Design Traceability Matrix (DTM) \- MDR Class I |
 
-4. # **Introduction (Purpose & Scope)**
+4. # **Introduction (Purpose & Scope)** {#introduction-(purpose-&-scope)}
 
 This document defines the Cross Points and Markers Influence Analysis Specific Requirements (SR) and Technical Specifications (TS) for the DMA Screening system, a Class I medical device developed by Math Biology S.r.l. for the non-invasive acquisition of quasi-static bioelectrical surface currents. 
 
@@ -82,7 +82,7 @@ Each specific requirement (SR) in this document is formally linked to a higher-l
 
 ## 
 
-5. # **Involved Components**
+5. # **Involved Components** {#involved-components}
 
 This document relates to the software components listed in the following table. For additional details about Components see **ref. 2\.**
 
@@ -94,7 +94,7 @@ This document relates to the software components listed in the following table. 
 |  |  |  |
 |  |  |  |
 
-6. # **Specific Requirements**
+6. # **Specific Requirements** {#specific-requirements}
 
 This section lists all Specific Requirements for the Cross Points and Markers Influence Analysis. Each SR is derived from one or more General Requirements (GR) defined in **ref.5**. 
 
@@ -186,7 +186,7 @@ Linked to: **\[REQ-G-P26.0022\], \[REQ-G-P26.0028\], \[REQ-G-P26.0029\]**
 
 Requirement: The component shall generate a formatted PDF run report summarising the analysis results — run parameters, series- and point-level positivity statistics, per-point prevalence and descent medians, and an anchor-marker summary — assembled through a programmatic templating engine (LaTeX / pdflatex) that enforces a fixed, auditable layout. Report generation shall fail in a controlled manner and shall not overwrite an existing report. All report text shall use non-diagnostic language. 
 
-7. # **Technical Specification**
+7. # **Technical Specification** {#technical-specification}
 
 This section provides the Technical Specification for each Specific Requirement defined in Section 6\. 
 
@@ -310,7 +310,7 @@ Specification: report\_generator.generate\_report() fills the LaTeX template dat
 
 Verification Method: Automated unit test tests/test\_report\_generator.py (cases TC-11-001 to TC-11-018: template fill, LaTeX escaping, pdflatex invocation, error paths).
 
-8. # **Risk Analysis**
+8. # **Risk Analysis** {#risk-analysis}
 
 This section provides the Risk Analysis entries for each Specific Requirement, in compliance with ISO 14971 and ref.4. For each risk, severity × probability establishes the initial risk level; the mitigation link identifies the SR/TS providing the control; residual risk is stated after mitigation.
 
@@ -402,7 +402,7 @@ Linked to: **\[REQ-CPM-IA-P26.0011\]**
 
 Risk: Hazard: the run report is malformed, silently overwrites a prior report, or renders unescaped content, undermining the auditability of the output. Cause: template/compilation failure or missing collision guard. Initial risk: Severity 2 x Probability 2 \= Low. Mitigation: LaTeX escaping, controlled ReportError on template/pdflatex failure, and a no-overwrite guard; non-diagnostic language per REQ-G-P26.0022/0028 applies to all report text (SPEC-CPM-IA-P26.0012). Residual risk: Low.
 
-9. # **Parameters**
+9. # **Parameters** {#parameters}
 
 This section contains all the fixed default parameters for the Cross Point and Markers Influence Analysis.
 
@@ -420,9 +420,9 @@ This section contains all the fixed default parameters for the Cross Point and M
 
 # 
 
-10. # **Document Governance**
+10. # **Document Governance** {#document-governance}
 
-    1. ## **Revision List & Notes** 
+    1. ## **Revision List & Notes**  {#revision-list-&-notes}
 
 | Revisision  | Date | Approved By \-  Name Acronymus | Notes |
 | :---- | :---- | :---- | :---- |

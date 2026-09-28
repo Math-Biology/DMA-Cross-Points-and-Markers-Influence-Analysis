@@ -34,6 +34,8 @@
 | 2026-08-31 | Add `variance_ratio` field (`src/variance_indicator.py`, `src/output_consolidation.py`) + tests TC-09-010 | claude-sonnet-4-6 | [IR] |  |
 | 2026-08-31 | M11: `src/report_generator.py` + `data/templates/cpm_ia_report.tex.template` + `tests/test_report_generator.py` (TC-11-001–018) | claude-sonnet-4-6 | [IR] |  |
 | 2026-09-23 | Rev 00.01 — multi-anchor refactor (M01–M11 + all tests): ingestione flessibile csv/excel/db, `>=` soglia, tutti i positivi, `positives_count`, `window_close_reason`, nuova granularità output `(visita, punto, àncora)`, data quality report | claude-sonnet-4-6 | [IR] |  |
+| 2026-09-24 | Rimozione M11: eliminati `src/report_generator.py`, `data/templates/cpm_ia_report.tex.template`, `tests/test_report_generator.py`; rimossa chiamata M11 da `src/main.py`; rimossi tutti i PDF/TEX dagli output. | claude-sonnet-4-6 | [IR] |  |
+| 2026-09-24 | Pulizia ID di tracciabilità: rimosso `REQ-CPM-IA-P26.0011` dal `LINKED-TO` di `src/main.py` e docstring aggiornati (M01–M10); `tests/test_main.py` rinumerato TC-11-001…007 → TC-12-001…007. Nessuna modifica funzionale; 211/211 test superati. | claude-opus-5-5 | [IR] |  |
 
 ## Component-specific rules
 
@@ -78,8 +80,8 @@ La finestra di ciascuna àncora si chiude al **primo** tra:
 NaN bridging invariato.
 
 ### Module execution order
-config_loader → data_ingestion → marker_sequence → trigger_detection → positive_census → descent_window → descent_slope → descent_descriptors → variance_indicator → output_consolidation → report_generator
+config_loader → data_ingestion → marker_sequence → trigger_detection → positive_census → descent_window → descent_slope → descent_descriptors → variance_indicator → output_consolidation
 
 ### Pipeline orchestration (main.py)
-- **Input Excel multi-file:** il pipeline esegue un run completo (M02–M11) per ogni `<file>` configurato; gli output finiscono in `<output_path>/<visit_id>/`.
+- **Input Excel multi-file:** il pipeline esegue un run completo (M02–M10) per ogni `<file>` configurato; gli output finiscono in `<output_path>/<visit_id>/`.
 - **Batch resilience:** in modalità multi-file, gli errori per-visita (dataset vuoto, marker duplicati, ecc.) vengono catturati, loggati come WARNING, e il loop continua alle visite successive senza interrompere il run.

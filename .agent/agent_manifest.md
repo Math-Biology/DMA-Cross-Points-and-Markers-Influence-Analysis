@@ -17,7 +17,6 @@ The CPM-IA component receives the consolidated raw-percentage-variation dataset 
 3. Determines an **adaptive descent window** starting from each anchor.
 4. Computes quantitative descriptors of the descent (slope, depth, length, mean per-step decrease, pre/post variance).
 5. Aggregates and exports tidy outputs at two granularities: per-(visit, point, anchor) and per-point across visits.
-6. Compiles an automated PDF run report (Module 11) summarising dataset statistics, algorithm description, and per-point results.
 
 All execution parameters are loaded from an external XML configuration file; no processing parameter is hard-coded.
 
@@ -54,7 +53,7 @@ All execution parameters are loaded from an external XML configuration file; no 
 | 08 | `src/descent_descriptors.py` | REQ-CPM-IA-P26.0008 | Complete | 15/15 |
 | 09 | `src/variance_indicator.py` | REQ-CPM-IA-P26.0009 | Complete | 22/22 |
 | 10 | `src/output_consolidation.py` | REQ-CPM-IA-P26.0010 | Complete | 25/25 |
-| 11 | `src/report_generator.py` | REQ-CPM-IA-P26.0011 | Complete | 33/33 |
+| 11 | `src/report_generator.py` | REQ-CPM-IA-P26.0011 | REMOVED — 2026-09-24 | — |
 | — | `src/main.py` | All (pipeline orchestrator) | Complete | 18/18 |
 
 Status legend: Not Started / In Progress / Complete / Blocked
@@ -63,11 +62,29 @@ Status legend: Not Started / In Progress / Complete / Blocked
 
 ## 4. Current Run Summary
 
-**Last updated:** 2026-09-23
-**Phase:** SOP Step 4 — Modular Development (Rev 00.01 + batch pipeline complete)
-**Active module:** — ALL MODULES COMPLETE (01–11)
+**Last updated:** 2026-09-24
+**Phase:** SOP Step 4 — Modular Development (Rev 00.01 + batch pipeline complete; M11 removed)
+**Active module:** — ALL ACTIVE MODULES COMPLETE (01–10)
 **Blocking issues:** None
 **Next action:** SOP Step 5 — Formal Verification (update SR&TS, independent QA)
+
+### Session log — 2026-09-24 traceability ID clean-up (post SR&TS Rev 00.01)
+
+- `src/main.py`: removed stale `REQ-CPM-IA-P26.0011` from the `LINKED-TO` anchor (M11 removed); docstrings updated to "Modules 01–10" / "M02–M10". No functional change.
+- `tests/test_main.py`: orchestrator test cases renumbered TC-11-001…007 → **TC-12-001…007** (classes `TestTC11xxx` → `TestTC12xxx`) to avoid collision with the historical M11 report-generator IDs TC-11-001–018. No assertion changed.
+- Full suite: 211/211 passed.
+
+### Session log — 2026-09-24 M11 removal (PDF report eliminated)
+
+- `src/report_generator.py`: deleted — PDF report generation removed from the pipeline.
+- `tests/test_report_generator.py`: deleted — 33 tests removed.
+- `data/templates/cpm_ia_report.tex.template`: deleted.
+- `src/main.py`: removed `generate_report` import; removed `dq_report` usage; removed M11 call block.
+- All existing `cpm_ia_report.pdf` and `cpm_ia_report.tex` files removed from output directories (753 PDF + 753 TEX).
+- `CLAUDE.md`: module execution order updated (removed `→ report_generator`).
+- `README.md`: output files table updated (removed PDF/TEX rows); algorithm pipeline updated (removed M11).
+- `.agent/modules/11_report_generator.md`: marked REMOVED; spec retained for audit trail.
+- Totale cumulativo: **211/211 test**.
 
 ### Session log — 2026-09-23 Batch pipeline + per-file output
 
@@ -76,7 +93,7 @@ Status legend: Not Started / In Progress / Complete / Blocked
 - `data/config/cpm_ia_config_all_visits.xml`: generato con 997 visite da `data/input/ALL_VISITS_input/`; output in `data/output/ALL_VISITS_output/`.
 - Run ALL_VISITS: 997 visite → 751 elaborate, 169 saltate (xlsx vuoto), 77 saltate (marker duplicato).
 - `data/output/ALL_VISITS_output/skipped_visits_report.md`: report visite saltate con spiegazione delle cause.
-- Totale cumulativo: 244/244 test.
+- Totale cumulativo (ante M11 removal): 244/244 test.
 
 ### Session log — 2026-09-23 Rev 00.01 multi-anchor refactor
 

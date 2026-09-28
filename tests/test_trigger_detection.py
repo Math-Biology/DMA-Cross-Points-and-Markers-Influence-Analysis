@@ -210,3 +210,64 @@ def test_tc_04_013_nan_skipped_collecting_all():
     assert r.anchors[0].marker == "M1"
     assert r.anchors[1].marker == "M3"
     assert r.anchors[1].index == 2
+
+
+# ---------------------------------------------------------------------------
+# TC-04-014 — Consecutive peaks: anchor_run_lengths and max_consecutive_peaks
+# ---------------------------------------------------------------------------
+
+def _anchors_at(indices, values=None):
+    """Build a list of Anchors at the given sequence indices."""
+    from src.trigger_detection import Anchor
+    if values is None:
+        values = [400.0] * len(indices)
+    return [Anchor(marker=f"M{idx}", index=idx, value=v) for idx, v in zip(indices, values)]
+
+
+def test_tc_04_014_no_anchors():
+    """No anchors -> anchor_run_lengths=[], max_consecutive_peaks=0."""
+    r = _single([], [])
+    assert r.anchor_run_lengths == []
+    assert r.consecutive_peaks == 0
+
+
+def test_tc_04_014_single_isolated_anchor():
+    """One anchor at index 2 (isolated) -> run_length=[1], max=1."""
+    r = _single([100.0, 200.0, 400.0], ["M1", "M2", "M3"])
+    assert r.anchor_run_lengths == [1]
+    assert r.consecutive_peaks == 0
+
+
+def test_tc_04_014_two_consecutive_anchors():
+    """Anchors at indices 0,1 (consecutive) -> run_lengths=[2,2], max=2."""
+    r = _single([400.0, 400.0, 100.0], ["M1", "M2", "M3"])
+    assert r.anchor_run_lengths == [2, 2]
+    assert r.consecutive_peaks == 2
+
+
+def test_tc_04_014_three_consecutive_anchors():
+    """Anchors at indices 0,1,2 (consecutive) -> run_lengths=[3,3,3], max=3."""
+    r = _single([400.0, 400.0, 400.0], ["M1", "M2", "M3"])
+    assert r.anchor_run_lengths == [3, 3, 3]
+    assert r.consecutive_peaks == 3
+
+
+def test_tc_04_014_non_consecutive_anchors():
+    """Anchors at indices 0 and 2 (gap at 1) -> run_lengths=[1,1], max=1."""
+    r = _single([400.0, 100.0, 400.0], ["M1", "M2", "M3"])
+    assert r.anchor_run_lengths == [1, 1]
+    assert r.consecutive_peaks == 0
+
+
+def test_tc_04_014_mixed_run_leading_pair():
+    """Anchors at indices 0,1,3 -> runs: [2,2] then [1] -> run_lengths=[2,2,1], max=2."""
+    r = _single([400.0, 400.0, 100.0, 400.0], ["M1", "M2", "M3", "M4"])
+    assert r.anchor_run_lengths == [2, 2, 1]
+    assert r.consecutive_peaks == 2
+
+
+def test_tc_04_014_mixed_run_trailing_pair():
+    """Anchors at indices 0,2,3 -> runs: [1] then [2,2] -> run_lengths=[1,2,2], max=2."""
+    r = _single([400.0, 100.0, 400.0, 400.0], ["M1", "M2", "M3", "M4"])
+    assert r.anchor_run_lengths == [1, 2, 2]
+    assert r.consecutive_peaks == 2

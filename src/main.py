@@ -1,11 +1,11 @@
 # LINKED-TO: [REQ-CPM-IA-P26.0001, REQ-CPM-IA-P26.0002, REQ-CPM-IA-P26.0003,
 #              REQ-CPM-IA-P26.0004, REQ-CPM-IA-P26.0005, REQ-CPM-IA-P26.0006,
 #              REQ-CPM-IA-P26.0007, REQ-CPM-IA-P26.0008, REQ-CPM-IA-P26.0009,
-#              REQ-CPM-IA-P26.0010, REQ-CPM-IA-P26.0011]
+#              REQ-CPM-IA-P26.0010]
 """
 main.py — CPM-IA Pipeline Orchestrator.
 
-CLI entry point. Calls Modules 01–11 in the documented execution order,
+CLI entry point. Calls Modules 01–10 in the documented execution order,
 threading each module's output into the next stage's inputs. Contains no
 analytical logic — all computation is delegated to the individual modules.
 
@@ -38,7 +38,6 @@ from src.descent_window import determine_descent_windows
 from src.marker_sequence import build_sequences
 from src.output_consolidation import consolidate_outputs
 from src.positive_census import compute_census
-from src.report_generator import generate_report
 from src.trigger_detection import detect_triggers
 from src.variance_indicator import compute_variance_indicators
 
@@ -66,14 +65,14 @@ def _make_per_file_config(config: CpmIaConfig, file_cfg: ExcelFileConfig) -> Cpm
 
 
 def _run_from_config(config: CpmIaConfig, run_dt: datetime) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Execute M02–M11 from a pre-built config and return (df_detail, df_agg)."""
+    """Execute M02–M10 from a pre-built config and return (df_detail, df_agg)."""
     logger.info(
         "CPM-IA run | input=%s | output=%s",
         config.input_description(),
         config.output_path,
     )
 
-    df_raw, dq_report = load_data(config)                                        # M02
+    df_raw, _ = load_data(config)                                                # M02
     marker_orders, sequences = build_sequences(df_raw)                           # M03
     trigger_results = detect_triggers(                                            # M04
         sequences, marker_orders, config.threshold_pct
@@ -92,12 +91,6 @@ def _run_from_config(config: CpmIaConfig, run_dt: datetime) -> Tuple[pd.DataFram
         df_raw, trigger_results, census, descent_windows,
         slopes, descriptors, variance_indicators, config,
     )
-    generate_report(                                                               # M11
-        df_detail, df_agg, trigger_results, census,
-        descent_windows, marker_orders, config, run_dt,
-        dq_report,
-    )
-
     logger.info(
         "CPM-IA run complete | detail_rows=%d | agg_rows=%d",
         len(df_detail),
@@ -123,7 +116,7 @@ def run_pipeline(config_path: str | Path) -> Tuple[pd.DataFrame, pd.DataFrame]:
         Tuple (df_detail, df_agg) — the tidy DataFrames also written to CSV.
 
     Raises:
-        Any typed exception from Modules 01–11 propagates unchanged in single-visit mode.
+        Any typed exception from Modules 01–10 propagates unchanged in single-visit mode.
     """
     run_dt = datetime.utcnow()
     logger.info(
